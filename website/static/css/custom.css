@@ -1,0 +1,125 @@
+/* your styles go here */
+/* Example site test */
+
+.box-image-text .image {
+    min-height: 190px;
+    max-height: 190px;
+}
+
+.box-image-text .image img {
+    max-height: 190px;
+    margin: auto;
+}
+
+.box-simple {
+    min-height: 230px;
+}
+
+.home-carousel{
+    background:url(../img/dutchcloudmeetupgrid.jpg);
+}
+
+.bar.background-image-fixed-2{
+    background:url(../img/dutchcloudmeetupgrid.jpg) important;
+}
+
+.app_message_error{
+    color:#FF9494;
+}
+
+.team-name-picture{
+    max-width:150px;
+    border-radius: 50%;
+}
+
+.sponsors-name-picture{
+    max-width: 200px;
+}
+
+#team-row, #sponsors-row{
+    padding-bottom:25px;
+}
+
+.post-image{
+    max-height:400px;
+}
+
+.image-container{
+    padding-bottom:25px;
+    text-align: center;
+}
+
+#blog-listing-medium .post h2, #blog-listing-medium .post .author-category, #heading-breadcrumbs h1{
+    text-transform: none;
+}
+
+.text-uppercase, .panel.sidebar-menu .panel-heading, #footer .blog-entries .item .name h5, .testimonials .item .testimonial .name-picture h5{
+    text-transform: none;
+}
+
+.panel.sidebar-menu ul.tag-cloud li a, .heading h1, .heading h2, .heading h3, .heading h4, .heading h5 {
+    text-transform: none;
+}
+
+.home-carousel .dark-mask{
+    background: url('../img/site/header2.jpg');
+}
+
+.navbar ul.nav > li > a{
+    text-transform: none;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: #009FE3 !important;
+}
+
+.btn-template-transparent-black-post {
+    color: #ffffff;
+    background-color: #d1410c;
+    border-color: #ffffff;
+  }
+  .btn-template-transparent-black-post:hover,
+  .btn-template-transparent-black-post:focus,
+  .btn-template-transparent-black-post:active,
+  .btn-template-transparent-black-post.active,
+  .open > .dropdown-toggle.btn-template-transparent-black {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #e0e0e0;
+  }
+  .btn-template-transparent-black-post:active,
+  .btn-template-transparent-black-post.active,
+  .open > .dropdown-toggle.btn-template-transparent-black {
+    background-image: none;
+  }
+  .btn-template-transparent-black-post.disabled,
+  .btn-template-transparent-black-post[disabled],
+  fieldset[disabled] .btn-template-transparent-black-post,
+  .btn-template-transparent-black-post.disabled:hover,
+  .btn-template-transparent-black-post[disabled]:hover,
+  fieldset[disabled] .btn-template-transparent-black-post:hover,
+  .btn-template-transparent-black-post.disabled:focus,
+  .btn-template-transparent-black-post[disabled]:focus,
+  fieldset[disabled] .btn-template-transparent-black-post:focus,
+  .btn-template-transparent-black-post.disabled:active,
+  .btn-template-transparent-black-post[disabled]:active,
+  fieldset[disabled] .btn-template-transparent-black-post:active,
+  .btn-template-transparent-black-post.disabled.active,
+  .btn-template-transparent-black-post[disabled].active,
+  fieldset[disabled] .btn-template-transparent-black-post.active {
+    background-color: #009FE3;
+    border-color: #ffffff;
+  }
+  .btn-template-transparent-black-post .badge {
+    color: transparent;
+    background-color:#009FE3;
+  }
+  .btn-template-transparent-black-post:hover,
+  .btn-template-transparent-black-post:focus,
+  .btn-template-transparent-black-post:active,
+  .btn-template-transparent-black-post.active {
+    background:#009FE3;
+    color: #fff;
+    border-color: #d1410c;
+  }
+  
