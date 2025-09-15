@@ -123,3 +123,9 @@
     border-color: #d1410c;
   }
   
+
+ .col-sm-7 .img-responsive{
+    width: 500px;
+    border-radius: 100px;
+  padding: 20px;
+  }

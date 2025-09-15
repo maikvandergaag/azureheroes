@@ -1,12 +1,10 @@
-baseurl = "https://dutchcloudmeetup.online"
-title = "Dutch Cloud Meetup"
+baseurl = "https://azug.nl"
+title = "Azure Heroes"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 summaryLength = 70
 buildFuture = true
-
-disqusShortname = "devcows"
 
 [menu]
 # Main menu
@@ -56,32 +54,16 @@ disqusShortname = "devcows"
 [[menu.topbar]]
     weight = 3
     name = "LinkedIn"
-    url = "https://www.linkedin.com/company/dutch-cloud-meetup/"
+    url = "https://www.linkedin.com/company/azure-heroes"
     pre = "<i class='fab fa-2x fa-linkedin'></i>"
-
-[[menu.topbar]]
-    weight = 4
-    name = "Twitter"
-    url = "http://twitter.com/dcloudmeetup"
-    pre = "<i class='fab fa-2x fa-twitter'></i>"
-
-[[menu.topbar]]
-    weight = 5
-    name = "YouTube"
-    url = "https://www.youtube.com/channel/UC5rlNwGCsECDGQrHgrxG3Pg"
-    pre = "<i class='fab fa-2x fa-youtube'></i>"
 
 [params]
     noComment = true 
     viewMorePostLink = "/events/"
-    author = "Dutch Cloud Meetup"
-    defaultKeywords = ["dutch cloud meetup", "cloud", "Azure"]
+    author = "Azure Heroes"
+    defaultKeywords = ["Azure Heroes", "Cloud", "Azure"]
     mainSections = ["events"]
-    defaultDescription = "Dutch Cloud Meetup - The Cloud Meetup group of the Netherlands"
-
-    # Social media
-    twitter_site = "dutchcloudmeetup"
-    default_sharing_image = "img/sharing-default.png"
+    defaultDescription = "Azure Heroes - Learn from Azure Heroes, Network and be part of a community."
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
     enableGoogleMaps = false
