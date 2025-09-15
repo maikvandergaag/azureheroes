@@ -74,34 +74,19 @@ buildFuture = true
     contact_form_ajax = true
 
     #forms
-    subscribe_action = "https://prod-213.westeurope.logic.azure.com:443/workflows/5ddb24fd6e264a43b4f4c8ad40a38bc6/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=JBaXgNQQ282jIUkDMb7rdxfcijdWi6rAhdH3oCGpHEw"
-    contact_action = "https://prod-222.westeurope.logic.azure.com:443/workflows/4e35983811e24776a28915ed460c36d8/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=VLpCMWNgdyMPlsavm2rrs1OE130rc1z2muKDqy-UZmY"
+    contact_action = "https://prod-79.westeurope.logic.azure.com:443/workflows/a7dc7d87b98e4042b14908726acc17b9/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=hzPTBm4zcqXLV5Htt68zM3z37nRllXZePH1Mf_-y9pE"
 
-    # Formspree form supports Google reCAPTCHA Key (type v2).
-    # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
-    #
-    # By default, Formspree use a redirect page for recaptcha widget.
-    # If you use a recaptcha widget in your contact page, you should do next steps.
-    # (if you don't want, skip these steps)
-    #
-    #   1. register your site on Google recaptcha admin page: https://www.google.com/recaptcha/admin
-    #   2. select reCAPTCHA v2 and checkbox widget type.
-    #   3. remember site key and secret key.
-    #   4. enter secret key into "Custom reCAPTCHA Key" field in your Formspree form setting page.
-    #   5. change `enableRecaptchaInContactForm` is to true
-    #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
-    #
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "6LfaxtohAAAAAELRkS4CT4Dm0SPlc6Ttr4e48xIJ"
 
-    about_us = "<p>The Dutch Cloud Meetup is a user group that focuses on Cloud Technologies. The group was founded in 2018 by an IT enthusiast who found the number of user group meetings in the Rotterdam area (South Holland) was too low.</p>"
-    copyright = "Copyright (c) 2022, Dutch Cloud Meetup; all rights reserved."
+    about_us = "<p>Azure Heroes is a user group that focuses on Cloud Technologies. The group was founded in 2018 by an IT enthusiast.</p>"
+    copyright = "Copyright (c) 2025, Azure Heroes; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
     disabled_logo = false
-    logo_text = "Dutch Cloud Meetup"
+    logo_text = "Azure Heroes"
 
     logo = "img/logo-small.png"
     logo_small = "img/logo-small.png"
@@ -153,8 +138,8 @@ buildFuture = true
     enable = true
     icon = "far fa-bell"
     title = "Our Next Event - In - Person!"
-    subtitle = "4 July - BBQ & Cloud Security!"
-    link_url = "/events/2023/07/04/"
+    subtitle = "30 September - Azure Heroes NL @ Rubicon!"
+    link_url = "/events/2025/09/30/"
     link_text = "Register Now"
 
 [params.clients]
