@@ -27,7 +27,7 @@ jobs:
           cd website
           hugo --buildFuture
       - name: Archive production website
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{env.archName}}
           path: ${{env.archFolder}}
@@ -39,7 +39,7 @@ jobs:
         with:
           submodules: true
       - name: Download a Build Artifact
-        uses: actions/download-artifact@v3.0.0
+        uses: actions/download-artifact@v5
         with:
           # Artifact name
           name: ${{env.archName}}
