@@ -1,7 +1,7 @@
 +++
 title = "Azure Heroes Training - Intro"
 date = "2025-10-01T10:00:00+01:00"
-banner = "img/meetup.png"
+banner = "img/Meetup.png"
 categories = ["training"]
 tags = ["azure", "devops", "Training", "Intro", "beginner"]
 authors = ["Danny Krugge"]
