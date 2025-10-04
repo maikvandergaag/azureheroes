@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "headers.html" . }}
+  {{ partial "custom_headers.html" . }}
+</head>
+
+<body>
+
+  <div id="all">
+
+    {{ partial "top.html" . }}
+
+    {{ partial "nav.html" . }}
+
+    {{ partial "breadcrumbs.html" . }}
+
+    <div id="content">
+      <div class="container">
+
+        <div class="row">
+
+          <!-- *** LEFT COLUMN *** -->
+
+          <div class="col-md-9" id="blog-post">
+
+            {{ if or .Params.author .Params.date }}
+            <p class="text-muted text-uppercase mb-small text-right">
+              {{ if isset .Params "authors" }}
+              {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a
+                href="{{ (printf " %s/%s" ("authors" | relLangURL) ($author | urlize)) }}">{{ $author }}</a>{{ end }}
+              {{ end }}
+              {{ if and .Params.author .Params.date }} | {{ end }}
+              {{ if .Params.date }}
+              {{ $createdAt := .Date.Format .Site.Params.date_format }}
+              {{ range $index, $month := slice "January" "February" "March" "April" "May" "June" "July" "August"
+              "September" "October" "November" "December" }}
+              {{ $createdAt = replace $createdAt $month (i18n $month) }}
+              {{ end }}
+              {{ $createdAt }}
+              {{ end }}
+            </p>
+            {{ end }}
+
+            <div id="post-content">
+              <!-- Training-specific registration section -->
+                           
+              <div class="image-container">
+              {{ if .Params.youtube}}
+              
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ .Params.youtube }}"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              {{ else if  .Params.banner }}
+                <img src="{{ .Params.banner | relURL }}" class="post-image" alt="{{ .Title }}">
+              {{ else if .Params.img }}
+                <img src="{{ .Params.img | relURL }}" class="post-image" alt="{{ .Title }}">
+              {{end}}
+            </div>
+           
+              {{ .Content }}
+
+              <!-- Training-specific information section -->
+              {{ if or .Params.duration .Params.prerequisites .Params.level }}
+              <div class="training-info mt-4">
+                <hr>
+                <h3>Training Information</h3>
+                <div class="row">
+                  {{ if .Params.duration }}
+                  <div class="col-md-4">
+                    <h5><i class="fas fa-clock"></i> Duration</h5>
+                    <p>{{ .Params.duration }}</p>
+                  </div>
+                  {{ end }}
+                  {{ if .Params.level }}
+                  <div class="col-md-4">
+                    <h5><i class="fas fa-signal"></i> Level</h5>
+                    <p>{{ .Params.level }}</p>
+                  </div>
+                  {{ end }}
+                  {{ if .Params.prerequisites }}
+                  <div class="col-md-4">
+                    <h5><i class="fas fa-list-check"></i> Prerequisites</h5>
+                    <p>{{ .Params.prerequisites }}</p>
+                  </div>
+                  {{ end }}
+                </div>
+              </div>
+              {{ end }}
+            </div>
+
+            <!-- Training registration footer -->
+            <!-- /#post-content -->
+
+          </div>
+          <!-- /#blog-post -->
+
+          <!-- *** LEFT COLUMN END *** -->
+
+          <!-- *** RIGHT COLUMN *** -->
+
+          <div class="col-md-3">
+
+            <!-- *** MENUS AND WIDGETS *** -->
+
+            {{ partial "sidebar.html" . }}
+
+            <!-- *** MENUS AND FILTERS END *** -->
+
+          </div>
+          <!-- /.col-md-3 -->
+
+          <!-- *** RIGHT COLUMN END *** -->
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /#content -->
+
+    {{ partial "footer.html" . }}
+
+  </div>
+  <!-- /#all -->
+
+  {{ partial "scripts.html" . }}
+
+</body>
+
+</html>
