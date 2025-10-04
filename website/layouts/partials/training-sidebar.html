@@ -1,0 +1,35 @@
+{{ partial "widgets/search.html" . }}
+
+{{ partial "widgets/categories.html" . }}
+
+<!-- Custom tags widget for training - only shows tags from training content -->
+{{ if .Site.Params.widgets.tags }}
+{{ if isset .Site.Taxonomies "tags" }}
+{{ $trainingTags := dict }}
+{{ range (where .Site.RegularPages "Type" "training") }}
+  {{ range .Params.tags }}
+    {{ $trainingTags = merge $trainingTags (dict (lower .) .) }}
+  {{ end }}
+{{ end }}
+{{ if gt (len $trainingTags) 0 }}
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Training Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            {{ $current := . }}
+            {{ range $key, $name := $trainingTags }}
+            <li {{ if eq $current.RelPermalink (printf "%s/%s/" ("tags" | relLangURL) ($key | urlize | lower)) }}class="active"{{ end }}>
+                <a href="{{ "tags/" | relLangURL }}{{ $key | urlize | lower }}"><i class="fas fa-tags"></i> {{ $name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+
+</div>
+{{ end }}
+{{ end }}
+{{ end }}

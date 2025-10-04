@@ -104,11 +104,26 @@
 
           <div class="col-md-3">
 
-            <!-- *** MENUS AND WIDGETS *** -->
+                        <!-- *** MENUS AND WIDGETS *** -->
 
-            {{ partial "sidebar.html" . }}
+                        {{ partial "training-sidebar.html" . }}
 
-            <!-- *** MENUS AND FILTERS END *** -->
+                        <!-- *** TRAINING-SPECIFIC SIDEBAR *** -->
+                        <div class="panel panel-default sidebar-menu">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Training Levels</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="{{ "training/" | relURL }}"><i class="fas fa-layer-group"></i> All Levels</a></li>
+                                    <li><a href="{{ "tags/beginner/" | relURL }}"><i class="fas fa-seedling"></i> Beginner</a></li>
+                                    <li><a href="{{ "tags/intermediate/" | relURL }}"><i class="fas fa-chart-line"></i> Intermediate</a></li>
+                                    <li><a href="{{ "tags/advanced/" | relURL }}"><i class="fas fa-rocket"></i> Advanced</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- *** MENUS AND FILTERS END *** -->
 
           </div>
           <!-- /.col-md-3 -->
