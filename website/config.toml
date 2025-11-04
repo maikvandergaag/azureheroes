@@ -85,7 +85,7 @@ buildFuture = true
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "6LfaxtohAAAAAELRkS4CT4Dm0SPlc6Ttr4e48xIJ"
 
-    about_us = "<p>Azure Heroes is a user group that focuses on Cloud Technologies. The group was founded in 2018 by an IT enthusiast.</p>"
+    about_us = "<p>Azure Heroes is a user group that focuses on anything Microsoft Azure. The group was founded in 2023 by Danny Kruge</p>"
     copyright = "Copyright (c) 2025, Azure Heroes; all rights reserved."
 
     # Format dates with Go's time formatting
@@ -144,8 +144,8 @@ buildFuture = true
     enable = true
     icon = "far fa-bell"
     title = "Our Next Event - In - Person!"
-    subtitle = "30 September - Azure Heroes NL @ Rubicon!"
-    link_url = "/events/2025/09/30/"
+    subtitle = "18 November - Azure Heroes NL @ Microsoft!"
+    link_url = "/events/2025/11/18/"
     link_text = "Register Now"
 
 [params.clients]

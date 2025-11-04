@@ -1,0 +1,21 @@
+<section>
+    <div class="home-carousel">
+        <div class="dark-mask"></div>
+        <div class="container">
+            <div class="homepage owl-carousel">
+                {{ range sort .Site.Data.carousel "weight" }}
+                <div class="item">
+                    <div class="content">
+                        <h1>{{ .title }}</h1>
+                        {{ if .image }}
+                        <div class="carousel-image-wrapper">
+                            <img src="{{ .image }}" alt="{{ .title }}">
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

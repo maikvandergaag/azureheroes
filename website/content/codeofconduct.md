@@ -64,4 +64,5 @@ This Code of Conduct is adapted from the Contributor Covenant, version 2.0, avai
 
 ## Contact
 
-By question please contact us. info@dutchcloudmeetup.online
+By question please contact us. 
+azheroesnl@gmail.com
