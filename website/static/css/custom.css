@@ -63,6 +63,8 @@
 
 .home-carousel .dark-mask{
     background: url('../img/site/header2.jpg');
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
 }
 
 .navbar ul.nav > li > a{
@@ -129,3 +131,110 @@
     border-radius: 100px;
   padding: 20px;
   }
+
+/* Override title capitalization */
+.home-carousel h1,
+.home-carousel h2,
+.navbar-brand,
+.box-simple h3,
+.navbar ul.nav > li > a {
+    text-transform: none !important;
+}
+
+/* If you also want to affect other titles throughout the site */
+.heading h1,
+.heading h2,
+.heading h3,
+.heading h4,
+.heading h5,
+.heading h6 {
+    text-transform: none !important;
+}
+
+/* Carousel title styling */
+.home-carousel h1 {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    text-transform: none !important;
+}
+
+/* Carousel styling */
+.home-carousel {
+    position: relative;
+    background: url('../img/site/header2.jpg') center center;
+    background-size: cover;
+}
+
+.home-carousel .dark-mask {
+    background: rgba(0, 0, 0, 0.5) !important;
+    padding: 60px 0 !important;
+}
+
+.home-carousel .homepage.owl-carousel .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+/* Title styling */
+.home-carousel .homepage.owl-carousel h1 {
+    font-size: 48px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 30px !important;
+    text-transform: none !important;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+}
+
+/* Image styling */
+.home-carousel .homepage.owl-carousel img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds subtle shadow */
+}
+
+/* Remove any conflicting styles */
+.home-carousel .item img {
+    order: unset;
+}
+
+.home-carousel .item h1 {
+    order: unset;
+}
+
+/* Remove envelope icon from send message button */
+button[type="submit"] i.fa-envelope {
+    display: none !important;
+}
+
+/* Adjust padding for send message button */
+button[type="submit"] {
+    padding: 10px 20px !important;
+}
+
+/* Add Azure Heroes logo styling */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-brand span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
