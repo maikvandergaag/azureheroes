@@ -37,4 +37,4 @@ Event details:
 <a href="https://e.runevents.net/global-azure-heroes-community-day-2026/speakers" class="ticket-button" target="_blank" rel="noopener noreferrer">CFP Click Here</a>
 
 ## Did you miss Global Azure Heroes 2025? Catch the Aftermovie! 
-{{<youtube  8k-s1uEGqRU>}}
+{{<youtube  8k-s1uEGqRU?si=3vmmlMWvkJ8SdjJv>}}
