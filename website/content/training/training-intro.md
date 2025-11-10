@@ -4,7 +4,7 @@ date = "2025-10-01T10:00:00+01:00"
 banner = "img/Meetup.png"
 categories = ["training"]
 tags = ["azure", "devops", "Training", "Intro", "beginner"]
-authors = ["Danny Krugge"]
+authors = ["Danny Kruge"]
 youtube = "qToBGPJGUrs?si=tSd2K2omK3Ay14NZ"
 level = "Beginner"
 duration = "30 minutes"

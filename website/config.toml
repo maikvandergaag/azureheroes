@@ -21,6 +21,12 @@ buildFuture = true
     weight     = 5
 
 [[menu.main]]
+identifier = "menu.GlobalAzureHeroes"
+name       = "Global Azure Heroes"
+url        = "/Global-Azure-Heroes/"
+weight     = 6
+
+[[menu.main]]
     identifier = "menu.sponsors"
     name       = "Sponsors"
     url        = "/sponsors/"
@@ -143,10 +149,10 @@ buildFuture = true
 [params.see_more]
     enable = true
     icon = "far fa-bell"
-    title = "Our Next Event - In - Person!"
-    subtitle = "18 November - Azure Heroes NL @ Microsoft!"
-    link_url = "/events/2025/11/18/"
-    link_text = "Register Now"
+    title = "Global Azure Heroes 2026 Tickets"
+    subtitle = "Join us for April 16th 2026 for Azure Heroes Community Day - Sign up Below"
+    link_url = "https://e.runevents.net/global-azure-heroes-community-day-2026"
+    link_text = "Click Here for a Free Ticket"
 
 [params.clients]
     enable = true
@@ -183,3 +189,8 @@ buildFuture = true
   category = "categories"
   tag = "tags"
   author = "authors"
+
+  [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
