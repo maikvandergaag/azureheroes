@@ -20,11 +20,15 @@ Azure Heroes and Azure Thursdays are excited to invite you to an incredible comm
 
 This event is part of the Global Azure 2026 celebration, a worldwide gathering where user groups and cloud communities come together to share their expertise with professionals eager to expand their knowledge of Microsoft Azure and Cloud Computing.
 
+<br/>
+
 📅 Date: Thursday, April 16th, 2026
 
 Join us for a day packed with top-notch Azure sessions, hands-on learning, and great networking opportunities. Let’s unite once again to celebrate the global Azure community and everything we can achieve together!
 
-Event details:
+<br/>
+
+<b>Event details</b>:
 
 📅 Date: April 16th 2026
 
@@ -32,9 +36,12 @@ Event details:
 
 <a href="https://e.runevents.net/global-azure-heroes-community-day-2026" class="ticket-button" target="_blank" rel="noopener noreferrer">Click here for a Free Ticket</a>
 
+<br/>
 🎙️ Call for Speakers : https://e.runevents.net/global-azure-heroes-community-day-2026/speakers
 
 <a href="https://e.runevents.net/global-azure-heroes-community-day-2026/speakers" class="ticket-button" target="_blank" rel="noopener noreferrer">CFP Click Here</a>
 
-## Did you miss Global Azure Heroes 2025? Catch the Aftermovie! 
+<br/>
+
+### Did you miss Global Azure Heroes 2025? Catch the Aftermovie! 
 {{<youtube  8k-s1uEGqRU?si=3vmmlMWvkJ8SdjJv>}}
