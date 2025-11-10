@@ -44,4 +44,4 @@ Join us for a day packed with top-notch Azure sessions, hands-on learning, and g
 <br/>
 
 ### Did you miss Global Azure Heroes 2025? Catch the Aftermovie! 
-{{<youtube  '8k-s1uEGqRU?si=3vmmlMWvkJ8SdjJv'>}}
+{{<youtube  8k-s1uEGqRU?si&#x3D;3vmmlMWvkJ8SdjJv>}}
