@@ -11,4 +11,4 @@ We regularly organize in-person community events, hosted at the locations of our
 
 Are you interested in sharing your knowledge and experience with the community? We’d love to hear from you! Please submit your proposal through the Call for Papers (CFP) form below to apply as a speaker for one of our upcoming events.
 
-[Azure Heroes - In-Peron - CFP ](https://sessionize.com/azure-heroes-netherlands/)
+<a href="https://e.runevents.net/azure-heroes-meetup-2026/speakers" class="ticket-button" target="_blank" rel="noopener noreferrer">Azure Heroes - In-Peron - CFP</a>
