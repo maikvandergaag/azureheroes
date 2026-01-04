@@ -34,7 +34,7 @@ Join us for a day packed with top-notch Azure sessions, hands-on learning, and g
 
 🏠 Location: Schuberg Philis https://maps.app.goo.gl/h5MtzPcgoUzBet2y7
 
-<a href="https://e.runevents.net/global-azure-heroes-community-day-2026" class="ticket-button" target="_blank" rel="noopener noreferrer">Click here for a Free Ticket</a>
+<a href="https://e.runevents.net/global-azure-heroes-community-day-2026/checkout" class="ticket-button" target="_blank" rel="noopener noreferrer">Click here for a Free Ticket</a>
 
 <br/>
 🎙️ Call for Speakers : https://e.runevents.net/global-azure-heroes-community-day-2026/speakers
@@ -44,4 +44,4 @@ Join us for a day packed with top-notch Azure sessions, hands-on learning, and g
 <br/>
 
 ### Did you miss Global Azure Heroes 2025? Catch the Aftermovie! 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8k-s1uEGqRU?si=auHufbAa0I0ZEY7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/8k-s1uEGqRU?si=auHufbAa0I0ZEY7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
