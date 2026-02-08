@@ -12,7 +12,7 @@ authors = ["Danny Kruge"]
 
 Azure Heroes Netherlands is hosting an incredible event
 
-# Keynote Announcmeent
+# Keynote Announcment
 
 <div style="text-align: center;">
   <img src="/img/keynote-the-microsoft-abc-.-50-years-of-produc_martin_1141267_banner.jpeg" alt="Keynote Banner" style="max-width: 800px; width: 100%; height: auto; display: block; margin: 0 auto;">
