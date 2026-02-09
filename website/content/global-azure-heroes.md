@@ -14,8 +14,6 @@ Azure Heroes Netherlands is hosting an incredible event
 
 <a href="https://e.runevents.net/global-azure-heroes-community-day-2026/checkout" class="ticket-button" target="_blank" rel="noopener noreferrer">Click here for a Free Ticket</a>
 
-<a href="https://e.runevents.net/global-azure-heroes-community-day-2026/checkout" class="ticket-button" target="_blank" rel="noopener noreferrer">Click here for a Free Ticket</a>
-
 # Keynote Announcement
 
 <div style="text-align: center;">
