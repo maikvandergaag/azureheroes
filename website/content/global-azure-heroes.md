@@ -8,6 +8,32 @@ authors = ["Danny Kruge"]
 
 +++
 
+<style>
+  .section-blue-to-white {
+    background: linear-gradient(to bottom, #e6f2ff, #ffffff);
+    padding: 40px 0;
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-white-to-blue {
+    background: linear-gradient(to bottom, #ffffff, #e6f2ff);
+    padding: 40px 0;
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-blue {
+    background: #e6f2ff;
+    padding: 40px 0;
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+</style>
+
+<div class="section-blue-to-white">
+
 # Global Azure Heroes Community Day 2026
 
 Azure Heroes Netherlands is hosting an incredible event
@@ -16,11 +42,16 @@ Azure Heroes Netherlands is hosting an incredible event
 
 # Keynote Announcement
 
-<div style="text-align: center;">
-  <img src="/img/keynote-the-microsoft-abc-.-50-years-of-produc_martin_1141267_banner.jpeg" alt="Keynote Banner" style="max-width: 800px; width: 100%; height: auto; display: block; margin: 0 auto;">
+<div style="text-align: left;">
+  <img src="/img/keynote-the-microsoft-abc-.-50-years-of-produc_martin_1141267_banner.jpeg" alt="Keynote Banner" style="max-width: 400px; width: 100%; height: auto; display: block; margin: 0;">
 </div>
 
-<br/>
+</div>
+
+<div class="section-white-to-blue">
+
+
+<a href="https://e.runevents.net/global-azure-heroes-community-day-2026/agenda" class="ticket-button" target="_blank" rel="noopener noreferrer">View Full Agenda & Session Details</a>
 
 We're excited to be hosting an event. Global Azure Heroes Community Day. Once Again Azure Heroes will partner up with Azure Thursdays to bring this event, This year we have a dedicated Data section and the Dutch Fabric User Group will also partner up with us.
 
@@ -34,7 +65,7 @@ This event is part of the Global Azure 2026 celebration, a worldwide gathering w
 
 Join us for a day packed with top-notch Azure sessions, hands-on learning, and great networking opportunities. Let’s unite once again to celebrate the global Azure community and everything we can achieve together!
 
-<br/>
+<div class="section-blue">
 
 <b>Event details</b>:
 
@@ -42,11 +73,7 @@ Join us for a day packed with top-notch Azure sessions, hands-on learning, and g
 
 🏠 Location: Schuberg Philis https://maps.app.goo.gl/h5MtzPcgoUzBet2y7
 
-Agenda 
 
-<script src="https://e.runevents.net/assets/external/polyfills.js"></script>
-<script src="https://e.runevents.net/assets/external/runtime.js"></script>
-<script src="https://e.runevents.net/assets/external/main.js"></script>
 
 <runevents-agenda api-url="https://api.runevents.net/api" checkout-url="https://e.runevents.net" slug="global-azure-heroes-community-day-2026" agenda-style="tabular" />
 
