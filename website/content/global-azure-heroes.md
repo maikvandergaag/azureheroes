@@ -40,7 +40,7 @@ Azure Heroes Netherlands is hosting an incredible event
 
 <a href="https://e.runevents.net/global-azure-heroes-community-day-2026/checkout" class="ticket-button" target="_blank" rel="noopener noreferrer">Click here for a Free Ticket</a>
 
-# Keynote Announcment
+# Keynote Announcement
 
 <div style="text-align: left;">
   <img src="/img/keynote-the-microsoft-abc-.-50-years-of-produc_martin_1141267_banner.jpeg" alt="Keynote Banner" style="max-width: 400px; width: 100%; height: auto; display: block; margin: 0;">
@@ -75,22 +75,10 @@ Join us for a day packed with top-notch Azure sessions, hands-on learning, and g
 
 
 
-<br/><a href="https://e.runevents.net/global-azure-heroes-community-day-2026/checkout" class="ticket-button" target="_blank" rel="noopener noreferrer">Click here for a Free Ticket</a>
+<runevents-agenda api-url="https://api.runevents.net/api" checkout-url="https://e.runevents.net" slug="global-azure-heroes-community-day-2026" agenda-style="tabular" />
 
+<a href="https://e.runevents.net/global-azure-heroes-community-day-2026/checkout" class="ticket-button" target="_blank" rel="noopener noreferrer">Click here for a Free Ticket</a>
 <br/>
-🎙️ Call for Speakers : Closed
-
-<a href="https://e.runevents.net/global-azure-heroes-community-day-2026/speakers" class="ticket-button" target="_blank" rel="noopener noreferrer">CFP Click Here</a>
-
-</div>
-
-<div class="section-white-to-blue">
 
 ### Did you miss Global Azure Heroes 2025? Catch the Aftermovie! 
-<iframe src="https://www.youtube.com/embed/8k-s1uEGqRU?si=auHufbAa0I0ZEY7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<br/>
-
-</div>
-
-</div>
+<iframe src="https://www.youtube.com/embed/8k-s1uEGqRU?si=auHufbAa0I0ZEY7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" width="100%" height="500px" allowfullscreen></iframe>
