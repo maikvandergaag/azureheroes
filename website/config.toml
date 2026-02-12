@@ -62,6 +62,12 @@ weight     = 6
     url        = "/contact/"
     weight     = 10
 
+[[menu.main]]
+    identifier = "test"
+    name       = "test"
+    url        = "/test/"
+    weight     = 10
+    
 # Top bar social links menu
 [[menu.topbar]]
     weight = 3
