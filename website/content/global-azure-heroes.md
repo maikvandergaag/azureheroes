@@ -65,6 +65,38 @@ This event is part of the Global Azure 2026 celebration, a worldwide gathering w
 
 Join us for a day packed with top-notch Azure sessions, hands-on learning, and great networking opportunities. Let’s unite once again to celebrate the global Azure community and everything we can achieve together!
 
+<style>
+  /* Fix: Bootstrap 3 has `.show { display: block !important; }` which overrides the
+     runevents popup's `.popup.show { display: flex; }` needed to center the white
+     dialog card. Without flex the card collapses to the top-left corner behind the
+     sticky navbar, leaving only the backdrop blur visible. */
+  .popup.show {
+    display: flex !important;
+    z-index: 9999 !important;
+  }
+  .popup.show .inner-container {
+    background: #fff !important;
+  }
+
+  /* Angular CDK overlay — raise above Bootstrap navbar (z-index ~1030) */
+  .cdk-overlay-container,
+  .cdk-overlay-backdrop,
+  .cdk-overlay-pane,
+  .cdk-global-overlay-wrapper {
+    z-index: 9999 !important;
+  }
+
+  body.modal-open {
+    overflow: visible !important;
+  }
+</style>
+
+<script src="https://e.runevents.net/assets/external/polyfills.js"></script>
+<script src="https://e.runevents.net/assets/external/runtime.js"></script>
+<script src="https://e.runevents.net/assets/external/main.js"></script>
+
+<runevents-agenda api-url="https://api.runevents.net/api" checkout-url="https://e.runevents.net" slug="global-azure-heroes-community-day-2026" agenda-style="linear" />
+
 <div class="section-blue">
 
 <b>Event details</b>:
