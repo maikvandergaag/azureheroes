@@ -62,12 +62,6 @@ weight     = 6
     url        = "/contact/"
     weight     = 10
 
-[[menu.main]]
-    identifier = "test"
-    name       = "test"
-    url        = "/test/"
-    weight     = 10
-    
 # Top bar social links menu
 [[menu.topbar]]
     weight = 3
@@ -120,8 +114,8 @@ weight     = 6
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
-    tags = true
-    search = true
+    tags = false
+    search = false
 
 [params.carouselCustomers]
     items = 3
