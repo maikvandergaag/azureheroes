@@ -109,7 +109,7 @@ Thank you to all speakers, sponsors, volunteers, and attendees who made this day
 
   function resetAuto() {
     clearInterval(autoTimer);
-    autoTimer = setInterval(function() { showSlide(current + 1); }, 4000);
+    autoTimer = setInterval(function() { showSlide(current + 1); }, 10000);
   }
 
   window.picksMove = function(dir) {
