@@ -126,7 +126,7 @@ function sliders () {
       navigationText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
       slideSpeed: ($('.homepage').attr('data-slide-speed') || 2000),
       paginationSpeed: ($('.homepage').attr('data-pagination-speed') || 1000),
-      autoPlay: ($('.homepage').attr('data-autoplay') || 'true') === 'true',
+      autoPlay: ($('.homepage').attr('data-autoplay') || 'true') === 'true' ? 10000 : false,
       stopOnHover: true,
       singleItem: true,
       lazyLoad: false,
