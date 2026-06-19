@@ -1,0 +1,33 @@
+{{ if isset .Site.Params "team" }}
+{{ if .Site.Params.team.enable }}
+{{ if gt (len .Site.Data.team) 0 }}
+<section class="bar background-pentagon no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>{{ .Site.Params.team.title }}</h2>
+                </div>
+                <p class="lead">{{ .Site.Params.team.subtitle | markdownify }}</p>
+            </div>
+        </div>
+
+        <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+            {{ range .Site.Data.team }}
+            <div style="background:#fff; padding:20px; width:30%; min-width:220px; max-width:340px; display:flex; flex-direction:column; margin-bottom:20px;">
+                <div style="color:#999; flex:1;">{{ .text | markdownify }}</div>
+                <div style="display:flex; align-items:center; gap:12px; margin-top:16px;">
+                    <img src="{{ .avatar | absURL }}" alt="{{ .name }}" style="width:60px; height:60px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+                    <div>
+                        <h5 style="font-size:14px; text-transform:uppercase; letter-spacing:0.08em; margin:0 0 4px;">{{ .name }}</h5>
+                        <p style="color:#999; font-size:12px; margin:0;">{{ .position }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
