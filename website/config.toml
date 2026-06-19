@@ -150,9 +150,9 @@ weight     = 6
     enable = true
     icon = "fas fa-hourglass-half"
     title = "Next Meetup"
-    subtitle = "Event to be announced soon — stay tuned!"
-    link_url = ""
-    link_text = ""
+    subtitle = "**Azure Heroes @ BetaBit** — June 30th, 2026 | BetaBit HQ Rotterdam | 18:00–21:30 CEST"
+    link_url = "https://www.meetup.com/azure-heroes-netherlands/events/314891673/"
+    link_text = "Get your free ticket"
 
 [params.clients]
     enable = true
