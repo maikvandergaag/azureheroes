@@ -28,7 +28,9 @@
 }
 
 .team-name-picture{
+    display: block;
     max-width:150px;
+    margin: 0 auto;
     border-radius: 50%;
 }
 
@@ -40,11 +42,19 @@
     padding-bottom:25px;
 }
 
+/* Vertically center each team member's photo against their text block. */
+#team-row {
+    display: flex;
+    align-items: center;
+}
+
 .post-image{
     max-height:400px;
 }
 
 .image-container{
+    display: flex;
+    justify-content: center;
     padding-bottom:25px;
     text-align: center;
 }
@@ -82,6 +92,20 @@
 
 #blog-listing-medium .post h2, #blog-listing-medium .post .author-category, #heading-breadcrumbs h1{
     text-transform: none;
+}
+
+/* Stack the event list thumbnail above its text instead of beside it. */
+#blog-listing-medium .post .image {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+#blog-listing-medium .post .image img {
+    display: block;
+    max-width: 100%;
+    max-height: 320px;
+    margin: 0 auto;
+    border-radius: 16px;
 }
 
 .text-uppercase, .panel.sidebar-menu .panel-heading, #footer .blog-entries .item .name h5, .testimonials .item .testimonial .name-picture h5{
@@ -517,58 +541,6 @@ button[type="submit"]:hover {
 
 .hero-member-item {
     height: 100%;
-}
-
-#team-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-
-#team-row .team-member {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    text-align: center;
-    padding: 18px 16px;
-}
-
-#team-row .team-member img {
-    display: block;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto 16px;
-    border: 3px solid rgba(15, 126, 216, 0.12);
-    box-shadow: 0 12px 22px rgba(15, 126, 216, 0.12);
-}
-
-#team-row .team-member h3 {
-    margin: 0 0 6px;
-    font-size: 1.05rem;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-}
-
-#team-row .team-member p.role {
-    min-height: 32px;
-    margin-bottom: 14px;
-}
-
-#team-row .team-member .text {
-    flex: 1 1 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#team-row .team-member .text p {
-    margin: 0;
-    line-height: 1.6;
-    color: #4d667d;
-    font-size: 0.92rem;
 }
 
 .box-simple,
