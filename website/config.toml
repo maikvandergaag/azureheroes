@@ -190,7 +190,7 @@ weight     = 6
   tag = "tags"
   author = "authors"
 
-  [markup]
+[markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
