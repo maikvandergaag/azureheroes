@@ -49,6 +49,13 @@
     text-align: center;
 }
 
+.image-container .post-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 #blog-listing-medium .post h2, #blog-listing-medium .post .author-category, #heading-breadcrumbs h1{
     text-transform: none;
 }
@@ -437,7 +444,7 @@ button[type="submit"]:hover {
 .azure-hero-member .bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 12px;
     padding: 0 18px 18px;
     margin-top: auto;
@@ -448,13 +455,14 @@ button[type="submit"]:hover {
 }
 
 .azure-hero-member .name-picture {
-    flex: 1;
+    flex: 0 1 auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    text-align: left;
-    gap: 12px;
-    width: 100%;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    width: auto;
 }
 
 .azure-hero-member .name-picture img {
@@ -470,7 +478,7 @@ button[type="submit"]:hover {
 }
 
 .azure-hero-member .name-picture h5 {
-    margin: 0 0 2px;
+    margin: 0;
     font-size: 14px;
     letter-spacing: 0.04em;
     font-weight: 800;
@@ -574,6 +582,9 @@ button[type="submit"]:hover {
 }
 
 .azure-event-card .content {
+    display: flex;
+    flex-direction: column;
+    min-height: 210px;
     padding: 18px 18px 16px;
 }
 
@@ -582,8 +593,60 @@ button[type="submit"]:hover {
     font-weight: 800;
 }
 
+.azure-event-card .author-category {
+    color: #5f7890;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.azure-event-card .event-card-slides {
+    margin: 0 0 8px;
+    color: #5f7890;
+    font-size: 12px;
+}
+
+.azure-event-card .event-card-slides i {
+    margin-right: 5px;
+    color: var(--azure-hero-blue);
+}
+
+.azure-event-card .event-card-slides a + a {
+    margin-left: 10px;
+}
+
+.azure-event-card .intro {
+    flex: 1 1 auto;
+    color: #425d79;
+    line-height: 1.55;
+}
+
+.azure-event-card .read-more {
+    margin: 14px 0 0;
+}
+
+.azure-event-card .read-more .btn {
+    width: 100%;
+}
+
 .event-card-col {
     margin-bottom: 24px;
+}
+
+.event-slides {
+    margin-top: 32px;
+    padding: 22px 24px;
+    background: linear-gradient(135deg, #eef8ff, #ffffff);
+    border: 1px solid rgba(15, 126, 216, 0.14);
+    border-radius: 16px;
+}
+
+.event-slides h2 {
+    margin-top: 0;
+    color: var(--azure-hero-navy);
+}
+
+.event-slides ul {
+    margin-bottom: 0;
 }
 
 .panel.sidebar-menu .panel-heading {

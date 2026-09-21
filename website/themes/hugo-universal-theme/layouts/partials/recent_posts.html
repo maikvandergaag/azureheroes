@@ -21,7 +21,7 @@
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 {{ if isset .Params "banner" }}
-                                <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
+                                <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="{{ .Title }}" >
                                 {{ else }}
                                 <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
                                 {{ end }}
@@ -48,6 +48,12 @@
                                 {{ i18n "publishedOn" }} {{ $createdAt }}
                             {{ end }}
                             </p>
+                            {{ with .Params.slides }}
+                            <p class="event-card-slides">
+                                <i class="fas fa-layer-group"></i>
+                                {{ range . }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ end }}
+                            </p>
+                            {{ end }}
                             {{ if not .Site.Params.recent_posts.hide_summary }}
                             <p class="intro">{{ .Summary }}</p>
                             <p class="read-more">

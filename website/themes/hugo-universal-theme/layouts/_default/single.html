@@ -73,6 +73,16 @@
             </div>
            
               {{ .Content }}
+              {{ with .Params.slides }}
+              <section class="event-slides" aria-labelledby="event-slides-title">
+                <h2 id="event-slides-title">Talk slides</h2>
+                <ul>
+                  {{ range . }}
+                  <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></li>
+                  {{ end }}
+                </ul>
+              </section>
+              {{ end }}
             </div>
             <div>
               {{ if lt now .Params.date }}
