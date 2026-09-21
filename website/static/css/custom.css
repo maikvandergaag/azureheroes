@@ -241,23 +241,470 @@ button[type="submit"] {
 
 .ticket-button {
     display: inline-block;
-    background-color: #00a1f1;
+    background: linear-gradient(135deg, #0078d4, #00a9f2);
     color: #fff !important;
     padding: 12px 24px;
-    border-radius: 4px;
+    border-radius: 999px;
     text-decoration: none;
     font-weight: bold;
     margin: 12px 0;
-    transition: background-color 0.3s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: none;
     cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 120, 212, 0.3);
 }
 
 .ticket-button:hover {
-    background-color: #0078d4;
+    transform: translateY(-1px);
+    box-shadow: 0 12px 30px rgba(0, 120, 212, 0.4);
+}
+
+.secondary-button {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    color: #fff !important;
+    padding: 12px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 12px 0 12px 10px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(2px);
+}
+
+.secondary-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Azure Heroes global site theme */
+:root {
+    --azure-hero-blue: #0f7ed8;
+    --azure-hero-blue-dark: #0d2b45;
+    --azure-hero-sky: #38bdf8;
+    --azure-hero-cyan: #dff7ff;
+    --azure-hero-navy: #102c47;
+    --azure-hero-soft: #eef7ff;
+    --azure-hero-border: rgba(17, 67, 110, 0.12);
+}
+
+body {
+    background: linear-gradient(180deg, #f3f9ff 0%, #edf6ff 28%, #f8fbff 100%);
+    color: var(--azure-hero-navy);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#all {
+    background: transparent;
+}
+
+#content {
+    background: transparent;
+}
+
+#top {
+    background: linear-gradient(135deg, #0b2340 0%, #102c47 35%, #0f7ed8 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#top .social a,
+#top .social a:hover,
+#top .social a:focus {
+    color: #f5fbff;
+}
+
+.navbar-default {
+    background: rgba(8, 24, 39, 0.96);
+    border: none;
+    box-shadow: 0 12px 35px rgba(9, 25, 43, 0.15);
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #edf7ff;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background: linear-gradient(135deg, #0f7ed8, #3bb5ff);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(15, 126, 216, 0.28);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+}
+
+.navbar-brand span {
+    color: #f3f9ff;
+}
+
+.btn-template-main,
+.btn-template-transparent-black-post,
+.btn-primary,
+.btn,
+button[type="submit"] {
+    background: linear-gradient(135deg, #0f7ed8, #38bdf8) !important;
+    border: none !important;
+    color: #fff !important;
+    border-radius: 999px !important;
+    box-shadow: 0 12px 24px rgba(15, 126, 216, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-template-main:hover,
+.btn-template-transparent-black-post:hover,
+.btn-primary:hover,
+.btn:hover,
+button[type="submit"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 30px rgba(15, 126, 216, 0.28);
+}
+
+.home-carousel {
+    position: relative;
+    background: linear-gradient(135deg, rgba(11, 35, 64, 0.92), rgba(15, 126, 216, 0.82)), url('../img/site/header2.jpg') center center;
+    background-size: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home-carousel .dark-mask {
+    background: linear-gradient(90deg, rgba(9, 22, 39, 0.72), rgba(10, 40, 66, 0.45));
+    padding: 60px 0 !important;
+}
+
+.home-carousel .homepage.owl-carousel h1 {
+    color: #ffffff;
+    text-shadow: 0 6px 30px rgba(11, 35, 64, 0.3);
+}
+
+.home-carousel .homepage.owl-carousel .item {
+    min-height: 420px;
+}
+
+.box-simple,
+.box-image-text,
+.panel,
+.post,
+.team-member,
+.sponsors-name-picture,
+#team-row,
+#sponsors-row {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid var(--azure-hero-border);
+    border-radius: 18px;
+    box-shadow: 0 18px 35px rgba(14, 41, 62, 0.06);
+}
+
+.box-simple,
+.panel,
+.post,
+.team-member {
+    padding: 18px;
+}
+
+.box-simple h3,
+.panel-title,
+.post h2,
+.heading h2,
+.heading h3 {
+    color: var(--azure-hero-navy);
+    font-weight: 800;
+}
+
+.panel.sidebar-menu .panel-heading {
+    background: linear-gradient(135deg, #0d2b45, #0f7ed8);
+    color: white;
+    border-radius: 16px 16px 0 0;
+}
+
+a {
+    color: var(--azure-hero-blue);
+}
+
+a:hover,
+a:focus {
+    color: #0a5fb4;
+}
+
+#blog-listing-medium .post,
+#blog-listing-big .post {
+    overflow: hidden;
+}
+
+#blog-listing-medium .post h2 a,
+#blog-listing-big .post h2 a {
+    color: var(--azure-hero-navy);
+    text-decoration: none;
+}
+
+#blog-listing-medium .post h2 a:hover,
+#blog-listing-big .post h2 a:hover {
+    color: var(--azure-hero-blue);
+}
+
+.footer {
+    background: linear-gradient(135deg, #0b2340 0%, #112d45 100%);
+    color: #eefbff;
+}
+
+.footer a,
+.footer h4,
+.footer p {
+    color: #eefbff;
 }
 
 /* Make carousel title responsive on mobile */
+
+.azure-hero-event {
+    margin: 0 auto 40px;
+    color: #0f1f2d;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.azure-hero-event .event-hero {
+    position: relative;
+    background:
+        radial-gradient(circle at 50% 18%, rgba(255,255,255,0.28), transparent 24%),
+        linear-gradient(135deg, #0a5fb4 0%, #0f7ed8 22%, #38bdf8 58%, #dff7ff 100%);
+    border: 1px solid rgba(9, 48, 82, 0.22);
+    border-radius: 26px;
+    padding: 40px 28px 32px;
+    overflow: hidden;
+    margin-bottom: 26px;
+    box-shadow: 0 24px 50px rgba(7, 39, 76, 0.18);
+}
+
+.azure-hero-event .event-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255,255,255,0.09), transparent 38%, rgba(2, 24, 43, 0.18));
+    pointer-events: none;
+}
+
+.azure-hero-event .event-kicker,
+.azure-hero-event .speaker-role {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 8px 12px;
+    background: rgba(15, 31, 45, 0.9);
+    color: #dff7ff;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.azure-hero-event h1 {
+    position: relative;
+    z-index: 1;
+    margin: 18px 0 16px;
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    color: #f5f7fb;
+    font-weight: 900;
+    text-transform: none;
+    text-shadow: 0 8px 30px rgba(5, 25, 41, 0.18);
+}
+
+.azure-hero-event .event-meta {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 18px;
+    color: #eefaff;
+    font-weight: 600;
+}
+
+.azure-hero-event .event-meta a {
+    color: #f8fdff;
+    text-decoration: underline;
+}
+
+.azure-hero-event .event-tags {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.azure-hero-event .event-tags span {
+    background: rgba(13, 31, 47, 0.68);
+    border: 1px solid rgba(255,255,255,0.22);
+    color: #f3fbff;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.azure-hero-event .event-actions {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.azure-hero-event .event-intro {
+    margin: 10px 0 30px;
+    padding: 18px 22px;
+    border-left: 4px solid #00a2e8;
+    background: linear-gradient(135deg, rgba(0, 162, 232, 0.08), rgba(12, 37, 69, 0.02));
+    border-radius: 18px;
+}
+
+.azure-hero-event .lead {
+    margin: 0;
+    font-size: 1.12rem;
+    line-height: 1.7;
+    color: #17314b;
+    font-weight: 600;
+}
+
+.azure-hero-event .speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.azure-hero-event .speaker-card {
+    background: linear-gradient(180deg, #ffffff 0%, #edf6ff 100%);
+    border: 1px solid rgba(0, 130, 206, 0.14);
+    border-radius: 20px;
+    padding: 22px 20px 18px;
+    box-shadow: 0 14px 30px rgba(12, 41, 67, 0.08);
+}
+
+.azure-hero-event .keynote-card {
+    background: linear-gradient(180deg, #f2fbff 0%, #e4f7ff 100%);
+}
+
+.azure-hero-event .speaker-card h3 {
+    margin: 14px 0 8px;
+    color: #0d2740;
+    font-size: 1.8rem;
+    line-height: 1.25;
+    font-weight: 800;
+    text-transform: none;
+}
+
+.azure-hero-event .speaker-card h4 {
+    margin: 0 0 12px;
+    color: #0d5da5;
+    font-size: 1.15rem;
+    line-height: 1.45;
+    font-weight: 800;
+}
+
+.azure-hero-event .speaker-card p {
+    margin: 0;
+    color: #2e4255;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.azure-hero-event .speaker-card a {
+    color: #0d5da5;
+}
+
+.azure-hero-event .info-panel {
+    background: linear-gradient(135deg, #0f243a 0%, #0d3257 100%);
+    color: #edfaff;
+    border-radius: 24px;
+    padding: 26px 24px;
+    margin-bottom: 26px;
+    box-shadow: 0 18px 40px rgba(9, 33, 58, 0.18);
+}
+
+.azure-hero-event .info-panel h3 {
+    margin-top: 0;
+    font-weight: 800;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.azure-hero-event .info-panel ul {
+    margin: 16px 0 0;
+    padding-left: 18px;
+    line-height: 1.9;
+    color: #dff1ff;
+}
+
+.azure-hero-event .hash-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 8px 0 30px;
+}
+
+.azure-hero-event .hash-grid a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(0, 162, 232, 0.08);
+    border: 1px solid rgba(0, 120, 212, 0.12);
+    color: #0d5da5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.azure-hero-event .hash-grid a:hover {
+    background: rgba(0, 162, 232, 0.12);
+}
+
+.azure-hero-event .event-footer {
+    margin: 0;
+    padding-top: 14px;
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: #213c5b;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .azure-hero-event .speaker-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .azure-hero-event .event-hero {
+        padding: 28px 18px 22px;
+    }
+
+    .azure-hero-event .event-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .azure-hero-event .event-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .azure-hero-event .secondary-button {
+        margin-left: 0;
+    }
+}
+
 .home-carousel h1 {
     font-size: 2.2rem;
     line-height: 1.2;
