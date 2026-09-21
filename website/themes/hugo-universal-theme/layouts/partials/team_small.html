@@ -1,7 +1,7 @@
 {{ if isset .Site.Params "team" }}
 {{ if .Site.Params.team.enable }}
 {{ if gt (len .Site.Data.team) 0 }}
-<section class="bar background-pentagon no-mb">
+<section class="bar background-pentagon no-mb azure-heroes-spotlight">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -21,8 +21,8 @@
                     data-slide-speed="{{ default 2000 .Site.Params.CarouselTestimonials.slide_speed }}"
                     data-pagination-speed="{{ default 1000 .Site.Params.CarouselTestimonials.pagination_speed }}">
                     {{ range .Site.Data.team }}
-                    <li class="item">
-                        <div class="testimonial same-height-always">
+                    <li class="item hero-member-item">
+                        <div class="testimonial same-height-always azure-hero-member">
                             <div class="text">
                                 <p>{{ .text | markdownify }}</p>
                             </div>
