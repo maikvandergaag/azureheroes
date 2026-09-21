@@ -63,11 +63,15 @@
                   allowfullscreen>
                 </iframe>
               </div>
-              {{ else if  .Params.img }}
+              {{ else if .Params.img }}
 
               
                 <img src="{{ .Params.img | relURL }}" class="post-image" alt="">
                 
+
+              {{ else if .Params.banner }}
+
+                <img src="{{ .Params.banner | relURL }}" class="post-image event-hero-image" alt="{{ .Title }}">
 
               {{end}}
             </div>
