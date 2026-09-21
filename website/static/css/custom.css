@@ -712,42 +712,43 @@ button[type="submit"]:hover {
 }
 
 /* Registration card: the first "Event details" heading, its list, and the
-   CTA paragraph right after it render as one seamless gradient card. The
-   gradient runs horizontally so it lines up perfectly across the stacked
-   elements regardless of their individual heights. */
+   CTA paragraph right after it render as one seamless card, using the same
+   light soft-blue palette as the rest of the site's cards for readability
+   and consistency (navy text on a light background, not white-on-blue). */
 #post-content h2:first-of-type {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin: 12px 0 0;
-    padding: 26px 28px 16px;
+    padding: 24px 28px 14px;
     border-top: none;
     border-radius: 22px 22px 0 0;
-    background: linear-gradient(90deg, #0a5fb4 0%, #0f7ed8 55%, #38bdf8 100%);
-    color: #ffffff;
-    font-size: 1.6rem;
-    box-shadow: 0 18px 34px rgba(10, 58, 104, 0.22);
-}
-
-#post-content h2:first-of-type::before {
-    display: none;
+    background: #eef7ff;
+    border: 1px solid rgba(15, 126, 216, 0.14);
+    border-bottom: none;
+    color: var(--azure-hero-navy);
+    font-size: 1.5rem;
+    box-shadow: 0 14px 28px rgba(12, 41, 67, 0.06);
 }
 
 #post-content h2:first-of-type + ul {
     list-style: none;
     margin: 0;
     padding: 6px 28px 18px;
-    background: linear-gradient(90deg, #0a5fb4 0%, #0f7ed8 55%, #38bdf8 100%);
-    border: none;
+    background: #eef7ff;
+    border-left: 1px solid rgba(15, 126, 216, 0.14);
+    border-right: 1px solid rgba(15, 126, 216, 0.14);
     border-radius: 0;
 }
 
 #post-content h2:first-of-type + ul li {
     padding: 7px 0;
-    color: #eaf6ff;
+    color: #2c4f6f;
     font-weight: 600;
 }
 
 #post-content h2:first-of-type + ul li strong {
-    color: #ffffff;
+    color: var(--azure-hero-navy);
 }
 
 #post-content h2:first-of-type + ul li code {
@@ -755,9 +756,9 @@ button[type="submit"]:hover {
     margin: 3px 6px 3px 0;
     padding: 5px 12px;
     border-radius: 999px;
-    background: rgba(8, 24, 39, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    color: #f2fbff;
+    background: rgba(15, 126, 216, 0.08);
+    border: 1px solid rgba(15, 126, 216, 0.18);
+    color: var(--azure-hero-blue);
     font-family: inherit;
     font-size: 0.82rem;
     font-weight: 700;
@@ -767,10 +768,12 @@ button[type="submit"]:hover {
 #post-content h2:first-of-type + ul + p {
     margin: 0 0 32px;
     padding: 16px 28px 26px;
-    background: linear-gradient(90deg, #0a5fb4 0%, #0f7ed8 55%, #38bdf8 100%);
+    background: #eef7ff;
+    border: 1px solid rgba(15, 126, 216, 0.14);
+    border-top: none;
     border-radius: 0 0 22px 22px;
-    box-shadow: 0 18px 34px rgba(10, 58, 104, 0.22);
-    color: #eaf6ff;
+    box-shadow: 0 14px 28px rgba(12, 41, 67, 0.06);
+    color: #2c4f6f;
 }
 
 #post-content h2:first-of-type + ul + p a {
@@ -785,24 +788,24 @@ button[type="submit"]:hover {
 }
 
 #post-content h2:first-of-type + ul + p a:first-child {
-    background: #ffffff;
-    color: var(--azure-hero-blue) !important;
-    box-shadow: 0 10px 22px rgba(6, 26, 46, 0.35);
+    background: linear-gradient(135deg, #0f7ed8, #38bdf8);
+    color: #ffffff !important;
+    box-shadow: 0 10px 22px rgba(15, 126, 216, 0.28);
 }
 
 #post-content h2:first-of-type + ul + p a:first-child:hover {
     transform: translateY(-1px);
-    box-shadow: 0 12px 26px rgba(6, 26, 46, 0.4);
+    box-shadow: 0 12px 26px rgba(15, 126, 216, 0.36);
 }
 
 #post-content h2:first-of-type + ul + p a:not(:first-child) {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.55);
-    color: #ffffff !important;
+    background: rgba(15, 126, 216, 0.06);
+    border: 1px solid rgba(15, 126, 216, 0.35);
+    color: var(--azure-hero-blue) !important;
 }
 
 #post-content h2:first-of-type + ul + p a:not(:first-child):hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(15, 126, 216, 0.14);
 }
 
 #post-content ul {
