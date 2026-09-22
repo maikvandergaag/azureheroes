@@ -1079,6 +1079,7 @@ button[type="submit"]:hover {
     box-shadow: 0 14px 26px rgba(12, 41, 67, 0.06);
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 10px;
 }
 
@@ -1086,22 +1087,40 @@ button[type="submit"]:hover {
 #blog-listing-medium .post .intro h3 + p + p + p a {
     display: inline-flex;
     align-items: center;
-    gap: 7px;
-    padding: 8px 16px;
-    border-radius: 999px;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
     background: rgba(15, 126, 216, 0.08);
-    border: 1px solid rgba(15, 126, 216, 0.16);
+    border: 1px solid rgba(15, 126, 216, 0.18);
     color: var(--azure-hero-blue) !important;
-    font-weight: 700;
+    font-size: 16px;
     text-decoration: none !important;
-    font-size: 0.88rem;
     transition: all 0.2s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: -9999px;
+    position: relative;
 }
 
 #post-content h3 + p + p + p a:hover,
 #blog-listing-medium .post .intro h3 + p + p + p a:hover {
-    background: rgba(15, 126, 216, 0.16);
-    transform: translateY(-1px);
+    background: linear-gradient(135deg, #0f7ed8, #38bdf8);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(15, 126, 216, 0.28);
+}
+
+#post-content h3 + p + p + p a::before,
+#blog-listing-medium .post .intro h3 + p + p + p a::before {
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", "Font Awesome 6 Brands", "Font Awesome 5 Brands";
+    content: "\f0c1"; /* default link icon */
+    font-weight: 900;
+    text-indent: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #post-content h3 + p + p + p a[href*="linkedin.com"]::before,
@@ -1131,6 +1150,27 @@ button[type="submit"]:hover {
     content: "\e671";
     font-weight: 400;
 }
+
+#post-content h3 + p + p + p a[href*="twitter.com"]::before,
+#post-content h3 + p + p + p a[href*="x.com"]::before,
+#blog-listing-medium .post .intro h3 + p + p + p a[href*="twitter.com"]::before,
+#blog-listing-medium .post .intro h3 + p + p + p a[href*="x.com"]::before {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands";
+    content: "\e61b";
+    font-weight: 400;
+}
+
+/* Specific icon for slides (file / presentation / screen) */
+#post-content h3 + p + p + p a[title*="slide" i]::before,
+#post-content h3 + p + p + p a[href*="slide" i]::before,
+#blog-listing-medium .post .intro h3 + p + p + p a[title*="slide" i]::before,
+#blog-listing-medium .post .intro h3 + p + p + p a[href*="slide" i]::before {
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free";
+    content: "\f1c4"; /* fa-file-powerpoint / slides icon */
+    font-weight: 900;
+}
+
+/* Hover tooltips or titles work natively via title attribute */
 
 
 .panel.sidebar-menu .panel-heading {
