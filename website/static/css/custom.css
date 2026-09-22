@@ -1220,6 +1220,53 @@ a:focus {
 }
 
 @media (max-width: 767px) {
+    #team-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #team-row > [class*="col-"] {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    #team-row > div:first-child {
+        order: 1;
+        padding-bottom: 14px;
+    }
+
+    #team-row > div:nth-child(2) {
+        order: 2;
+    }
+
+    #team-row .team-name-picture {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    #team-row h5 {
+        margin-top: 0;
+        margin-bottom: 6px;
+        color: var(--azure-hero-navy);
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    #team-row h5 + p {
+        margin-bottom: 16px;
+        color: #5f7890;
+        font-weight: 600;
+    }
+
+    #team-row .col-md-8 > p:last-of-type {
+        text-align: left;
+    }
+
     .event-main h1 {
         font-size: 2.2rem;
     }
