@@ -23,7 +23,11 @@
 
           <!-- *** LEFT COLUMN *** -->
 
+          {{ if eq .Type "events" }}
+          <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" id="blog-post">
+          {{ else }}
           <div class="col-md-9" id="blog-post">
+          {{ end }}
 
             {{ if or .Params.author .Params.date }}
             <p class="text-muted text-uppercase mb-small text-right">
@@ -44,17 +48,6 @@
             {{ end }}
 
             <div id="post-content">
-              <div>
-                {{ if lt now .Params.date }}
-                {{ if .Params.eventbrite}}
-                <p class="text-center">
-                  <a href="{{ .Params.eventbrite }}" class="btn btn-template-transparent-black-post btn-lg">
-                  Register
-                  </a>
-              </p>
-                {{ end }}
-                {{ end }}
-              </div>
               <div class="image-container">
               {{ if .Params.youtube}}
               
@@ -88,17 +81,6 @@
               </section>
               {{ end }}
             </div>
-            <div>
-              {{ if lt now .Params.date }}
-              {{ if .Params.eventbrite}}
-              <p class="text-center">
-                <a href="{{ .Params.eventbrite }}" class="btn btn-template-transparent-black-post btn-lg">
-                Register
-                </a>
-            </p>
-              {{ end }}
-              {{ end }}
-            </div>
             <!-- /#post-content -->
            
 
@@ -109,6 +91,7 @@
 
           <!-- *** RIGHT COLUMN *** -->
 
+          {{ if ne .Type "events" }}
           <div class="col-md-3">
 
             <!-- *** MENUS AND WIDGETS *** -->
@@ -119,6 +102,7 @@
 
           </div>
           <!-- /.col-md-3 -->
+          {{ end }}
 
           <!-- *** RIGHT COLUMN END *** -->
 

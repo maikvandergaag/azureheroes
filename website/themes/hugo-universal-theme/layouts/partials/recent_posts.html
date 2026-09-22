@@ -48,6 +48,13 @@
                                 {{ i18n "publishedOn" }} {{ $createdAt }}
                             {{ end }}
                             </p>
+                            {{ if .Params.location }}
+                            <p class="event-card-location">
+                                <a href="https://www.google.com/maps/search/?api=1&query={{ .Params.location | urlquery }}" target="_blank" rel="noopener" title="Open in Google Maps">
+                                    <i class="fas fa-map-marker-alt"></i> {{ .Params.location }}
+                                </a>
+                            </p>
+                            {{ end }}
                             {{ with .Params.slides }}
                             <p class="event-card-slides">
                                 <i class="fas fa-layer-group"></i>

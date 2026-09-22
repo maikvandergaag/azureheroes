@@ -1,7 +1,7 @@
 {{ if isset .Site.Params "team" }}
 {{ if .Site.Params.team.enable }}
 {{ if gt (len .Site.Data.team) 0 }}
-<section class="bar background-pentagon no-mb">
+<section class="bar background-pentagon no-mb azure-heroes-spotlight">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -12,15 +12,36 @@
             </div>
         </div>
 
-        <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+        <div class="home-team-grid">
             {{ range .Site.Data.team }}
-            <div style="background:#fff; padding:20px; width:30%; min-width:220px; max-width:340px; display:flex; flex-direction:column; margin-bottom:20px;">
-                <div style="color:#999; flex:1;">{{ .text | markdownify }}</div>
-                <div style="display:flex; align-items:center; gap:12px; margin-top:16px;">
-                    <img src="{{ .avatar | absURL }}" alt="{{ .name }}" style="width:60px; height:60px; border-radius:50%; object-fit:cover; flex-shrink:0;">
-                    <div>
-                        <h5 style="font-size:14px; text-transform:uppercase; letter-spacing:0.08em; margin:0 0 4px;">{{ .name }}</h5>
-                        <p style="color:#999; font-size:12px; margin:0;">{{ .position }}</p>
+            <div class="testimonial same-height-always azure-hero-member">
+                <div class="top-member">
+                    <div class="name-picture">
+                        <img alt="{{ .name }}" src="{{ .avatar | absURL }}">
+                        <h5>{{ .name }}</h5>
+                        <p>{{ .position }}</p>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>{{ .text | markdownify }}</p>
+                </div>
+                <div class="bottom">
+                    <div class="team-social-links team-social-small">
+                        {{ if .blog }}
+                        <a href="{{ .blog }}" target="_blank" rel="noopener" title="Website / Blog"><i class='fas fa-globe'></i></a>
+                        {{end}}
+                        {{ if .linkedin }}
+                        <a href="{{ .linkedin }}" target="_blank" rel="noopener" title="LinkedIn"><i class='fab fa-linkedin'></i></a>
+                        {{end}}
+                        {{ if .github }}
+                        <a href="{{ .github }}" target="_blank" rel="noopener" title="GitHub"><i class='fab fa-github'></i></a>
+                        {{end}}
+                        {{ if or .bluesky .bsky }}
+                        <a href="{{ default .bluesky .bsky }}" target="_blank" rel="noopener" title="Bluesky"><i class='fab fa-bluesky'></i></a>
+                        {{end}}
+                        {{ if or .x .twitter }}
+                        <a href="{{ default .x .twitter }}" target="_blank" rel="noopener" title="X"><i class='fab fa-x-twitter'></i></a>
+                        {{end}}
                     </div>
                 </div>
             </div>

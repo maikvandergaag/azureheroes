@@ -21,7 +21,11 @@
                 <div class="row">
                     <!-- *** LEFT COLUMN *** -->
 
+                    {{ if eq .Type "events" }}
+                    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" id="blog-listing-medium">
+                    {{ else }}
                     <div class="col-md-9" id="blog-listing-medium">
+                    {{ end }}
 
                         {{ $paginator := .Paginate (where .Data.Pages "Type" "in" .Site.Params.mainSections) }}
                         {{ range $paginator.Pages }}
@@ -64,9 +68,15 @@
                                     {{ end }}
                                 </div>
                                 {{ if not .Site.Params.recent_posts.hide_summary }}
-                                <p class="intro">{{ .Summary }}</p>
-                                <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
-                                </p>
+                                <div class="intro">{{ .Summary }}</div>
+                                <div class="post-footer-bar">
+                                    {{ if .Params.location }}
+                                    <a href="https://www.google.com/maps/search/?api=1&query={{ .Params.location | urlquery }}" target="_blank" rel="noopener" class="event-location-tag" title="Open in Google Maps">
+                                        <i class="fas fa-map-marker-alt"></i> {{ .Params.location }}
+                                    </a>
+                                    {{ end }}
+                                    <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                                </div>
                                 {{ end }}
                             </div>
                         </section>
@@ -93,6 +103,7 @@
                     <!-- *** RIGHT COLUMN ***
        _________________________________________________________ -->
 
+                    {{ if ne .Type "events" }}
                     <div class="col-md-3">
 
                         <!-- *** MENUS AND WIDGETS *** -->
@@ -103,6 +114,7 @@
 
                     </div>
                     <!-- /.col-md-3 -->
+                    {{ end }}
 
                     <!-- *** RIGHT COLUMN END *** -->
 
