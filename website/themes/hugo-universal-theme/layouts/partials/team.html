@@ -31,6 +31,10 @@
                     <p>{{ .text | markdownify }}</p>
 
                     <div class="team-social-links">
+                        {{ if .mvp }}
+                        <a href="{{ .mvp }}" target="_blank" rel="noopener" title="Microsoft MVP Profile"><i class='fab fa-microsoft'></i></a>
+                        {{end}}
+
                         {{ if .blog }}
                         <a href="{{ .blog }}" target="_blank" rel="noopener" title="Website / Blog"><i class='fas fa-globe'></i></a>
                         {{end}}

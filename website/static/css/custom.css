@@ -1086,7 +1086,7 @@ button[type="submit"]:hover {
 #blog-listing-medium .post .intro h3 + p + p + p a {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
     padding: 8px 16px;
     border-radius: 999px;
     background: rgba(15, 126, 216, 0.08);
@@ -1094,11 +1094,42 @@ button[type="submit"]:hover {
     color: var(--azure-hero-blue) !important;
     font-weight: 700;
     text-decoration: none !important;
+    font-size: 0.88rem;
+    transition: all 0.2s ease;
 }
 
 #post-content h3 + p + p + p a:hover,
 #blog-listing-medium .post .intro h3 + p + p + p a:hover {
     background: rgba(15, 126, 216, 0.16);
+    transform: translateY(-1px);
+}
+
+#post-content h3 + p + p + p a[href*="linkedin.com"]::before,
+#blog-listing-medium .post .intro h3 + p + p + p a[href*="linkedin.com"]::before {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands";
+    content: "\f08c";
+    font-weight: 400;
+}
+
+#post-content h3 + p + p + p a[href*="github.com"]::before,
+#blog-listing-medium .post .intro h3 + p + p + p a[href*="github.com"]::before {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands";
+    content: "\f09b";
+    font-weight: 400;
+}
+
+#post-content h3 + p + p + p a[href*="mvp.microsoft.com"]::before,
+#blog-listing-medium .post .intro h3 + p + p + p a[href*="mvp.microsoft.com"]::before {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands";
+    content: "\f85a";
+    font-weight: 400;
+}
+
+#post-content h3 + p + p + p a[href*="bsky.app"]::before,
+#blog-listing-medium .post .intro h3 + p + p + p a[href*="bsky.app"]::before {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands";
+    content: "\e671";
+    font-weight: 400;
 }
 
 
