@@ -38,11 +38,6 @@ weight     = 6
     url        = "/CFP/"
     weight     = 7
 
-[[menu.main]]
-    identifier = "menu.training"
-    name       = "Training"
-    url        = "/training/"
-    weight     = 7
 
 [[menu.main]]
     identifier = "menu.code"

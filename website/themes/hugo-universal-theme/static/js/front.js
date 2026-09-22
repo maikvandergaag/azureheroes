@@ -118,7 +118,10 @@ function sliders () {
       autoPlay: $('.testimonials').attr('data-autoplay') === 'true',
       itemsDesktopSmall: [990, 3],
       itemsTablet: [768, 2],
-      itemsMobile: [480, 1]
+      itemsMobile: [480, 1],
+      afterInit: function () {
+        $(document).alignElementsSameHeight()
+      }
     })
 
     $('.homepage').owlCarousel({
