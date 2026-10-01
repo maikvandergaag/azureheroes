@@ -3,7 +3,7 @@ title = "Global Azure Heroes"
 date = "2026-04-16T12:00:00+01:00"
 tags = ["Azure", "Community"]
 categories = ["Azure", "Community"]
-banner = "img/events/global-azure-heroes.png"
+banner = "img/events/globalazureheroes.png"
 authors = ["Danny Kruge"]
 
 +++
