@@ -46,16 +46,22 @@ weight     = 6
     weight     = 8
 
 [[menu.main]]
+    identifier = "menu.whatsapp-code"
+    name       = "WhatsApp Code of Conduct"
+    url        = "/whatsapp-code-of-conduct/"
+    weight     = 9
+
+[[menu.main]]
     identifier = "team"
     name       = "Team"
     url        = "/team/"
-    weight     = 9
+    weight     = 10
 
 [[menu.main]]
     identifier = "contact"
     name       = "Contact"
     url        = "/contact/"
-    weight     = 10
+    weight     = 11
 
 # Top bar social links menu
 [[menu.topbar]]
