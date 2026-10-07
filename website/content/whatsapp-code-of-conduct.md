@@ -10,7 +10,7 @@ Leave room for others.**
 This community is for sharing Azure knowledge, celebrating contributions, and helping one another learn. Whether you’re a seasoned Hero or asking your first question, you belong here.
 
 
-### Make the group a good place to learn
+## Make the group a good place to learn
 
 - **Be generous with knowledge, not status.**  
 Explain, encourage, and give credit. No question is “too basic,” and expertise is not a license to belittle.
@@ -28,7 +28,7 @@ Text can travel badly across languages and cultures. If someone flags a problem,
 Respect other people’s work and intellectual property. Don’t present someone else’s ideas, content, or achievements as your own, or imply Microsoft endorsement where none has been given.
 
 
-### Protect people—and the cloud
+## Protect people—and the cloud
 
 - **Treat personal information as personal.**  
 Don’t share someone’s number, identity, photo, private message, or other personal details outside the group without their permission. Don’t add members to other groups or start unsolicited private conversations.
@@ -39,7 +39,7 @@ Never post passwords, access tokens, keys, customer data, confidential work info
 - **Remember what WhatsApp can’t promise.**  
 Members may be able to copy or forward messages, and admins can’t guarantee confidentiality. Share only what you’re comfortable having leave the group.
 
-### If something goes wrong
+## If something goes wrong
 
 
 Contact an admin privately at **azureheroesnl@gmail.com**. Share what happened, when and where it happened, and any relevant context you’re comfortable providing. _Please don’t circulate screenshots or identifying details more widely than needed._
@@ -48,4 +48,3 @@ Admins will review reports as fairly and discreetly as practical. They may clari
 
 
 This code applies to this WhatsApp community and activities directly connected to it, including when someone represents Azure Heroes in public. It sets community expectations; it does not replace applicable law or Microsoft policies that may separately apply.
-
