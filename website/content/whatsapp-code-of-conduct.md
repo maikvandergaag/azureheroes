@@ -4,24 +4,48 @@ title = "WhatsApp Community Code of Conduct"
 
 # WhatsApp Community Code of Conduct
 
-We want this community to be welcoming, useful, and respectful. By joining, you agree to treat other members with consideration and help keep this a safe space for everyone.
+**Bring your curiosity.  
+Leave room for others.**
 
-**Be respectful.**  
-Disagree with ideas without attacking people. No harassment, hate speech, discriminatory remarks, threats, bullying, or sexual comments or advances.
+This community is for sharing Azure knowledge, celebrating contributions, and helping one another learn. Whether you’re a seasoned Hero or asking your first question, you belong here.
 
-**Keep posts relevant and considerate.**  
-Follow the group’s purpose and any topic-specific rules. Avoid spam, repeated messages, chain messages, unsolicited promotions, and content that could reasonably make members feel unsafe or unwelcome. Share potentially sensitive or graphic material only when it is relevant and clearly labelled.
 
-**Respect privacy and consent.**  
-Don’t share someone’s phone number, personal details, photos, messages, or other private information outside the group without their permission. Don’t add people to the group or contact them privately about community matters without their consent. Members should not assume that group messages are confidential; take care with what you share.
+### Make the group a good place to learn
 
-**Help conversations go well.**  
-Give feedback constructively, listen to different experiences, and take responsibility if something you post causes harm. If a moderator asks you to pause or change course, cooperate.
+- **Be generous with knowledge, not status.**  
+Explain, encourage, and give credit. No question is “too basic,” and expertise is not a license to belittle.
 
-## Moderation and reporting
+- **Challenge ideas, not people.**  
+Disagreement is welcome; personal attacks, insults, harassment, hate speech, threats, and discriminatory or sexualized comments are not.
 
-If something concerns you, contact one of the admin privately. Include what happened and, if helpful, the message or context. Please don’t confront someone publicly if that could escalate the situation.
+- **Make space in the chat.**  
+Keep posts relevant, avoid flooding the group, and don’t repeatedly tag or message people who haven’t responded. Share promotions or event announcements only when they fit the group or admins have approved them.
 
-Admins will review reports as fairly and promptly as they can, and will limit sharing details where practical. Depending on the situation, they may remind someone of the rules, issue a warning, remove messages, temporarily restrict participation, or remove someone from the group. Serious behaviour may result in immediate removal.
+- **Assume good intent; respond to impact.**  
+Text can travel badly across languages and cultures. If someone flags a problem, pause, listen, and adjust rather than escalating.
 
-This Code applies to activity in this WhatsApp group and to conduct directly connected with the community. Admin decisions should aim to protect members and keep the group constructive.
+- **Give credit where it’s due.**  
+Respect other people’s work and intellectual property. Don’t present someone else’s ideas, content, or achievements as your own, or imply Microsoft endorsement where none has been given.
+
+
+### Protect people—and the cloud
+
+- **Treat personal information as personal.**  
+Don’t share someone’s number, identity, photo, private message, or other personal details outside the group without their permission. Don’t add members to other groups or start unsolicited private conversations.
+
+- **Keep sensitive technical details out of chat.**  
+Never post passwords, access tokens, keys, customer data, confidential work information, or identifiable production details. Redact screenshots and logs before sharing. If a security issue may expose others to risk, don’t publish exploit steps or secrets here; use an appropriate private reporting channel.
+
+- **Remember what WhatsApp can’t promise.**  
+Members may be able to copy or forward messages, and admins can’t guarantee confidentiality. Share only what you’re comfortable having leave the group.
+
+### If something goes wrong
+
+
+Contact an admin privately at **azureheroesnl@gmail.com**. Share what happened, when and where it happened, and any relevant context you’re comfortable providing. _Please don’t circulate screenshots or identifying details more widely than needed._
+
+Admins will review reports as fairly and discreetly as practical. They may clarify expectations, contact people privately, ask a member to stop or remove a message, restrict participation, or remove someone from the group. Serious or repeated conduct may warrant immediate removal. Actions will be based on the circumstances, with the aim of protecting members and keeping the community useful—not settling personal scores.
+
+
+This code applies to this WhatsApp community and activities directly connected to it, including when someone represents Azure Heroes in public. It sets community expectations; it does not replace applicable law or Microsoft policies that may separately apply.
+
