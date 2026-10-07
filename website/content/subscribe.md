@@ -1,1 +1,1 @@
-# Subscriped
+# Subscribed
