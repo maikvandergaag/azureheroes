@@ -2,67 +2,71 @@
 title = "Code of Conduct"
 +++
 
-# Code of Conduct
+# Azure Heroes Community Code of Conduct
 
-## Our Pledge
-We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+Azure Heroes brings people together to share knowledge, learn about Azure and related technologies, and build a welcoming professional community. We want everyone to feel safe participating, asking questions, sharing experience, and meeting others.
 
-We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
+By participating in an Azure Heroes community space or event, you agree to follow this Code of Conduct. It applies to attendees, speakers, sponsors, volunteers, organizers, and anyone else taking part, regardless of role or seniority.
 
-## Our Standards
-Examples of behavior that contributes to a positive environment for our community include:
+## Our expectations
 
-Demonstrating empathy and kindness toward other people
-Being respectful of differing opinions, viewpoints, and experiences
-Giving and gracefully accepting constructive feedback
-Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience
-Focusing on what is best not just for us as individuals, but for the overall community
-Examples of unacceptable behavior include:
-The use of sexualized language or imagery, and sexual attention or advances of any kind
-Trolling, insulting or derogatory comments, and personal or political attacks
-Public or private harassment
-Publishing others’ private information, such as a physical or email address, without their explicit permission
-Other conduct which could reasonably be considered inappropriate in a professional setting
-Enforcement Responsibilities
-Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.
+Treat others with respect, empathy, and consideration. Welcome different backgrounds, identities, experiences, and viewpoints. Critique ideas constructively, give credit for others' work, and take responsibility when your words or actions have a negative impact.
 
-Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.
+The following behavior is not acceptable:
 
-## Scope
-This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+- Disruptive, disrespectful, degrading, harassing, discriminatory, or hateful behavior, messages, images, or interactions, including conduct based on age, ancestry, citizenship, color, disability, ethnicity, gender identity or expression, immigration status, marital status, medical condition, national origin, political affiliation, race, religion or belief, sex, sexual orientation, veteran or military status, or any other characteristic protected by applicable law.
+- Sexualized language or imagery, unwelcome sexual attention, or unwanted physical contact.
+- Threats, intimidation, stalking, following, deliberate disruption, or repeated unwanted contact after someone has asked you to stop.
+- Insults, personal attacks, or jokes that target or demean people or groups.
+- Sharing or threatening to share another person's private or identifying information, messages, or images without their permission.
+- Recording, photographing, or publishing identifiable participants in a way that disregards their consent or an event's stated photography and recording guidance.
+- Spam, repeated solicitation, or promotional activity unrelated to the community or not approved by the organizers.
+- Sharing confidential employer, customer, or personal information, including credentials, access tokens, or other sensitive technical details.
+- Retaliating against someone for raising a concern or participating in a review.
 
-## Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the one of the organizers. All complaints will be reviewed and investigated promptly and fairly.
+These examples are not exhaustive. Conduct that a reasonable person would consider threatening, harassing, or inappropriate in a professional community may also violate this Code.
 
-All community leaders are obligated to respect the privacy and security of the reporter of any incident.
+## Where this Code applies
 
-## Enforcement Guidelines
-Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:
+This Code applies to activities organized or managed by Azure Heroes, including meetups, talks, workshops, related business and social activities, online sessions, the website, social media, and community chat spaces. It applies to event-related conduct regardless of location, including interactions on digital platforms. It also applies when someone is representing Azure Heroes in a public or professional setting.
 
-1. Correction
+At in-person events, follow instructions from organizers and venue staff, and respect venue safety and accessibility requirements. Follow any event-specific guidance about photography, recordings, and promotional materials. Do not assume that meeting someone at an event is permission to add them to a mailing list, contact them privately, or use their details for marketing.
 
-Community Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.
-Consequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.
+## Reporting a concern
 
-2. Warning
+If you experience or witness behavior that may violate this Code, please contact the organizers at [support@azureheroes.online](mailto:support@azureheroes.online). You may report a concern even if you are unsure whether it falls within this Code. At an event, you can also speak to an organizer, volunteer, venue staff, or event host. If someone is in immediate danger, contact local emergency services or venue security first.
 
-Community Impact: A violation through a single incident or series of actions.
-Consequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.
+When possible, include what happened, when and where it happened, who was involved, any witnesses, whether the behavior is ongoing, and how the organizers can safely contact you. Share only information that is relevant and that you are comfortable providing. Please do not circulate reports, screenshots, or identifying details more widely than needed.
 
-3. Temporary Ban
+Organizers will review reports as promptly and fairly as practicable. They will limit access to report details to people who need them to assess and respond, and collect and retain only information reasonably needed for that purpose, subject to applicable obligations. Absolute confidentiality cannot be guaranteed: details may need to be shared to investigate or address a safety concern, or where required by law. If you have concerns about your safety, privacy, or possible retaliation, please say so in your report.
 
-Community Impact: A serious violation of community standards, including sustained inappropriate behavior.
-Consequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.
+Organizers handling a report should act impartially, disclose potential conflicts of interest, and step aside from decisions where they cannot do so. They may ask relevant people for their account of events and consider the available information before deciding on a response. The person raising a concern and the person whose conduct is reported will be treated respectfully; organizers will share information about the outcome only as appropriate to protect privacy and safety.
 
-4. Permanent Ban
+## How organizers may respond
 
-Community Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.
-Consequence: A permanent ban from any sort of public interaction within the community.
+Responses depend on the nature, seriousness, context, impact, and pattern of the behavior. Organizers may take one or more of the following actions:
 
-## Attribution
-This Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+- Give a private reminder, correction, or warning.
+- Ask someone to stop a behavior, remove content, or have no contact with another participant.
+- Restrict participation in a session, online space, or event, or ask someone to leave.
+- Suspend or permanently prohibit participation in Azure Heroes community spaces and events.
+- Refer a concern to the venue, platform, or appropriate authorities when necessary.
 
-## Contact
+Organizers may take immediate action, including removal from an event or community space, when behavior is serious, ongoing, or presents a safety risk. A prior warning is not required. Retaliation or knowingly making a malicious report may itself violate this Code; good-faith reports will not be penalized simply because they cannot be substantiated.
 
-By question please contact us. 
-azheroesnl@gmail.com
+## Scope and other policies
+
+This Code sets expectations for Azure Heroes community participation. It does not replace applicable law, event-specific terms, venue rules, or the policies of platforms and organizations involved. It is not legal advice. Participants may also contact an appropriate external authority or seek independent support.
+
+Azure Heroes is an independent community. This Code does not make an Azure Heroes event a Microsoft event. If an activity is organized by Microsoft, Microsoft's own event policies and reporting channels apply to that activity; participants may also raise a concern with Azure Heroes organizers when relevant.
+
+## References
+
+This Code is informed by established community and event conduct practices, including:
+
+- [Contributor Covenant Code of Conduct, version 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
+- [PyCon US Code of Conduct and reporting procedures](https://policies.python.org/us.pycon.org/code-of-conduct/)
+- [Microsoft Events Code of Conduct](https://www.microsoft.com/en-us/events/code-of-conduct)
+- [Microsoft Learn Events Code of Conduct](https://learn.microsoft.com/en-us/legal/learnevents/codeofconduct)
+- [Government of the Netherlands: prohibition of discrimination](https://www.government.nl/themes/migration-and-travel/discrimination/prohibition-of-discrimination)
+- [Dutch Data Protection Authority: retaining personal data](https://autoriteitpersoonsgegevens.nl/themas/basis-avg/privacy-en-persoonsgegevens/bewaren-van-persoonsgegevens)
