@@ -16,7 +16,7 @@ We want this community to be welcoming, useful, and respectful. By joining, you 
 
 ## Moderation and reporting
 
-If something concerns you, contact an admin privately: **[admin name or contact method]**. Include what happened and, if helpful, the message or context. Please don’t confront someone publicly if that could escalate the situation.
+If something concerns you, contact one of the admin privately. Include what happened and, if helpful, the message or context. Please don’t confront someone publicly if that could escalate the situation.
 
 Admins will review reports as fairly and promptly as they can, and will limit sharing details where practical. Depending on the situation, they may remind someone of the rules, issue a warning, remove messages, temporarily restrict participation, or remove someone from the group. Serious behaviour may result in immediate removal.
 
