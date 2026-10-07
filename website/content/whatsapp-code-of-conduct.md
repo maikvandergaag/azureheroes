@@ -6,13 +6,17 @@ title = "WhatsApp Community Code of Conduct"
 
 We want this community to be welcoming, useful, and respectful. By joining, you agree to treat other members with consideration and help keep this a safe space for everyone.
 
-**Be respectful.** Disagree with ideas without attacking people. No harassment, hate speech, discriminatory remarks, threats, bullying, or sexual comments or advances.
+**Be respectful.**  
+Disagree with ideas without attacking people. No harassment, hate speech, discriminatory remarks, threats, bullying, or sexual comments or advances.
 
-**Keep posts relevant and considerate.** Follow the group’s purpose and any topic-specific rules. Avoid spam, repeated messages, chain messages, unsolicited promotions, and content that could reasonably make members feel unsafe or unwelcome. Share potentially sensitive or graphic material only when it is relevant and clearly labelled.
+**Keep posts relevant and considerate.**  
+Follow the group’s purpose and any topic-specific rules. Avoid spam, repeated messages, chain messages, unsolicited promotions, and content that could reasonably make members feel unsafe or unwelcome. Share potentially sensitive or graphic material only when it is relevant and clearly labelled.
 
-**Respect privacy and consent.** Don’t share someone’s phone number, personal details, photos, messages, or other private information outside the group without their permission. Don’t add people to the group or contact them privately about community matters without their consent. Members should not assume that group messages are confidential; take care with what you share.
+**Respect privacy and consent.**  
+Don’t share someone’s phone number, personal details, photos, messages, or other private information outside the group without their permission. Don’t add people to the group or contact them privately about community matters without their consent. Members should not assume that group messages are confidential; take care with what you share.
 
-**Help conversations go well.** Give feedback constructively, listen to different experiences, and take responsibility if something you post causes harm. If a moderator asks you to pause or change course, cooperate.
+**Help conversations go well.**  
+Give feedback constructively, listen to different experiences, and take responsibility if something you post causes harm. If a moderator asks you to pause or change course, cooperate.
 
 ## Moderation and reporting
 
