@@ -29,8 +29,8 @@ Grab your phone and step into the inner circle. **The WhatsApp invite link will 
 
 See you on the cloud side,
 
-The Azure Heroes Team  
-(Maik, Danny, Gillian, Rogier)  
+The Azure Heroes Team (Maik, Danny, Gillian, Rogier)
+
 [azug.nl](https://azug.nl)
 
 Read our [WhatsApp Community Code of Conduct](/whatsapp-code-of-conduct/).
