@@ -46,6 +46,12 @@ weight     = 6
     weight     = 8
 
 [[menu.main]]
+    identifier = "menu.whatsapp"
+    name       = "WhatsApp Community"
+    url        = "/whatsapp-community/"
+    weight     = 9
+
+[[menu.main]]
     identifier = "team"
     name       = "Team"
     url        = "/team/"
