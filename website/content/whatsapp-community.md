@@ -29,7 +29,7 @@ We respect your notification tray. This group is strictly curated for official A
 
 ## 🕹️ Ready to Join Forces?
 
-Grab your phone and step into the inner circle. [WhatsApp invite link]()
+Grab your phone and step into the inner circle. [WhatsApp invite link](https://chat.whatsapp.com/J5AxhvoDSIFCkOzHeLdCB0)
 
 See you on the cloud side,
 
