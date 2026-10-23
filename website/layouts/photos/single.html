@@ -30,16 +30,15 @@
 
                 <div class="photo-grid">
                     {{ range $i, $photo := .Resources.ByType "image" }}
-                    {{ $photo = $photo.Filter images.AutoOrient }}
-                    {{ $thumb := $photo.Fill "400x300 q75" }}
-                    {{ $full := $photo }}
-                    {{ if gt $photo.Width 1600 }}{{ $full = $photo.Resize "1600x q85" }}{{ end }}
-                    <a href="{{ $full.RelPermalink }}" class="photo-grid-item" data-index="{{ $i }}">
+                    {{/* Thumbnail is auto-oriented and fitted; the lightbox opens the committed file untouched. */}}
+                    {{ $thumb := ($photo.Filter images.AutoOrient).Fit "720x720 q75" }}
+                    <a href="{{ $photo.RelPermalink }}" class="photo-grid-item" data-index="{{ $i }}" style="--w:{{ $thumb.Width }};--h:{{ $thumb.Height }}">
                         <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ $.Title }} photo {{ add $i 1 }}" loading="lazy">
                     </a>
                     {{ else }}
                     <p>No photos in this album yet.</p>
                     {{ end }}
+                    <div class="photo-grid-filler" aria-hidden="true"></div>
                 </div>
             </div>
             <!-- /.container -->

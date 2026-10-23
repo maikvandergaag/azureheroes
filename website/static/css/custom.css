@@ -1841,25 +1841,45 @@ a:focus {
   font-size: 13px;
 }
 
+/* Album grid: justified rows, every photo shown uncropped.
+   --w/--h are set per item in the template; flex-grow equal to the
+   aspect ratio makes all photos in a row share the same height. */
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  --row-height: 220px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 20px 0 40px;
+}
+
+.photo-grid-item {
+  display: block;
+  flex-grow: calc(var(--w) / var(--h));
+  flex-basis: calc(var(--row-height) * var(--w) / var(--h));
+  min-width: 0;
 }
 
 .photo-grid-item img {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
   border-radius: 4px;
   transition: opacity 0.2s;
 }
 
 .photo-grid-item:hover img {
   opacity: 0.85;
+}
+
+/* Stops a short last row from stretching to the full width */
+.photo-grid-filler {
+  flex-grow: 1000;
+  flex-basis: 0;
+  height: 0;
+}
+
+@media (max-width: 600px) {
+  .photo-grid { --row-height: 140px; }
 }
 
 .photo-lightbox {
