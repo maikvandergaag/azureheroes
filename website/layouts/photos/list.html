@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+            <div class="container">
+                {{ .Content }}
+
+                <div class="photo-albums">
+                    {{ range .Pages.ByDate.Reverse }}
+                    {{ $photos := .Resources.ByType "image" }}
+                    {{ $title := .Title }}
+                    {{ $cover := index $photos 0 }}
+                    {{ with .Params.cover }}{{ $cover = or ($photos.GetMatch .) $cover }}{{ end }}
+                    <a class="photo-album" href="{{ .RelPermalink }}">
+                        {{ with $cover }}
+                        {{ $thumb := (.Filter images.AutoOrient).Fill "600x400 q80" }}
+                        <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ $title }}" loading="lazy">
+                        {{ else }}
+                        <img src="{{ "img/Meetup.png" | relURL }}" alt="{{ .Title }}" loading="lazy">
+                        {{ end }}
+                        <div class="photo-album-caption">
+                            <h3>{{ .Title }}</h3>
+                            <p><i class="far fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }} &middot; <i class="far fa-images"></i> {{ len $photos }}</p>
+                        </div>
+                    </a>
+                    {{ else }}
+                    <p>No photos yet &mdash; check back after our next meetup!</p>
+                    {{ end }}
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
