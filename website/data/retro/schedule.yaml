@@ -1,0 +1,51 @@
+# Schedule for Azure Heroes: Retro 2027.
+# Used when sessionize.embed_id in event.yaml is empty.
+#
+# `provisional: true` shows a banner that the timetable may still change.
+# Each slot is either a plenary item (title only, spans all rooms) or a set of
+# parallel sessions (one per room, in the same order as `rooms`).
+
+provisional: true   # TODO: set to false once the programme is final
+
+rooms: ["Main stage", "Room 2"]
+
+# TODO: replace this outline with the real programme once the CFP has closed.
+slots:
+  - time: "09:00"
+    title: "Doors open, registration and coffee"
+    kind: break
+  - time: "09:45"
+    title: "Opening"
+    kind: plenary
+  - time: "10:00"
+    title: "Keynote"
+    kind: plenary
+  - time: "11:00"
+    kind: sessions
+    sessions:
+      - title: "Session to be announced"
+      - title: "Session to be announced"
+  - time: "12:00"
+    title: "Lunch, expo and Hero Quest"
+    kind: break
+  - time: "13:00"
+    kind: sessions
+    sessions:
+      - title: "Session to be announced"
+      - title: "Session to be announced"
+  - time: "14:00"
+    kind: sessions
+    sessions:
+      - title: "Session to be announced"
+      - title: "Session to be announced"
+  - time: "15:00"
+    title: "Coffee break and expo"
+    kind: break
+  - time: "15:30"
+    kind: sessions
+    sessions:
+      - title: "Session to be announced"
+      - title: "Session to be announced"
+  - time: "16:30"
+    title: "Closing, raffle and drinks"
+    kind: plenary

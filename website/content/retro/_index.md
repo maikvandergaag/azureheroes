@@ -4,9 +4,10 @@ linkTitle = "Retro 2027"
 description = "Azure Heroes: Retro — The Big One. A full day of Microsoft Cloud knowledge, practical ideas and community on 15 April 2027 at MARCFAIT, Almere."
 +++
 
-<div class="retro-section">
+<section class="rh-section rh-section--intro">
+<div>
 
-<p class="retro-kicker">Press start</p>
+<p class="rh-kicker">Press start</p>
 
 ## A bigger stage
 
@@ -14,13 +15,15 @@ A full day of Microsoft Cloud knowledge, practical ideas and community connectio
 
 Azure Heroes: Retro is the biggest event Azure Heroes Netherlands has organised so far: two session rooms, an expo hall, a Hero Quest to play throughout the day and plenty of time to meet the community.
 
-{{< retro-facts >}}
-
 </div>
 
-<div class="retro-section">
+{{< retro-facts >}}
 
-<p class="retro-kicker">Player select</p>
+</section>
+
+<section class="rh-section">
+
+<p class="rh-kicker">Player select</p>
 
 ## Who you'll meet
 
@@ -28,18 +31,32 @@ A hands-on Microsoft Cloud crowd on a working Thursday: people who build, run an
 
 {{< retro-audience >}}
 
-</div>
+</section>
 
-<div class="retro-section">
+<section class="rh-section">
 
-<p class="retro-kicker">Coming soon</p>
+<p class="rh-kicker">The line-up</p>
 
-## Programme, speakers and tickets
+## Speakers
 
-The call for speakers, the programme and ticket sales will be announced here. Follow us on [LinkedIn](https://www.linkedin.com/company/azure-heroes) or join our [Meetup group](https://www.meetup.com/azure-heroes-netherlands/) so you don't miss the start.
+{{< retro-speakers limit="6" >}}
 
-</div>
+<p><a class="rh-link" href="/retro/speakers/">All speakers <span aria-hidden="true">→</span></a></p>
 
-{{< retro-sponsor-cta >}}
-Want your brand to be part of the day? Check the [sponsor packages](/retro/sponsor/) or get in touch with the organisers.
-{{< /retro-sponsor-cta >}}
+</section>
+
+<section class="rh-section">
+
+<p class="rh-kicker">Getting there</p>
+
+## When and where
+
+{{< retro-venue >}}
+
+<p><a class="rh-link" href="/retro/info/">Practical information <span aria-hidden="true">→</span></a></p>
+
+</section>
+
+{{< retro-callout title="Ready to power up?" button="See the sponsor packages" href="/retro/sponsors/" >}}
+Want your brand to be part of the day? Platinum, Gold, Silver, Barista and Lanyard packages are available, plus power-ups for any budget.
+{{< /retro-callout >}}

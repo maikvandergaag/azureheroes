@@ -1,0 +1,19 @@
+{{/* Venue card, from data/retro/event.yaml. */}}
+{{ $e := site.Data.retro.event }}
+{{ $v := $e.venue }}
+<div class="rh-venue">
+  <div>
+    <p class="rh-eyebrow">Venue</p>
+    <h3>{{ $v.name }}</h3>
+    <p>{{ $v.address }}</p>
+    <div class="rh-actions">
+      <a class="rh-btn rh-btn--sm" href="{{ $v.maps_url }}" target="_blank" rel="noopener"><i class="fas fa-map-location-dot" aria-hidden="true"></i> Open in Maps</a>
+      {{ with $v.url }}<a class="rh-btn rh-btn--sm" href="{{ . }}" target="_blank" rel="noopener">Venue website</a>{{ end }}
+    </div>
+  </div>
+  <ul class="rh-venue__list">
+    <li><i class="fas fa-train" aria-hidden="true"></i><span><strong>By train</strong>{{ $v.train }}</span></li>
+    <li><i class="fas fa-square-parking" aria-hidden="true"></i><span><strong>By car</strong>{{ $v.parking }}</span></li>
+    <li><i class="far fa-clock" aria-hidden="true"></i><span><strong>Hours</strong>{{ $e.date_display }}, {{ $e.hours }}</span></li>
+  </ul>
+</div>

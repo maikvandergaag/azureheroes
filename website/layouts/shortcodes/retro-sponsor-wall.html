@@ -1,0 +1,26 @@
+{{/* Confirmed sponsors per package (data/retro/sponsors.yaml), with open slots
+     shown as "your logo here" tiles. */}}
+{{ $confirmed := site.Data.retro.sponsors }}
+{{ range site.Data.retro.packages.packages }}
+  {{ $list := index $confirmed .id | default slice }}
+  <section class="rh-wall rh-package--{{ .color }}" aria-labelledby="wall-{{ .id }}">
+    <h3 id="wall-{{ .id }}">{{ .name }}</h3>
+    <div class="rh-wall__grid rh-wall__grid--{{ .id }}">
+      {{ range $list }}
+      <a class="rh-logo" href="{{ .url }}" target="_blank" rel="noopener"><img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy"></a>
+      {{ end }}
+      {{ $open := sub (.max | default 0) (len $list) }}
+      {{ if gt $open 0 }}{{ range seq $open }}
+      <a class="rh-logo rh-logo--open" href="#packages"><span>Your logo here</span></a>
+      {{ end }}{{ end }}
+    </div>
+  </section>
+{{ end }}
+{{ with $confirmed.bronze }}
+<section class="rh-wall" aria-labelledby="wall-bronze">
+  <h3 id="wall-bronze">Bronze</h3>
+  <div class="rh-wall__grid rh-wall__grid--bronze">
+    {{ range . }}<a class="rh-logo" href="{{ .url }}" target="_blank" rel="noopener"><img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy"></a>{{ end }}
+  </div>
+</section>
+{{ end }}

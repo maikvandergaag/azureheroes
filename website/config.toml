@@ -75,6 +75,28 @@ weight     = 6
     url        = "/contact/"
     weight     = 11
 
+# Retro 2027 subsite menu (layouts/partials/retro/header.html)
+[[menu.retro]]
+    name = "Home"
+    url = "/retro/"
+    weight = 1
+[[menu.retro]]
+    name = "Speakers"
+    url = "/retro/speakers/"
+    weight = 2
+[[menu.retro]]
+    name = "Schedule"
+    url = "/retro/schedule/"
+    weight = 3
+[[menu.retro]]
+    name = "Sponsors"
+    url = "/retro/sponsors/"
+    weight = 4
+[[menu.retro]]
+    name = "Info"
+    url = "/retro/info/"
+    weight = 5
+
 # Top bar social links menu
 [[menu.topbar]]
     weight = 3

@@ -1,23 +1,40 @@
 # Single source of truth for the Azure Heroes: Retro 2027 event facts.
-# Every page in /retro/ reads from this file, so update details here only.
+# Every page in the /retro/ subsite reads from this file, so update details here only.
 
 name: "Azure Heroes: Retro"
 tagline: "The Big One • 2027"
+organiser: "Azure Heroes Netherlands"
 date_display: "Thursday 15 April 2027"
 date_iso: "2027-04-15"
 hours: "09:00–17:00"
-venue: "MARCFAIT"
-venue_city: "Almere Centrum"
-venue_url: ""            # TODO: add venue website or Google Maps link
 target_attendance: "250–300"
 session_rooms: 2
 
+venue:
+  name: "MARCFAIT"
+  city: "Almere Centrum"
+  address: "Schrijverstraat 2, 1315 HX Almere"
+  url: "https://www.marcfait.nl/"
+  maps_url: "https://www.google.com/maps/search/?api=1&query=MARCFAIT%2C%20Schrijverstraat%202%2C%201315%20HX%20Almere"
+  train: "About a five-minute walk from Almere Centrum railway station."
+  parking: "Right next to car park P3 Regisseur (paid parking)."
+
 # Leave a link empty to hide its button on the site.
 links:
-  cfp: ""                # TODO: Sessionize CFP URL
   tickets: ""            # TODO: ticket / registration URL (opens later)
   sponsor_deck: ""       # Optional: public link to the sponsorship deck PDF
   sponsor_contact: "/contact/"
+  code_of_conduct: "/codeofconduct/"
+  main_site: "/"
+  linkedin: "https://www.linkedin.com/company/azure-heroes"
+  meetup: "https://www.meetup.com/azure-heroes-netherlands/"
+
+sessionize:
+  cfp_url: ""            # TODO: public Sessionize CFP URL, e.g. https://sessionize.com/azure-heroes-retro-2027
+  cfp_closes: ""         # Optional, e.g. "31 January 2027"
+  # Sessionize API endpoint ID (Sessionize > API / Embed). When set, the Speakers and
+  # Schedule pages embed the live Sessionize views instead of the YAML data below.
+  embed_id: ""
 
 audience:
   - title: "Cloud engineers"

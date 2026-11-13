@@ -1,0 +1,34 @@
+{{/* Schedule: live Sessionize grid when sessionize.embed_id is set, otherwise
+     data/retro/schedule.yaml. */}}
+{{ $e := site.Data.retro.event }}
+{{ $s := site.Data.retro.schedule }}
+{{ if $e.sessionize.embed_id }}
+<div class="rh-sessionize">
+  <script type="text/javascript" src="https://sessionize.com/api/v2/{{ $e.sessionize.embed_id }}/view/GridSmart"></script>
+</div>
+{{ else }}
+{{ if $s.provisional }}
+<p class="rh-notice"><i class="fas fa-triangle-exclamation" aria-hidden="true"></i> Provisional outline. The final programme with sessions and speakers follows after the call for speakers closes.</p>
+{{ end }}
+<ol class="rh-schedule" style="--rooms: {{ len $s.rooms }}">
+  <li class="rh-schedule__head" aria-hidden="true">
+    <span>Time</span>{{ range $s.rooms }}<span>{{ . }}</span>{{ end }}
+  </li>
+  {{ range $s.slots }}
+  <li class="rh-slot rh-slot--{{ .kind }}">
+    <time class="rh-slot__time">{{ .time }}</time>
+    {{ if eq .kind "sessions" }}
+      {{ range $i, $session := .sessions }}
+      <div class="rh-slot__session">
+        <span class="rh-slot__room">{{ index $s.rooms $i }}</span>
+        <strong>{{ $session.title }}</strong>
+        {{ with $session.speaker }}<span class="rh-slot__speaker">{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+    {{ else }}
+      <div class="rh-slot__plenary"><strong>{{ .title }}</strong>{{ with .speaker }}<span class="rh-slot__speaker">{{ . }}</span>{{ end }}</div>
+    {{ end }}
+  </li>
+  {{ end }}
+</ol>
+{{ end }}

@@ -1,6 +1,2 @@
-{{/* Sub pages of the /retro/ section, e.g. /retro/sponsor/. */}}
-{{ partial "retro/shell-start.html" . }}
-<div class="container">
-  {{ .Content }}
-</div>
-{{ partial "retro/shell-end.html" . }}
+{{/* Retro subsite: rendered inside layouts/retro/baseof.html. */}}
+{{ define "main" }}{{ .Content }}{{ end }}

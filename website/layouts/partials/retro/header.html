@@ -1,0 +1,45 @@
+{{/* Retro subsite header with its own menu (menu "retro" in config.toml). */}}
+{{ $e := site.Data.retro.event }}
+<a class="rh-skip" href="#main">Skip to content</a>
+<div class="rh-topbar">
+  <div class="rh-container">
+    <a href="{{ $e.links.main_site | relURL }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Azure Heroes</a>
+    <span class="rh-topbar__meta">{{ $e.date_display }} · {{ $e.venue.name }}, {{ $e.venue.city }}</span>
+  </div>
+</div>
+<header class="rh-header">
+  <div class="rh-container rh-header__inner">
+    <a class="rh-brand" href="{{ "retro/" | relURL }}" aria-label="{{ $e.name }} home">
+      <span class="rh-brand__top">Azure Heroes</span>
+      <span class="rh-brand__main">Retro</span>
+    </a>
+    <button class="rh-burger" type="button" aria-expanded="false" aria-controls="rh-nav">
+      <span class="rh-sr">Menu</span><span class="rh-burger__bars" aria-hidden="true"></span>
+    </button>
+    <nav class="rh-nav" id="rh-nav" aria-label="{{ $e.name }}">
+      <ul>
+        {{ range site.Menus.retro }}
+        {{ $active := eq $.RelPermalink .URL }}
+        <li><a href="{{ .URL }}"{{ if $active }} class="is-active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+      {{ with $e.links.tickets }}
+      <a class="rh-btn rh-btn--primary rh-btn--sm" href="{{ . }}" target="_blank" rel="noopener">Tickets</a>
+      {{ else }}
+      <span class="rh-badge">Tickets soon</span>
+      {{ end }}
+    </nav>
+  </div>
+</header>
+<script>
+  (function () {
+    var b = document.querySelector('.rh-burger');
+    var n = document.getElementById('rh-nav');
+    if (!b || !n) return;
+    b.addEventListener('click', function () {
+      var open = b.getAttribute('aria-expanded') === 'true';
+      b.setAttribute('aria-expanded', String(!open));
+      n.classList.toggle('is-open', !open);
+    });
+  })();
+</script>

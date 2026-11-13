@@ -1,0 +1,34 @@
+{{/* Retro subsite footer. */}}
+{{ $e := site.Data.retro.event }}
+<footer class="rh-footer">
+  <div class="rh-container rh-footer__grid">
+    <div>
+      <p class="rh-brand rh-brand--footer"><span class="rh-brand__top">Azure Heroes</span><span class="rh-brand__main">Retro</span></p>
+      <p>{{ $e.tagline }}. Organised by {{ $e.organiser }}.</p>
+    </div>
+    <div>
+      <h2>When &amp; where</h2>
+      <p>{{ $e.date_display }}<br>{{ $e.hours }}<br>
+        <a href="{{ $e.venue.maps_url }}" target="_blank" rel="noopener">{{ $e.venue.name }}, {{ $e.venue.address }}</a></p>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <ul>
+        {{ range site.Menus.retro }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+      </ul>
+    </div>
+    <div>
+      <h2>Community</h2>
+      <ul>
+        <li><a href="{{ $e.links.main_site | relURL }}">azureheroes.online</a></li>
+        <li><a href="{{ $e.links.code_of_conduct | relURL }}">Code of Conduct</a></li>
+        <li><a href="{{ $e.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="{{ $e.links.meetup }}" target="_blank" rel="noopener">Meetup</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="rh-container rh-footer__bottom">
+    <p>{{ site.Params.copyright }}</p>
+    <p class="rh-pixel">Game over? Never. Insert coin.</p>
+  </div>
+</footer>
