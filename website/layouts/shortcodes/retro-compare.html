@@ -1,0 +1,20 @@
+{{/* Package comparison table, read from data/retro/packages.yaml. */}}
+{{ $p := site.Data.retro.packages }}
+<div class="retro-table-wrap" tabindex="0" role="region" aria-label="Sponsorship packages compared">
+  <table class="retro-table">
+    <thead>
+      <tr><th scope="col"><span class="sr-only">Feature</span></th>{{ range $p.compare_columns }}<th scope="col">{{ . }}</th>{{ end }}</tr>
+    </thead>
+    <tbody>
+      {{ range $p.compare_rows }}
+      <tr>
+        <th scope="row">{{ .label }}</th>
+        {{ range .values }}
+        <td>{{ if eq . "yes" }}<i class="fas fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span>{{ else if eq . "–" }}<span class="retro-muted" aria-label="Not included">–</span>{{ else }}{{ . }}{{ end }}</td>
+        {{ end }}
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+<p class="retro-small">All prices exclude 21% VAT. Every sponsor's logo appears on the website, socials and event screens.</p>

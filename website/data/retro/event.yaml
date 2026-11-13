@@ -1,0 +1,30 @@
+# Single source of truth for the Azure Heroes: Retro 2027 event facts.
+# Every page in /retro/ reads from this file, so update details here only.
+
+name: "Azure Heroes: Retro"
+tagline: "The Big One • 2027"
+date_display: "Thursday 15 April 2027"
+date_iso: "2027-04-15"
+hours: "09:00–17:00"
+venue: "MARCFAIT"
+venue_city: "Almere Centrum"
+venue_url: ""            # TODO: add venue website or Google Maps link
+target_attendance: "250–300"
+session_rooms: 2
+
+# Leave a link empty to hide its button on the site.
+links:
+  cfp: ""                # TODO: Sessionize CFP URL
+  tickets: ""            # TODO: ticket / registration URL (opens later)
+  sponsor_deck: ""       # Optional: public link to the sponsorship deck PDF
+  sponsor_contact: "/contact/"
+
+audience:
+  - title: "Cloud engineers"
+    text: "Platform, DevOps and infrastructure engineers running Microsoft Cloud every day."
+  - title: "Architects"
+    text: "Solution and cloud architects shaping what gets built next."
+  - title: "Data + Fabric"
+    text: "Data engineers and analysts working with Microsoft Fabric."
+  - title: "Decision makers"
+    text: "Tech leads, CCoE leads and IT managers who pick tools and partners."

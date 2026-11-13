@@ -1,0 +1,118 @@
+# Sponsorship packages for Azure Heroes: Retro 2027 (source: sponsorship deck v3).
+# All prices exclude 21% VAT.
+# `color` maps to a CSS modifier: gold, cyan, violet, teal, pink.
+
+packages:
+  - id: platinum
+    name: "Platinum"
+    tagline: "Premium event partnership"
+    price: "€6,500"
+    slots: "Max 3 slots"
+    color: gold
+    perks:
+      - "XL stand in the main hall"
+      - "Invite for 3 to the speaker dinner"
+      - "XL logo on screens and signage, front of the badge"
+      - "Opening and closing mention, own social post and pre-event email"
+      - "Opt-in lead list"
+    note: "Max 3 Platinum partners, all on equal terms: no single headline sponsor."
+
+  - id: gold
+    name: "Gold"
+    tagline: "Expo presence and engagement"
+    price: "€4,000"
+    slots: "3 slots"
+    color: cyan
+    perks:
+      - "Large stand in the main hall (~3 × 2 m)"
+      - "Hero Quest stop at your stand"
+      - "Large logo on screens, signage and badge back"
+      - "Mention at the opening and own social post"
+      - "Opt-in lead list"
+    note: "Stand spots go first come, first served."
+
+  - id: silver
+    name: "Silver"
+    tagline: "Market stand and visibility"
+    price: "€2,000"
+    slots: "6 slots"
+    color: violet
+    perks:
+      - "Standing table and 2 chairs in the main hall"
+      - "Medium logo on website, screens and socials"
+      - "Hero Quest stop, included in the raffle"
+    note: "Add the retro photobooth or extra passes as a power-up."
+
+  - id: barista
+    name: "Barista"
+    tagline: "Coffee and conversation"
+    price: "€1,500"
+    slots: "1 slot"
+    color: teal
+    perks:
+      - "Your brand on the coffee station all day"
+      - "Logo on cups and on every break in the schedule"
+      - "Hero Quest stop at the coffee bar, 1 staff pass"
+    note: "Coffee station branding is arranged together with the venue."
+
+  - id: lanyard
+    name: "Lanyard"
+    tagline: "Branding throughout the day"
+    price: "€1,500"
+    slots: "1 slot"
+    color: pink
+    perks:
+      - "Your logo on every lanyard (~300)"
+      - "Worn all day: in sessions, at stands and in photos"
+      - "Social mention"
+    note: "We produce the lanyards; artwork due 6 weeks before the event."
+
+powerups:
+  - name: "Bronze"
+    price: "€750"
+    slots: "Unlimited"
+    text: "Small logo on the website, screens and socials. No stand needed."
+  - name: "Power-up Drinks"
+    price: "€2,000"
+    slots: "1 slot"
+    text: "Host the end-of-day drinks: 5-min pitch, logo on coasters and bites."
+  - name: "Retro Photobooth"
+    price: "+€900"
+    slots: "1 slot"
+    text: "Self-service booth; every print carries your logo. Silver and up."
+  - name: "Game Sponsor"
+    price: "€100 each"
+    slots: ""
+    text: "Get included in the Retro game: your logo added and seen by all players."
+  - name: "Vacancy Spot"
+    price: "+€200"
+    slots: ""
+    text: "Your job flyer in the hiring corner. Included for Platinum, Gold and Silver."
+  - name: "Raffle Prize"
+    price: "Free"
+    slots: ""
+    text: "Hand out a prize at the closing session. Open to every sponsor."
+
+# Comparison table. Columns follow the order of `compare_columns`.
+compare_columns: ["Platinum", "Gold", "Silver", "Barista", "Lanyard", "Bronze"]
+compare_rows:
+  - label: "Price"
+    values: ["€6,500", "€4,000", "€2,000", "€1,500", "€1,500", "€750"]
+  - label: "Available"
+    values: ["3", "3", "6", "1", "1", "Unlimited"]
+  - label: "Expo presence"
+    values: ["XL stand", "L stand", "Standing table", "Coffee station", "–", "–"]
+  - label: "Speaker dinner invite"
+    values: ["3 guests", "–", "–", "–", "–", "–"]
+  - label: "Logo size on screens"
+    values: ["XL", "L", "M", "M", "M", "S"]
+  - label: "Logo on badge or lanyard"
+    values: ["Badge front", "Badge back", "–", "–", "Lanyard", "–"]
+  - label: "Opening and closing mention"
+    values: ["yes", "yes", "–", "–", "–", "–"]
+  - label: "Own social post"
+    values: ["yes", "yes", "Group post", "Group post", "Group post", "Group post"]
+  - label: "Hero Quest stop"
+    values: ["yes", "yes", "yes", "yes", "–", "–"]
+  - label: "Opt-in lead list"
+    values: ["yes", "yes", "–", "–", "–", "–"]

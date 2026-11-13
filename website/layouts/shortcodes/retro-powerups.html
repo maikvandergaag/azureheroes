@@ -1,0 +1,10 @@
+{{/* Power-ups and add-ons, read from data/retro/packages.yaml. */}}
+<div class="retro-grid retro-grid--3">
+  {{ range site.Data.retro.packages.powerups }}
+  <div class="retro-card retro-card--powerup">
+    <h3>{{ .name }}</h3>
+    <p class="retro-powerup__price">{{ .price }}{{ with .slots }} · {{ . }}{{ end }}</p>
+    <p>{{ .text }}</p>
+  </div>
+  {{ end }}
+</div>

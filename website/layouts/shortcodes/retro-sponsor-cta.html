@@ -1,0 +1,10 @@
+{{/* Call to action for sponsors. */}}
+{{ $l := site.Data.retro.event.links }}
+<div class="retro-callout">
+  <h2>Ready to power up?</h2>
+  <p>{{ with .Inner }}{{ . | markdownify }}{{ else }}Get in touch and we'll help you pick the package that fits your goals and budget.{{ end }}</p>
+  <div class="retro-cta">
+    <a class="retro-btn retro-btn--primary" href="{{ $l.sponsor_contact | relURL }}">Contact the organisers</a>
+    {{ with $l.sponsor_deck }}<a class="retro-btn" href="{{ . }}" target="_blank" rel="noopener">Download the sponsor deck</a>{{ end }}
+  </div>
+</div>

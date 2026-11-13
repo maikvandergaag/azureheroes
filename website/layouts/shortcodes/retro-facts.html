@@ -1,0 +1,8 @@
+{{/* Key numbers for Azure Heroes: Retro, read from data/retro/event.yaml. */}}
+{{ $e := site.Data.retro.event }}
+<div class="retro-stats">
+  <div class="retro-stat"><strong>{{ $e.target_attendance }}</strong><span>attendees</span></div>
+  <div class="retro-stat"><strong>{{ $e.session_rooms }}</strong><span>session rooms</span></div>
+  <div class="retro-stat"><strong>1</strong><span>full day, {{ $e.hours }}</span></div>
+  <div class="retro-stat"><strong>{{ $e.venue }}</strong><span>{{ $e.venue_city }}</span></div>
+</div>

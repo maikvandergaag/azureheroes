@@ -1,0 +1,16 @@
+{{/* Sponsorship package cards, read from data/retro/packages.yaml. */}}
+<div class="retro-grid retro-grid--packages">
+  {{ range site.Data.retro.packages.packages }}
+  <article class="retro-package retro-package--{{ .color }}" id="{{ .id }}">
+    <p class="retro-package__name">{{ .name }}</p>
+    <p class="retro-package__tagline">{{ .tagline }}</p>
+    <p class="retro-package__price">{{ .price }}</p>
+    <p class="retro-package__slots">{{ .slots }}</p>
+    <ul>
+      {{ range .perks }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ with .note }}<p class="retro-package__note">{{ . }}</p>{{ end }}
+  </article>
+  {{ end }}
+</div>
+<p class="retro-small">All prices exclude 21% VAT.</p>
