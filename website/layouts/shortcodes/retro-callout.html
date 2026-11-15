@@ -4,7 +4,8 @@
   <h2>{{ .Get "title" | default "Ready to power up?" }}</h2>
   {{ with .Inner }}<div>{{ . | markdownify }}</div>{{ end }}
   <div class="rh-actions">
-    <a class="rh-btn rh-btn--primary" href="{{ .Get "href" | default $e.links.sponsor_contact | relURL }}">{{ .Get "button" | default "Contact the organisers" }}</a>
+    {{ $href := .Get "href" | default $e.links.sponsor_contact }}
+    <a class="rh-btn rh-btn--primary" href="{{ $href | relURL }}"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Get "button" | default "Contact the organisers" }}</a>
     {{ if eq (.Get "deck") "true" }}{{ with $e.links.sponsor_deck }}<a class="rh-btn" href="{{ . }}" target="_blank" rel="noopener">Download the sponsor deck</a>{{ end }}{{ end }}
   </div>
 </div>

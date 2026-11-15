@@ -25,11 +25,23 @@ Collect stamps at the Hero Quest stops around the expo hall and the coffee bar. 
 
 ## Code of Conduct
 
-Azure Heroes is a welcoming community. All attendees, speakers, sponsors and volunteers follow our [Code of Conduct](/codeofconduct/).
+Azure Heroes is a welcoming community. All attendees, speakers, sponsors and volunteers follow our [Code of Conduct](/retro/code-of-conduct/).
 
 ## Questions?
 
-Something you can't find here? [Contact the organisers](/contact/).
+Something you can't find here? [Contact the organisers](/retro/contact/).
+
+</section>
+
+<section class="rh-section" id="previous-editions">
+
+<p class="rh-kicker">Previously on Azure Heroes</p>
+
+## Previous editions
+
+Azure Heroes: Retro builds on our earlier community days. Here's a look back.
+
+{{< retro-editions >}}
 
 </section>
 
@@ -40,7 +52,7 @@ Something you can't find here? [Contact the organisers](/contact/).
 <details class="rh-faq">
 <summary>Who organises Azure Heroes: Retro?</summary>
 
-Azure Heroes Netherlands, the community behind the Azure Heroes meetups and Global Azure Heroes.
+Azure Heroes Netherlands, the community behind the Azure Heroes meetups. The event is organised by {{< retro-organisers >}}. Meet them on the [team page](/team/).
 
 </details>
 
@@ -54,7 +66,7 @@ Cloud and platform engineers, architects, data professionals and IT decision mak
 <details class="rh-faq">
 <summary>Can my company sponsor?</summary>
 
-Yes. Check the [sponsor packages](/retro/sponsors/) or [get in touch](/contact/).
+Yes. See our [sponsors page](/retro/sponsors/) and [get in touch](/retro/contact/) for the sponsorship options.
 
 </details>
 

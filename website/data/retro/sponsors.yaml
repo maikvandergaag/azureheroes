@@ -13,3 +13,16 @@ silver: []
 barista: []
 lanyard: []
 bronze: []
+
+# Community sponsors: user groups and communities supporting the event.
+# logo is optional; without it the tile shows the name. Set dark: true for
+# logos made for a dark background (white artwork or a black backdrop).
+community:
+  - name: "Azure Thursday"
+    url: "https://www.azurethursday.com/"
+    logo: "img/retro/sponsors/azure-thursday.svg"
+    dark: true
+  - name: "Dutch Fabric User Group"
+    url: "https://dutchfabricusergroup.com/"
+    logo: "img/retro/sponsors/dutch-fabric-user-group.jpg"
+    dark: true

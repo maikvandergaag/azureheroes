@@ -1,0 +1,69 @@
+{{/* Events overview: every event as a wide card (layouts/partials/event-feature.html),
+     upcoming first, then past events grouped by year. */}}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+  <body>
+    <div id="all">
+      {{ partial "top.html" . }}
+      {{ partial "nav.html" . }}
+      {{ partial "breadcrumbs.html" . }}
+
+      {{ $events := .RegularPages }}
+      {{ $upcoming := sort (where $events "Date" "ge" now) "Date" "asc" }}
+      {{ $past := sort (where $events "Date" "lt" now) "Date" "desc" }}
+
+      <div id="content" class="ah-events">
+        <div class="container">
+
+          <section class="ah-events__section" aria-labelledby="upcoming-heading">
+            <h2 id="upcoming-heading">Upcoming</h2>
+            <div class="ah-feature-list" data-upcoming-cards>
+              {{ range $i, $p := $upcoming }}{{ partial "event-feature.html" (dict "page" $p "badge" (cond (eq $i 0) "Next event" "Upcoming")) }}{{ end }}
+            </div>
+            <div class="ah-upcoming__empty" data-upcoming-cards-empty{{ if $upcoming }} hidden{{ end }}>
+              <i class="far fa-calendar" aria-hidden="true"></i>
+              <div>
+                <h3>No new meetups scheduled yet</h3>
+                <p>We're planning the next one. Follow us on {{ with site.Params.footer.meetup }}<a href="{{ . }}" target="_blank" rel="noopener">Meetup</a>{{ else }}Meetup{{ end }} or join the <a href="{{ "whatsapp-community/" | relURL }}">WhatsApp community</a> to hear first.</p>
+              </div>
+            </div>
+          </section>
+
+          {{ with $past }}
+          <section class="ah-events__section" aria-labelledby="past-heading">
+            <h2 id="past-heading">Past events</h2>
+            {{ range .GroupByDate "2006" }}
+            <h3 class="ah-events__year">{{ .Key }}</h3>
+            <div class="ah-feature-list">
+              {{ range .Pages }}{{ partial "event-feature.html" (dict "page" . "badge" "Past event" "past" true) }}{{ end }}
+            </div>
+            {{ end }}
+          </section>
+          {{ end }}
+
+        </div>
+      </div>
+
+      <script>
+      (function () {
+        var grid = document.querySelector('[data-upcoming-cards]');
+        if (!grid) return;
+        var now = Date.now(), left = 0;
+        grid.querySelectorAll('[data-date]').forEach(function (card) {
+          if (Date.parse(card.getAttribute('data-date')) + 12 * 3600 * 1000 < now) card.hidden = true;
+          else left++;
+        });
+        var empty = document.querySelector('[data-upcoming-cards-empty]');
+        if (empty) empty.hidden = left > 0;
+      })();
+      </script>
+
+      {{ partial "footer.html" . }}
+    </div>
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

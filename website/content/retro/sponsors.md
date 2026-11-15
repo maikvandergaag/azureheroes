@@ -2,7 +2,7 @@
 title = "Sponsors"
 kicker = "Power-ups for the community"
 lead = "Azure Heroes: Retro is free for the community because of our sponsors. Meet 250–300 cloud engineers, architects, data professionals and decision makers."
-description = "Sponsors and sponsorship packages for Azure Heroes: Retro 2027 — Platinum, Gold, Silver, Barista, Lanyard and power-ups."
+description = "Sponsors and community sponsors of Azure Heroes: Retro 2027 on 15 April 2027 in Almere."
 +++
 
 <section class="rh-section">
@@ -15,40 +15,18 @@ description = "Sponsors and sponsorship packages for Azure Heroes: Retro 2027 �
 
 </section>
 
-<section class="rh-section" id="packages">
+<section class="rh-section" id="community">
 
-<p class="rh-kicker">Choose your package</p>
+<p class="rh-kicker">Fellow heroes</p>
 
-## Become a sponsor
+## Community sponsors
 
-Support the community, connect with attendees and make your brand part of the experience.
+The user groups and communities that help make Azure Heroes: Retro happen. Running a community and want to join them? [Get in touch](/retro/contact/).
 
-{{< retro-packages >}}
-
-</section>
-
-<section class="rh-section">
-
-<p class="rh-kicker">At a glance</p>
-
-## Compare the packages
-
-{{< retro-compare >}}
-
-</section>
-
-<section class="rh-section">
-
-<p class="rh-kicker">Extras and add-ons</p>
-
-## Power-ups
-
-Smaller budget, or want more? Take these on their own or add them to any package.
-
-{{< retro-powerups >}}
+{{< retro-community-sponsors >}}
 
 </section>
 
 {{< retro-callout title="Claim your slot" deck="true" >}}
-Get in touch and we'll help you pick the package that fits your goals and budget. Stand spots are first come, first served.
+Want your brand to be part of the day? Get in touch and we'll share the sponsorship options and find the one that fits your goals and budget. Stand spots are first come, first served.
 {{< /retro-callout >}}

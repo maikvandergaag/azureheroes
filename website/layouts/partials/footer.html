@@ -1,0 +1,89 @@
+{{/* Main site footer (overrides the hugo-universal-theme footer). Same layout as
+     the Retro subsite footer: about + socials, upcoming, explore, get involved.
+     Links come from config.toml ([params.footer], menu.main), upcoming events
+     from content/events and the Retro facts from data/retro/event.yaml. */}}
+{{ $f := site.Params.footer }}
+{{ $retro := site.Data.retro.event }}
+<footer id="footer" class="ah-footer">
+  <div class="container">
+    <div class="ah-footer__grid">
+
+      <div class="ah-footer__about">
+        <p class="ah-footer__brand">{{ site.Title }}</p>
+        {{ with site.Params.about_us }}<div class="ah-footer__text">{{ . | safeHTML }}</div>{{ end }}
+        <ul class="ah-footer__social" aria-label="{{ site.Title }} on social media">
+          {{ with $f.linkedin }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>{{ end }}
+          {{ with $f.meetup }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="Meetup"><i class="fab fa-meetup" aria-hidden="true"></i></a></li>{{ end }}
+          {{ with $f.whatsapp }}<li><a href="{{ . | relURL }}" aria-label="WhatsApp community"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>{{ end }}
+          {{ with $f.email }}<li><a href="mailto:{{ . }}" aria-label="Email {{ . }}"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>{{ end }}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Upcoming</h4>
+        {{- /* Future meetups from content/events (date >= build time), soonest
+               first, followed by Retro while it is still to come. The script
+               also hides items whose date passes between rebuilds. */ -}}
+        {{ $upcoming := where (where site.RegularPages "Section" "events") "Date" "ge" now }}
+        {{ $upcoming = first 3 (sort $upcoming "Date" "asc") }}
+        <ul class="ah-footer__events" data-upcoming>
+          {{ range $upcoming }}
+          <li data-date="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" data-meetup>
+            <span class="ah-footer__label"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Monday 2 January 2006" }}</time></span>
+            <a class="ah-footer__event" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ with .Params.location }}<span>{{ . }}</span>{{ end }}
+          </li>
+          {{ end }}
+          <li class="ah-footer__empty" data-upcoming-empty{{ if $upcoming }} hidden{{ end }}>
+            No new meetups scheduled yet. Follow us on {{ with $f.meetup }}<a href="{{ . }}" target="_blank" rel="noopener">Meetup</a>{{ else }}Meetup{{ end }} to hear first.
+          </li>
+          {{ with $retro }}{{ if and (not .hidden) (ge (time.AsTime .date_iso).Unix (now.AddDate 0 0 -1).Unix) }}
+          <li data-date="{{ .date_iso }}T17:00:00+02:00">
+            <span class="ah-footer__label"><i class="fas fa-gamepad" aria-hidden="true"></i> <time datetime="{{ .date_iso }}">{{ .date_display }}</time></span>
+            <a class="ah-footer__event" href="{{ "retro/" | relURL }}">{{ .name }}</a>
+            <span>{{ .venue.name }}, {{ .venue.city }}</span>
+          </li>
+          {{ end }}{{ end }}
+        </ul>
+        <a class="ah-footer__more" href="{{ "events/" | relURL }}">All events <span aria-hidden="true">→</span></a>
+        <script>
+        (function () {
+          var list = document.querySelector('[data-upcoming]');
+          if (!list) return;
+          var now = Date.now(), meetups = 0;
+          list.querySelectorAll('li[data-date]').forEach(function (li) {
+            // keep an item visible until 12 hours after its start time
+            if (Date.parse(li.getAttribute('data-date')) + 12 * 3600 * 1000 < now) li.hidden = true;
+            else if (li.hasAttribute('data-meetup')) meetups++;
+          });
+          var empty = list.querySelector('[data-upcoming-empty]');
+          if (empty) empty.hidden = meetups > 0;
+        })();
+        </script>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="ah-footer__links ah-footer__links--cols">
+          {{ range site.Menus.main }}<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>{{ end }}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Get involved</h4>
+        <ul class="ah-footer__links">
+          {{ range site.Menus.footer }}<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>{{ end }}
+          {{ with $f.email }}<li><a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<div id="copyright" class="ah-copyright">
+  <div class="container ah-copyright__inner">
+    {{ with site.Params.copyright }}<p>{{ . | safeHTML }}</p>{{ end }}
+    <p><a href="{{ "codeofconduct/" | relURL }}">Code of Conduct</a> · <a href="{{ "contact/" | relURL }}">Contact</a></p>
+  </div>
+</div>

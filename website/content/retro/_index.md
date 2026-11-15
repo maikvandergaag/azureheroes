@@ -2,6 +2,11 @@
 title = "Azure Heroes: Retro 2027"
 linkTitle = "Retro 2027"
 description = "Azure Heroes: Retro — The Big One. A full day of Microsoft Cloud knowledge, practical ideas and community on 15 April 2027 at MARCFAIT, Almere."
+
+# Keep all Retro pages out of the sitemap while the subsite is hidden
+# (see `hidden` in data/retro/event.yaml).
+[cascade.sitemap]
+  disable = true
 +++
 
 <section class="rh-section rh-section--intro">
@@ -57,6 +62,10 @@ A hands-on Microsoft Cloud crowd on a working Thursday: people who build, run an
 
 </section>
 
-{{< retro-callout title="Ready to power up?" button="See the sponsor packages" href="/retro/sponsors/" >}}
-Want your brand to be part of the day? Platinum, Gold, Silver, Barista and Lanyard packages are available, plus power-ups for any budget.
+{{< retro-callout title="Call for speakers is open" button="Submit a session on Sessionize" href="https://sessionize.com/azure-heroes-retro/" >}}
+Got a practical, real-world story about Azure, platform engineering, DevOps, security, data or AI? Submit your session for Azure Heroes: Retro. First-time speakers are very welcome.
+{{< /retro-callout >}}
+
+{{< retro-callout title="Ready to power up?" button="Become a sponsor" href="/retro/sponsors/" >}}
+Want your brand to be part of the day? Meet 250–300 cloud engineers, architects, data professionals and decision makers. We have sponsorship options for every budget.
 {{< /retro-callout >}}

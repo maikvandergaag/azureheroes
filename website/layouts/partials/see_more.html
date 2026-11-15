@@ -1,0 +1,37 @@
+{{/* Home page "Upcoming events": one wide, featured card for the next event
+     from content/events. The next two events are rendered as hidden fallbacks;
+     a small script shows the first one that has not passed yet, so the card
+     stays correct between rebuilds. With nothing upcoming, a message shows. */}}
+{{ $upcoming := first 3 (sort (where (where site.RegularPages "Section" "events") "Date" "ge" now) "Date" "asc") }}
+<section class="ah-upcoming" id="upcoming">
+  <div class="container">
+
+    <div data-featured-events>
+      {{ range $i, $p := $upcoming }}{{ partial "event-feature.html" (dict "page" $p "badge" "Next event" "hidden" (gt $i 0)) }}{{ end }}
+    </div>
+
+    <div class="ah-upcoming__empty" data-featured-empty{{ if $upcoming }} hidden{{ end }}>
+      <i class="far fa-calendar" aria-hidden="true"></i>
+      <div>
+        <h3>No new meetups scheduled yet</h3>
+        <p>We're planning the next one. Follow us on {{ with site.Params.footer.meetup }}<a href="{{ . }}" target="_blank" rel="noopener">Meetup</a>{{ else }}Meetup{{ end }} or join the <a href="{{ "whatsapp-community/" | relURL }}">WhatsApp community</a> to hear first, or browse our <a href="{{ "events/" | relURL }}">past events</a>.</p>
+      </div>
+    </div>
+    <p class="ah-upcoming__more"><a class="ah-upcoming__all" href="{{ "events/" | relURL }}">All events <span aria-hidden="true">→</span></a></p>
+  </div>
+  <script>
+  (function () {
+    var wrap = document.querySelector('[data-featured-events]');
+    if (!wrap) return;
+    var now = Date.now(), shown = false;
+    wrap.querySelectorAll('[data-date]').forEach(function (card) {
+      // an event counts as upcoming until 12 hours after its start time
+      var live = Date.parse(card.getAttribute('data-date')) + 12 * 3600 * 1000 >= now;
+      card.hidden = !(live && !shown);
+      if (live && !shown) shown = true;
+    });
+    var empty = document.querySelector('[data-featured-empty]');
+    if (empty) empty.hidden = shown;
+  })();
+  </script>
+</section>

@@ -1,12 +1,16 @@
 # Single source of truth for the Azure Heroes: Retro 2027 event facts.
 # Every page in the /retro/ subsite reads from this file, so update details here only.
 
+# While true, the Retro subsite is reachable by URL only: no links from the
+# main site, noindex for search engines and left out of the sitemap.
+hidden: true
+
 name: "Azure Heroes: Retro"
 tagline: "The Big One • 2027"
 organiser: "Azure Heroes Netherlands"
 date_display: "Thursday 15 April 2027"
 date_iso: "2027-04-15"
-hours: "09:00–17:00"
+hours: "08:00–17:00"
 target_attendance: "250–300"
 session_rooms: 2
 
@@ -23,14 +27,15 @@ venue:
 links:
   tickets: ""            # TODO: ticket / registration URL (opens later)
   sponsor_deck: ""       # Optional: public link to the sponsorship deck PDF
-  sponsor_contact: "/contact/"
-  code_of_conduct: "/codeofconduct/"
+  sponsor_contact: "/retro/contact/"
+  email: "retro@azureheroes.online"
+  code_of_conduct: "/retro/code-of-conduct/"
   main_site: "/"
   linkedin: "https://www.linkedin.com/company/azure-heroes"
   meetup: "https://www.meetup.com/azure-heroes-netherlands/"
 
 sessionize:
-  cfp_url: ""            # TODO: public Sessionize CFP URL, e.g. https://sessionize.com/azure-heroes-retro-2027
+  cfp_url: "https://sessionize.com/azure-heroes-retro/"
   cfp_closes: ""         # Optional, e.g. "31 January 2027"
   # Sessionize API endpoint ID (Sessionize > API / Embed). When set, the Speakers and
   # Schedule pages embed the live Sessionize views instead of the YAML data below.

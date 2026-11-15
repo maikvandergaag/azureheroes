@@ -3,6 +3,7 @@
 {{ $e := site.Data.retro.event }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{ if site.Data.retro.event.hidden }}<meta name="robots" content="noindex, nofollow">{{ end }}
 {{ $title := cond .IsSection (printf "%s — %s" $e.name $e.tagline) (printf "%s | %s 2027" .Title $e.name) }}
 <title>{{ $title }}</title>
 {{ $desc := or .Description (printf "%s: %s at %s, %s." $e.name $e.date_display $e.venue.name $e.venue.city) }}

@@ -11,7 +11,7 @@
       {{ end }}
       {{ $open := sub (.max | default 0) (len $list) }}
       {{ if gt $open 0 }}{{ range seq $open }}
-      <a class="rh-logo rh-logo--open" href="#packages"><span>Your logo here</span></a>
+      <a class="rh-logo rh-logo--open" href="{{ site.Data.retro.event.links.sponsor_contact | relURL }}"><span>Your logo here</span></a>
       {{ end }}{{ end }}
     </div>
   </section>

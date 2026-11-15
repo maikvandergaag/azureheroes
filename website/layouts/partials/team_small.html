@@ -1,57 +1,31 @@
-{{ if isset .Site.Params "team" }}
-{{ if .Site.Params.team.enable }}
-{{ if gt (len .Site.Data.team) 0 }}
-<section class="bar background-pentagon no-mb azure-heroes-spotlight">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="heading text-center">
-                    <h2>{{ .Site.Params.team.title }}</h2>
-                </div>
-                <p class="lead">{{ .Site.Params.team.subtitle | markdownify }}</p>
-            </div>
-        </div>
-
-        <div class="home-team-grid">
-            {{ range .Site.Data.team }}
-            <div class="testimonial same-height-always azure-hero-member">
-                <div class="top-member">
-                    <div class="name-picture">
-                        <img alt="{{ .name }}" src="{{ .avatar | absURL }}">
-                        <h5>{{ .name }}</h5>
-                        <p>{{ .position }}</p>
-                    </div>
-                </div>
-                <div class="text">
-                    <p>{{ .text | markdownify }}</p>
-                </div>
-                <div class="bottom">
-                    <div class="team-social-links team-social-small">
-                        {{ if .mvp }}
-                        <a href="{{ .mvp }}" target="_blank" rel="noopener" title="Microsoft MVP Profile"><i class='fab fa-microsoft'></i></a>
-                        {{end}}
-                        {{ if .blog }}
-                        <a href="{{ .blog }}" target="_blank" rel="noopener" title="Website / Blog"><i class='fas fa-globe'></i></a>
-                        {{end}}
-                        {{ if .linkedin }}
-                        <a href="{{ .linkedin }}" target="_blank" rel="noopener" title="LinkedIn"><i class='fab fa-linkedin'></i></a>
-                        {{end}}
-                        {{ if .github }}
-                        <a href="{{ .github }}" target="_blank" rel="noopener" title="GitHub"><i class='fab fa-github'></i></a>
-                        {{end}}
-                        {{ if or .bluesky .bsky }}
-                        <a href="{{ default .bluesky .bsky }}" target="_blank" rel="noopener" title="Bluesky"><i class='fab fa-bluesky'></i></a>
-                        {{end}}
-                        {{ if or .x .twitter }}
-                        <a href="{{ default .x .twitter }}" target="_blank" rel="noopener" title="X"><i class='fab fa-x-twitter'></i></a>
-                        {{end}}
-                    </div>
-                </div>
-            </div>
-            {{ end }}
-        </div>
+{{/* Home page team section: compact cards (photo, name, role, socials) sorted by name, with a link to the full Team page. On phones the
+     cards become a horizontal, swipeable row. */}}
+{{ if and site.Params.team site.Params.team.enable (gt (len site.Data.team) 0) }}
+<section class="ah-team" aria-labelledby="ah-team-heading">
+  <div class="container">
+    <div class="ah-upcoming__head">
+      <h2 id="ah-team-heading">{{ site.Params.team.title | default "Team" }}</h2>
+      <a class="ah-upcoming__all" href="{{ "team/" | relURL }}">Meet the team <span aria-hidden="true">→</span></a>
     </div>
+    {{ with site.Params.team.subtitle }}<p class="ah-team__lead">{{ . | markdownify }}</p>{{ end }}
+
+    <ul class="ah-team__grid">
+      {{ range sort site.Data.team "name" }}
+      <li class="ah-member">
+        <img class="ah-member__photo" src="{{ .avatar | relURL }}" alt="" width="96" height="96" loading="lazy">
+        <h3 class="ah-member__name">{{ .name }}</h3>
+        {{ with .position }}<p class="ah-member__role">{{ . }}</p>{{ end }}
+        <ul class="ah-member__social" aria-label="{{ .name }} online">
+          {{ with .linkedin }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>{{ end }}
+          {{ with .github }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>{{ end }}
+          {{ with .blog }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="Website or blog"><i class="fas fa-globe" aria-hidden="true"></i></a></li>{{ end }}
+          {{ with .mvp }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="Microsoft MVP profile"><i class="fab fa-microsoft" aria-hidden="true"></i></a></li>{{ end }}
+          {{ with or .bluesky .bsky }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i></a></li>{{ end }}
+          {{ with or .x .twitter }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a></li>{{ end }}
+        </ul>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
 </section>
-{{ end }}
-{{ end }}
 {{ end }}

@@ -15,8 +15,13 @@
     <span>Time</span>{{ range $s.rooms }}<span>{{ . }}</span>{{ end }}
   </li>
   {{ range $s.slots }}
+  {{ $slot := . }}
   <li class="rh-slot rh-slot--{{ .kind }}">
-    <time class="rh-slot__time">{{ .time }}</time>
+    <div class="rh-slot__time">
+      <time>{{ .time }}</time>{{ with .end }}<span class="rh-slot__end">–&nbsp;<time>{{ . }}</time></span>
+      {{ $mins := ((time.AsTime (printf "2000-01-01T%s:00" .)).Sub (time.AsTime (printf "2000-01-01T%s:00" $slot.time))).Minutes }}
+      <span class="rh-slot__duration">{{ $mins }} min</span>{{ end }}
+    </div>
     {{ if eq .kind "sessions" }}
       {{ range $i, $session := .sessions }}
       <div class="rh-slot__session">

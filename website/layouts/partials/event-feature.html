@@ -1,0 +1,28 @@
+{{/* Wide event card, used on the home page and the events page.
+     Context: dict "page" (event page), "badge" (label text), "past" (bool),
+     "hidden" (bool, render hidden; used for fallbacks on the home page). */}}
+{{ $p := .page }}
+{{ $past := .past | default false }}
+{{ $intro := "" }}
+{{ with $p.Description }}{{ $intro = . }}{{ else }}{{ with index (findRE `(?s)<p>.*?</p>` $p.Content 1) 0 }}{{ $intro = . | plainify | htmlUnescape }}{{ end }}{{ end }}
+<article class="ah-feature{{ if $past }} ah-feature--past{{ end }}"{{ if not $past }} data-date="{{ $p.Date.Format "2006-01-02T15:04:05Z07:00" }}"{{ end }}{{ if .hidden }} hidden{{ end }}>
+  <a class="ah-feature__media" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
+    <img src="{{ $p.Params.banner | default "img/placeholder.png" | relURL }}" alt="" loading="lazy">
+  </a>
+  <div class="ah-feature__body">
+    {{ with .badge }}<p class="ah-feature__badge">{{ if not $past }}<span class="ah-feature__pulse" aria-hidden="true"></span> {{ end }}{{ . }}</p>{{ end }}
+    <p class="ah-feature__date">
+      <time datetime="{{ $p.Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ $p.Date.Format "Monday 2 January 2006" }}</time>
+    </p>
+    <h3><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+    <ul class="ah-feature__facts">
+      <li><i class="far fa-clock" aria-hidden="true"></i> {{ $p.Date.Format "15:04" }}</li>
+      {{ with $p.Params.location }}<li><i class="fas fa-location-dot" aria-hidden="true"></i> {{ . }}</li>{{ end }}
+    </ul>
+    {{ with $intro }}<p class="ah-feature__intro">{{ . | truncate 220 }}</p>{{ end }}
+    <div class="ah-feature__actions">
+      {{ if not $past }}{{ with $p.Params.eventbrite }}<a class="ah-btn ah-btn--primary" href="{{ . }}" target="_blank" rel="noopener">Register <span aria-hidden="true">→</span></a>{{ end }}{{ end }}
+      <a class="ah-btn {{ if $past }}ah-btn--primary{{ else }}ah-btn--ghost{{ end }}" href="{{ $p.RelPermalink }}">Event details</a>
+    </div>
+  </div>
+</article>

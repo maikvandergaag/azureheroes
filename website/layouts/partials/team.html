@@ -1,0 +1,77 @@
+{{/* Override of the theme team partial: members sorted alphabetically by name. */}}
+<div class="container" id="team">
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <section>
+
+                <div class="team-content">
+                    {{ .Content }}
+                </div>
+                
+
+
+    {{ if isset .Site.Params "team" }}
+    {{ if .Site.Params.team.enable }}
+    {{ if gt (len .Site.Data.team) 0 }}
+    <div class="container">
+
+
+            {{ range sort .Site.Data.team "name" }}
+            <hr>
+        <div class="row" id="team-row">
+            <div class="col-md-2 col-sm-6">
+                <div class="">
+                    <img class="team-name-picture" alt="" src="{{ .avatar | relURL }}">
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-6">
+                    <h5>{{ .name }}</h5>
+                    <p>{{ .position }}</p>
+                    <p>{{ .text | markdownify }}</p>
+
+                    <div class="team-social-links">
+                        {{ if .mvp }}
+                        <a href="{{ .mvp }}" target="_blank" rel="noopener" title="Microsoft MVP Profile"><i class='fab fa-microsoft'></i></a>
+                        {{end}}
+
+                        {{ if .blog }}
+                        <a href="{{ .blog }}" target="_blank" rel="noopener" title="Website / Blog"><i class='fas fa-globe'></i></a>
+                        {{end}}
+
+                        {{ if .linkedin }}
+                        <a href="{{ .linkedin }}" target="_blank" rel="noopener" title="LinkedIn"><i class='fab fa-linkedin'></i></a>
+                        {{end}}
+
+                        {{ if .github }}
+                        <a href="{{ .github }}" target="_blank" rel="noopener" title="GitHub"><i class='fab fa-github'></i></a>
+                        {{end}}
+
+                        {{ if or .bluesky .bsky }}
+                        <a href="{{ default .bluesky .bsky }}" target="_blank" rel="noopener" title="Bluesky"><i class='fab fa-bluesky'></i></a>
+                        {{end}}
+
+                        {{ if or .x .twitter }}
+                        <a href="{{ default .x .twitter }}" target="_blank" rel="noopener" title="X"><i class='fab fa-x-twitter'></i></a>
+                        {{end}}
+                    </div>
+
+            </div>
+        </div>
+            {{ end }}
+
+    </div>
+
+    <!-- /.bar -->
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+    </section>  
+    </div>  
+    </div>
+    <!-- /.row -->
+</div>
+
+{{ partial "map.html" . }}

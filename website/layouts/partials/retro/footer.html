@@ -1,34 +1,52 @@
-{{/* Retro subsite footer. */}}
+{{/* Retro subsite footer. Everything comes from data/retro/*.yaml and the
+     "retro" menu, so it stays in sync with the rest of the subsite. */}}
 {{ $e := site.Data.retro.event }}
 <footer class="rh-footer">
   <div class="rh-container rh-footer__grid">
-    <div>
+    <div class="rh-footer__about">
       <p class="rh-brand rh-brand--footer"><span class="rh-brand__top">Azure Heroes</span><span class="rh-brand__main">Retro</span></p>
-      <p>{{ $e.tagline }}. Organised by {{ $e.organiser }}.</p>
+      <p>{{ $e.tagline }}. A full day of Microsoft Cloud sessions, an expo hall and the Hero Quest for {{ $e.target_attendance }} cloud professionals.</p>
+      <p>Organised by {{ $e.organiser }}.</p>
+      <ul class="rh-footer__social" aria-label="Azure Heroes on social media">
+        {{ with $e.links.linkedin }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>{{ end }}
+        {{ with $e.links.meetup }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="Meetup"><i class="fab fa-meetup" aria-hidden="true"></i></a></li>{{ end }}
+        {{ with $e.links.email }}<li><a href="mailto:{{ . }}" aria-label="Email {{ . }}"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>{{ end }}
+      </ul>
     </div>
+
     <div>
       <h2>When &amp; where</h2>
-      <p>{{ $e.date_display }}<br>{{ $e.hours }}<br>
-        <a href="{{ $e.venue.maps_url }}" target="_blank" rel="noopener">{{ $e.venue.name }}, {{ $e.venue.address }}</a></p>
+      <ul class="rh-footer__facts">
+        <li><i class="far fa-calendar" aria-hidden="true"></i><span>{{ $e.date_display }}</span></li>
+        <li><i class="far fa-clock" aria-hidden="true"></i><span>{{ $e.hours }}</span></li>
+        <li><i class="fas fa-location-dot" aria-hidden="true"></i><span><a href="{{ $e.venue.maps_url }}" target="_blank" rel="noopener">{{ $e.venue.name }}</a><br>{{ $e.venue.address }}</span></li>
+        {{ with $e.venue.train }}<li><i class="fas fa-train" aria-hidden="true"></i><span>{{ . }}</span></li>{{ end }}
+      </ul>
+      <p><a class="rh-footer__more" href="{{ "retro/info/" | relURL }}">Travel &amp; practical info <span aria-hidden="true">→</span></a></p>
     </div>
+
     <div>
       <h2>Explore</h2>
       <ul>
         {{ range site.Menus.retro }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+        <li><a href="{{ $e.links.code_of_conduct | relURL }}">Code of Conduct</a></li>
       </ul>
     </div>
+
     <div>
-      <h2>Community</h2>
+      <h2>Get involved</h2>
       <ul>
-        <li><a href="{{ $e.links.main_site | relURL }}">azureheroes.online</a></li>
-        <li><a href="{{ $e.links.code_of_conduct | relURL }}">Code of Conduct</a></li>
-        <li><a href="{{ $e.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="{{ $e.links.meetup }}" target="_blank" rel="noopener">Meetup</a></li>
+        {{ with $e.links.tickets }}<li><a href="{{ . }}" target="_blank" rel="noopener">Get your ticket</a></li>{{ end }}
+        {{ with $e.sessionize.cfp_url }}<li><a href="{{ . }}" target="_blank" rel="noopener">Submit a session</a>{{ with $e.sessionize.cfp_closes }} <span class="rh-footer__note">until {{ . }}</span>{{ end }}</li>{{ end }}
+        <li><a href="{{ "retro/sponsors/" | relURL }}">Become a sponsor</a></li>
+        <li><a href="{{ "retro/contact/" | relURL }}">Contact the organisers</a></li>
+        {{ with $e.links.email }}<li><a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
       </ul>
     </div>
   </div>
+
   <div class="rh-container rh-footer__bottom">
-    <p>{{ site.Params.copyright }}</p>
+    <p>{{ site.Params.copyright }} · <a href="{{ $e.links.main_site | relURL }}">azureheroes.online</a></p>
     <p class="rh-pixel">Game over? Never. Insert coin.</p>
   </div>
 </footer>

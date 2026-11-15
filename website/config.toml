@@ -21,47 +21,16 @@ buildFuture = true
     weight     = 5
 
 [[menu.main]]
-    name       = "Photos"
-    identifier = "menu.photos"
-    url        = "/photos/"
-    weight     = 5
-
-[[menu.main]]
-    identifier = "menu.retro"
-    name       = "Retro 2027"
-    url        = "/retro/"
-    weight     = 6
-
-[[menu.main]]
-identifier = "menu.GlobalAzureHeroes"
-name       = "Global Azure Heroes"
-url        = "/Global-Azure-Heroes/"
-weight     = 6
-
-[[menu.main]]
     identifier = "menu.sponsors"
     name       = "Sponsors"
     url        = "/sponsors/"
     weight     = 6
 
 [[menu.main]]
-    identifier = "menu.speakers"
-    name       = "CFP"
-    url        = "/CFP/"
+    identifier = "menu.info"
+    name       = "Info"
+    url        = "/info/"
     weight     = 7
-
-
-[[menu.main]]
-    identifier = "menu.code"
-    name       = "Code of Conduct"
-    url        = "/codeofconduct/"
-    weight     = 8
-
-[[menu.main]]
-    identifier = "menu.whatsapp"
-    name       = "WhatsApp Community"
-    url        = "/whatsapp-community/"
-    weight     = 9
 
 [[menu.main]]
     identifier = "team"
@@ -96,6 +65,28 @@ weight     = 6
     name = "Info"
     url = "/retro/info/"
     weight = 5
+[[menu.retro]]
+    name = "Contact"
+    url = "/retro/contact/"
+    weight = 6
+
+# Footer "Get involved" links (layouts/partials/footer.html)
+[[menu.footer]]
+    name = "Submit a talk"
+    url = "/CFP/"
+    weight = 1
+[[menu.footer]]
+    name = "Become a sponsor"
+    url = "/sponsors/"
+    weight = 2
+[[menu.footer]]
+    name = "Join the WhatsApp community"
+    url = "/whatsapp-community/"
+    weight = 3
+[[menu.footer]]
+    name = "Contact us"
+    url = "/contact/"
+    weight = 4
 
 # Top bar social links menu
 [[menu.topbar]]
@@ -126,8 +117,8 @@ weight     = 6
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "6LfaxtohAAAAAELRkS4CT4Dm0SPlc6Ttr4e48xIJ"
 
-    about_us = "<p>Azure Heroes is a user group that focuses on anything Microsoft Azure. The group was founded in 2023 by Danny Kruge</p>"
-    copyright = "Copyright (c) 2025, Azure Heroes; all rights reserved."
+    about_us = "<p>Azure Heroes is a user group that focuses on anything Microsoft Azure.</p>"
+    copyright = "Copyright (c) 2026, Azure Heroes; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -145,7 +136,7 @@ weight     = 6
 
 # Enable or disable top bar with social icons
 [params.topbar]
-    enable = true
+    enable = false   # LinkedIn is in the footer
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
@@ -181,13 +172,18 @@ weight     = 6
     title = "Team"
     subtitle = ""
 
-[params.see_more]
-    enable = true
-    icon = "fas fa-hourglass-half"
-    title = "Next Meetup"
-    subtitle = "**GitHub DevDays @ BBTG** — Oktober 6th, 2026 | Leusden | 17:30–21:00 CEST"
-    link_url = "https://azureheroes.online/events/2026/10/06/"
-    link_text = "Get your free ticket"
+# Home page hero (layouts/partials/carousel.html)
+[params.hero]
+    kicker = "Microsoft Azure community · Netherlands"
+    title = "Azure Heroes User Group"
+    lead = "Free meetups for everyone building on Microsoft Azure: practical sessions from community speakers, and plenty of time to learn from each other."
+    image = "img/hero-heroes.jpg"
+    image_alt = "Azure Heroes superhero mascot"
+
+# Home page upcoming events, generated from content/events (layouts/partials/see_more.html)
+[params.upcoming]
+    title = "Upcoming events"
+    limit = 3
 
 [params.clients]
     enable = true
@@ -210,6 +206,18 @@ weight     = 6
     title = "Training"
     subtitle = "Discover our training sessions and educational content to enhance your Azure skills."
     hide_summary = false
+
+# Highlighted button at the end of the main navigation (layouts/partials/nav.html)
+[params.nav_cta]
+    text = "Submit a talk"
+    url = "/CFP/"
+
+# Footer contact and social links (layouts/partials/footer.html)
+[params.footer]
+    email = "support@azureheroes.online"
+    linkedin = "https://www.linkedin.com/company/azure-heroes"
+    meetup = "https://www.meetup.com/azure-heroes-netherlands/"
+    whatsapp = "/whatsapp-community/"
 
 [params.footer.recent_posts]
     enable = true
