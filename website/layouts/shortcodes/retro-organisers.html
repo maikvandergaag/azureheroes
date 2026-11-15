@@ -1,0 +1,9 @@
+{{- /* Inline list of the Azure Heroes organisers from data/team/*.yaml (same
+       source as the main site's Team page, sorted by name), linked to LinkedIn. */ -}}
+{{- $names := slice -}}
+{{- range $m := sort site.Data.team "name" -}}
+  {{- $n := $m.name -}}
+  {{- with $m.linkedin }}{{ $n = printf `<a href="%s" target="_blank" rel="noopener">%s</a>` . $m.name }}{{ end -}}
+  {{- $names = $names | append $n -}}
+{{- end -}}
+{{- delimit $names ", " " and " | safeHTML -}}

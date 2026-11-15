@@ -1,0 +1,15 @@
+{{/* Community sponsors (community list in data/retro/sponsors.yaml). Shows the
+     logo when set, otherwise the community name. */}}
+{{ with site.Data.retro.sponsors.community }}
+<div class="rh-wall rh-wall--community">
+  <div class="rh-wall__grid rh-wall__grid--community">
+    {{ range . }}
+    {{ $name := .name }}
+    <a title="{{ $name }}" class="rh-logo{{ if not .logo }} rh-logo--name{{ end }}{{ if .dark }} rh-logo--dark{{ end }}" href="{{ .url }}" target="_blank" rel="noopener">
+      {{ with .logo }}<img src="{{ . | relURL }}" alt="{{ $name }}" loading="lazy">{{ end }}
+      {{ if not .logo }}<span>{{ .name }}</span>{{ end }}
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

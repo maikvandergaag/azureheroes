@@ -1,0 +1,14 @@
+{{/* Sponsorship package cards, from data/retro/packages.yaml. */}}
+<div class="rh-grid rh-grid--packages">
+  {{ range site.Data.retro.packages.packages }}
+  <article class="rh-package rh-package--{{ .color }}" id="{{ .id }}">
+    <p class="rh-package__name">{{ .name }}</p>
+    <p class="rh-package__tagline">{{ .tagline }}</p>
+    <p class="rh-package__price">{{ .price }}</p>
+    <p class="rh-package__slots">{{ .slots }}</p>
+    <ul>{{ range .perks }}<li>{{ . }}</li>{{ end }}</ul>
+    {{ with .note }}<p class="rh-package__note">{{ . }}</p>{{ end }}
+  </article>
+  {{ end }}
+</div>
+<p class="rh-small">All prices exclude 21% VAT.</p>

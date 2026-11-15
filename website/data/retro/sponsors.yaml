@@ -1,0 +1,28 @@
+# Confirmed sponsors for Azure Heroes: Retro 2027, grouped by package id
+# (the ids from packages.yaml). Logos go in static/img/retro/sponsors/.
+#
+# Example:
+#   platinum:
+#     - name: "Contoso"
+#       logo: "img/retro/sponsors/contoso.svg"
+#       url: "https://contoso.com"
+
+platinum: []
+gold: []
+silver: []
+barista: []
+lanyard: []
+bronze: []
+
+# Community sponsors: user groups and communities supporting the event.
+# logo is optional; without it the tile shows the name. Set dark: true for
+# logos made for a dark background (white artwork or a black backdrop).
+community:
+  - name: "Azure Thursday"
+    url: "https://www.azurethursday.com/"
+    logo: "img/retro/sponsors/azure-thursday.svg"
+    dark: true
+  - name: "Dutch Fabric User Group"
+    url: "https://dutchfabricusergroup.com/"
+    logo: "img/retro/sponsors/dutch-fabric-user-group.jpg"
+    dark: true

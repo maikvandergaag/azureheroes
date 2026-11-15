@@ -1,0 +1,45 @@
+{{/* Speakers: live Sessionize embed when sessionize.embed_id is set, otherwise
+     data/retro/speakers.yaml, otherwise a "coming soon" state. Param: limit (optional). */}}
+{{ $e := site.Data.retro.event }}
+{{ $all := site.Data.retro.speakers.speakers | default slice }}
+{{ $speakers := sort $all "keynote" "desc" }}
+{{ with .Get "limit" }}{{ $speakers = first (int .) $speakers }}{{ end }}
+{{ if $e.sessionize.embed_id }}
+<div class="rh-sessionize">
+  <script type="text/javascript" src="https://sessionize.com/api/v2/{{ $e.sessionize.embed_id }}/view/SpeakerWall"></script>
+</div>
+{{ else if $speakers }}
+<div class="rh-speakers">
+  {{ range $speakers }}
+  <article class="rh-speaker{{ if .keynote }} rh-speaker--keynote{{ end }}">
+    <div class="rh-speaker__photo">
+      {{ with .photo }}<img src="{{ . | relURL }}" alt="" loading="lazy" width="320" height="320">
+      {{ else }}<span aria-hidden="true">{{ range first 2 (split .name " ") }}{{ substr . 0 1 }}{{ end }}</span>{{ end }}
+    </div>
+    {{ if .keynote }}<p class="rh-tag">Keynote</p>{{ end }}
+    <h3>{{ .name }}</h3>
+    {{ with .role }}<p class="rh-speaker__role">{{ . }}</p>{{ end }}
+    {{ with .session }}<p class="rh-speaker__session">{{ . }}</p>{{ end }}
+    {{ with .bio }}<p class="rh-speaker__bio">{{ . }}</p>{{ end }}
+    <p class="rh-speaker__links">
+      {{ with .linkedin }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>{{ end }}
+      {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>{{ end }}
+    </p>
+  </article>
+  {{ end }}
+</div>
+{{ else }}
+<div class="rh-empty">
+  <div class="rh-empty__slots" aria-hidden="true">
+    {{ range seq 4 }}<span>?</span>{{ end }}
+  </div>
+  <div>
+    <h3>Player 2... and 3, 4, 5: press start</h3>
+    <p>Our line-up is being assembled. Speakers will be announced here after the call for speakers closes{{ with $e.sessionize.cfp_closes }} on {{ . }}{{ end }}.</p>
+    <div class="rh-actions">
+      {{ with $e.sessionize.cfp_url }}<a class="rh-btn rh-btn--primary" href="{{ . }}" target="_blank" rel="noopener">Submit a session on Sessionize</a>{{ end }}
+      <a class="rh-btn" href="{{ $e.links.linkedin }}" target="_blank" rel="noopener">Follow for announcements</a>
+    </div>
+  </div>
+</div>
+{{ end }}

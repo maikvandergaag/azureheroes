@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "retro/head.html" . }}
+  </head>
+  <body class="rh">
+    {{ partial "retro/header.html" . }}
+    <main id="main">
+      {{ partial "retro/page-header.html" . }}
+      <div class="rh-container rh-body">
+        {{ block "main" . }}{{ .Content }}{{ end }}
+      </div>
+    </main>
+    {{ partial "retro/footer.html" . }}
+  </body>
+</html>

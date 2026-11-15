@@ -1,0 +1,32 @@
+# Previous Azure Heroes editions, shown on the Retro info page
+# (shortcode retro-editions). Newest first. The first photo is shown large.
+# Photos are web-sized copies (max 1400px) in static/img/retro/editions/.
+
+editions:
+  - name: "Global Azure Heroes 2026"
+    date: "16 April 2026"
+    summary: "Our previous big day, organised together with Azure Thursday and Dutch Fabric User Group. Thank you to all speakers, sponsors, volunteers and attendees who made it an incredible celebration of the Azure community."
+    credit: ""        # Optional photo credit, e.g. "Photos: Jane Doe"
+    photos:
+      - src: "img/retro/editions/2026/global-azure-heroes-2026-01.jpg"
+        alt: "A packed main room during a session"
+      - src: "img/retro/editions/2026/global-azure-heroes-2026-02.jpg"
+        alt: "A speaker presenting code on stage"
+      - src: "img/retro/editions/2026/global-azure-heroes-2026-03.jpg"
+        alt: "Group photo of attendees and organisers outside the venue"
+      - src: "img/retro/editions/2026/global-azure-heroes-2026-04.jpg"
+        alt: "Two people shaking hands on stage"
+      - src: "img/retro/editions/2026/global-azure-heroes-2026-05.jpg"
+        alt: "Wide view of the session room with two screens"
+      - src: "img/retro/editions/2026/global-azure-heroes-2026-06.jpg"
+        alt: "Attendees at picnic tables on the sunny terrace"
+      - src: "img/retro/editions/2026/global-azure-heroes-2026-07.jpg"
+        alt: "The audience following a session"
+      - src: "img/retro/editions/2026/global-azure-heroes-2026-08.jpg"
+        alt: "Attendees talking at a standing table"
+      - src: "img/retro/editions/2026/global-azure-heroes-2026-09.jpg"
+        alt: "Organisers posing on stage with a unicorn"
+
+  - name: "Global Azure Heroes 2025"
+    summary: "Missed it? Catch the aftermovie."
+    video: "8k-s1uEGqRU"   # YouTube video id

@@ -1,0 +1,8 @@
+{{- /* Renders the main site's Code of Conduct (content/codeofconduct.md) so there
+       is one source of truth. Its own <h1> is dropped; the retro page header
+       already shows the title. */ -}}
+{{- with site.GetPage "/codeofconduct" -}}
+{{ .Content | replaceRE `(?s)<h1[^>]*>.*?</h1>` "" | safeHTML }}
+{{- else -}}
+{{ errorf "retro-code-of-conduct: content/codeofconduct.md not found" }}
+{{- end -}}

@@ -1,0 +1,15 @@
+# Speakers for Azure Heroes: Retro 2027.
+# Used when sessionize.embed_id in event.yaml is empty. Leave the list empty to
+# show the "coming soon" state on the Speakers page.
+#
+# Example entry:
+#   - name: "Jane Doe"
+#     role: "Cloud Architect @ Contoso"
+#     photo: "img/retro/speakers/jane-doe.jpg"   # optional, falls back to initials
+#     session: "Landing zones that don't fall over"
+#     keynote: false                              # true = shown first, highlighted
+#     bio: "One or two sentences."
+#     linkedin: "https://www.linkedin.com/in/..."
+#     github: "https://github.com/..."
+
+speakers: []

@@ -1,0 +1,8 @@
+{{/* Key numbers, from data/retro/event.yaml. */}}
+{{ $e := site.Data.retro.event }}
+<div class="rh-stats">
+  <div class="rh-stat"><strong>{{ $e.target_attendance }}</strong><span>attendees</span></div>
+  <div class="rh-stat"><strong>{{ $e.session_rooms }}</strong><span>session rooms</span></div>
+  <div class="rh-stat"><strong>1</strong><span>full day, {{ $e.hours }}</span></div>
+  <div class="rh-stat"><strong>{{ $e.venue.name }}</strong><span>{{ $e.venue.city }}</span></div>
+</div>

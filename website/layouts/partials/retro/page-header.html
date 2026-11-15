@@ -1,0 +1,28 @@
+{{/* Hero for the subsite home page, compact header for the other pages. */}}
+{{ $e := site.Data.retro.event }}
+{{ if .IsSection }}
+<section class="rh-hero" style="background-image: url('{{ "img/retro/hero.jpg" | relURL }}');">
+  <div class="rh-container">
+    <p class="rh-eyebrow">{{ $e.tagline }}</p>
+    <h1 class="rh-hero__title">Azure Heroes:<br><span>Retro</span></h1>
+    <ul class="rh-hero__meta">
+      <li><i class="far fa-calendar" aria-hidden="true"></i> {{ $e.date_display }}</li>
+      <li><i class="far fa-clock" aria-hidden="true"></i> {{ $e.hours }}</li>
+      <li><i class="fas fa-location-dot" aria-hidden="true"></i> {{ $e.venue.name }}, {{ $e.venue.city }}</li>
+    </ul>
+    <div class="rh-actions">
+      {{ with $e.links.tickets }}<a class="rh-btn rh-btn--primary" href="{{ . }}" target="_blank" rel="noopener">Get your ticket</a>{{ end }}
+      {{ with $e.sessionize.cfp_url }}<a class="rh-btn{{ if not $e.links.tickets }} rh-btn--primary{{ end }}" href="{{ . }}" target="_blank" rel="noopener">Submit a session</a>{{ end }}
+      <a class="rh-btn" href="{{ "retro/sponsors/" | relURL }}">Become a sponsor</a>
+    </div>
+  </div>
+</section>
+{{ else }}
+<section class="rh-pagehead">
+  <div class="rh-container">
+    {{ with .Params.kicker }}<p class="rh-eyebrow">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.lead }}<p class="rh-pagehead__lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}

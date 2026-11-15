@@ -1,0 +1,36 @@
+{{/* Sponsors page (overrides the theme's sponsors_large partial): one card per
+     sponsor with the logo on the same white tile as the home page. */}}
+<div class="container" id="sponsors">
+  <div class="sponsors-content">
+    {{ .Content }}
+  </div>
+
+  {{ if and site.Params.sponsors site.Params.sponsors.enable (gt (len site.Data.sponsors) 0) }}
+  <div class="ah-sponsor-list">
+    {{ range site.Data.sponsors }}
+    <article class="ah-sponsor-card">
+      <div class="ah-logo-tile ah-logo-tile--card">
+        <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
+      </div>
+      <div class="ah-sponsor-card__body">
+        <h3>{{ .name }}</h3>
+        {{ with .description }}<div class="ah-sponsor-card__text">{{ . | markdownify }}</div>{{ end }}
+        <ul class="ah-sponsor-card__links">
+          {{ with .url }}<li><a href="{{ . }}" target="_blank" rel="noopener"><i class="fas fa-globe" aria-hidden="true"></i> Website</a></li>{{ end }}
+          {{ with .linkedin }}<li><a href="{{ . }}" target="_blank" rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>{{ end }}
+          {{ with .twitter }}<li><a href="{{ . }}" target="_blank" rel="noopener"><i class="fab fa-x-twitter" aria-hidden="true"></i> X</a></li>{{ end }}
+        </ul>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="ah-sponsor-cta">
+    <h3>Become a sponsor</h3>
+    <p>Help us keep Azure Heroes free for the community and meet cloud professionals at our meetups.</p>
+    <a class="btn btn-template-main" href="{{ "contact/" | relURL }}">Get in touch</a>
+  </div>
+</div>
+
+{{ partial "map.html" . }}

@@ -1,0 +1,44 @@
+{{/* Standalone <head> for the Retro subsite. It does not load the theme CSS/JS, so the
+     subsite stays independent from the main Azure Heroes look. */}}
+{{ $e := site.Data.retro.event }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ if site.Data.retro.event.hidden }}<meta name="robots" content="noindex, nofollow">{{ end }}
+{{ $title := cond .IsSection (printf "%s — %s" $e.name $e.tagline) (printf "%s | %s 2027" .Title $e.name) }}
+<title>{{ $title }}</title>
+{{ $desc := or .Description (printf "%s: %s at %s, %s." $e.name $e.date_display $e.venue.name $e.venue.city) }}
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ "img/retro/banner-square.jpg" | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#120d2b">
+<link rel="icon" href="{{ "img/favicon.ico" | relURL }}" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+{{ $css := resources.Get "retro/retro.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": {{ $e.name }},
+  "startDate": "{{ $e.date_iso }}T09:00:00+02:00",
+  "endDate": "{{ $e.date_iso }}T17:00:00+02:00",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": {{ $e.venue.name }},
+    "address": {{ $e.venue.address }}
+  },
+  "organizer": { "@type": "Organization", "name": {{ $e.organiser }}, "url": {{ "/" | absURL }} },
+  "image": [{{ "img/retro/hero.jpg" | absURL }}],
+  "description": {{ $desc }}
+}
+</script>

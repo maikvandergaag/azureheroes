@@ -1,0 +1,22 @@
+{{/* Home page sponsors (overrides the theme's logo carousel): every logo on an
+     equal white tile, so logos of different shapes get the same visual weight. */}}
+{{ if and site.Params.sponsors site.Params.sponsors.enable (gt (len site.Data.sponsors) 0) }}
+<section class="ah-sponsors">
+  <div class="container">
+    <div class="ah-upcoming__head">
+      <h2>{{ site.Params.sponsors.title | default "Sponsors" }}</h2>
+      <a class="ah-upcoming__all" href="{{ "sponsors/" | relURL }}">Meet our sponsors <span aria-hidden="true">→</span></a>
+    </div>
+    {{ with site.Params.sponsors.subtitle }}<p class="ah-team__lead">{{ . | markdownify }}</p>{{ end }}
+    <ul class="ah-logo-grid">
+      {{ range site.Data.sponsors }}
+      <li>
+        {{ if .url }}<a class="ah-logo-tile" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">{{ else }}<span class="ah-logo-tile">{{ end }}
+          <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
+        {{ if .url }}</a>{{ else }}</span>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

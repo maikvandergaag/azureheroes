@@ -1,0 +1,83 @@
+# Schedule for Azure Heroes: Retro 2027.
+# Used when sessionize.embed_id in event.yaml is empty.
+#
+# `provisional: true` shows a banner that the timetable may still change.
+# Each slot has a start `time` and an `end` (the length is calculated).
+# Each slot is either a plenary item (title only, spans all rooms) or a set of
+# parallel sessions (one per room, in the same order as `rooms`).
+
+provisional: true   # TODO: set to false once the programme is final
+
+rooms: ["Main stage", "Room 2"]
+
+slots:
+  - time: "08:00"
+    end: "09:00"
+    title: "Doors open, registration and coffee"
+    kind: break
+  - time: "09:00"
+    end: "09:15"
+    title: "Welcome and opening"
+    kind: plenary
+  - time: "09:15"
+    end: "10:05"
+    title: "Keynote"
+    kind: plenary
+  - time: "10:05"
+    end: "10:20"
+    title: "Coffee break"
+    kind: break
+  - time: "10:20"
+    end: "11:10"
+    kind: sessions
+    sessions:
+      - title: "Session 1A"
+      - title: "Session 1B"
+  - time: "11:10"
+    end: "11:20"
+    title: "Room change"
+    kind: break
+  - time: "11:20"
+    end: "12:10"
+    kind: sessions
+    sessions:
+      - title: "Session 2A"
+      - title: "Session 2B"
+  - time: "12:10"
+    end: "13:20"
+    title: "Lunch, expo and Hero Quest"
+    kind: break
+  - time: "13:20"
+    end: "14:10"
+    kind: sessions
+    sessions:
+      - title: "Session 3A"
+      - title: "Session 3B"
+  - time: "14:10"
+    end: "14:20"
+    title: "Room change"
+    kind: break
+  - time: "14:20"
+    end: "15:10"
+    kind: sessions
+    sessions:
+      - title: "Session 4A"
+      - title: "Session 4B"
+  - time: "15:10"
+    end: "15:30"
+    title: "Coffee break"
+    kind: break
+  - time: "15:30"
+    end: "16:20"
+    kind: sessions
+    sessions:
+      - title: "Session 5A"
+      - title: "Session 5B"
+  - time: "16:20"
+    end: "16:30"
+    title: "Room change"
+    kind: break
+  - time: "16:30"
+    end: "17:00"
+    title: "Closing, raffle and thank you"
+    kind: plenary
