@@ -780,4 +780,6 @@ body.rh {
   .rh-footer ul a { display: inline-block; padding: 7px 0; }
   .rh-footer__facts a { padding: 0; }
   .rh-footer__bottom a { display: inline-block; padding: 8px 0; }
+  /* social icon buttons are already 38px squares: keep the icon centred */
+  .rh-footer ul.rh-footer__social a { display: grid; place-items: center; padding: 0; }
 }
