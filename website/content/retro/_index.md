@@ -2,11 +2,6 @@
 title = "Azure Heroes: Retro 2027"
 linkTitle = "Retro 2027"
 description = "Azure Heroes: Retro — The Big One. A full day of Microsoft Cloud knowledge, practical ideas and community on 15 April 2027 at MARCFAIT, Almere."
-
-# Keep all Retro pages out of the sitemap while the subsite is hidden
-# (see `hidden` in data/retro/event.yaml).
-[cascade.sitemap]
-  disable = true
 +++
 
 <section class="rh-section rh-section--intro">

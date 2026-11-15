@@ -3,7 +3,7 @@
 
 # While true, the Retro subsite is reachable by URL only: no links from the
 # main site, noindex for search engines and left out of the sitemap.
-hidden: true
+hidden: false
 
 name: "Azure Heroes: Retro"
 tagline: "The Big One • 2027"
