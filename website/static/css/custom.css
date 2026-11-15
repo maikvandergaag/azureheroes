@@ -2758,3 +2758,12 @@ a:hover, a:focus { color: var(--ah-accent-hover); }
     .ah-feature--past .ah-feature__media { min-height: 260px; }
     .ah-feature--past h3 { font-size: 26px; }
 }
+
+/* Bigger tap targets in the footer on touch screens (from the cross-browser check) */
+@media (pointer: coarse) {
+    .ah-footer__links { gap: 2px; }
+    .ah-footer__links a,
+    #copyright.ah-copyright a { display: inline-block; padding: 7px 0; }
+    .ah-footer__links--cols li { margin-bottom: 2px; }
+    .ah-upcoming__all { display: inline-block; padding: 10px 0; }
+}
