@@ -46,8 +46,16 @@ body.rh {
 .rh :focus-visible { outline: 3px solid var(--rh-gold); outline-offset: 3px; }
 
 .rh h1, .rh h2, .rh h3 { color: #fff; line-height: 1.25; margin: 0 0 .6em; }
-.rh h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 700; }
-.rh h3 { font-size: 19px; font-weight: 600; }
+/* Section headings use the retro pixel font, like the page titles */
+.rh h2 {
+  font-family: var(--rh-pixel);
+  font-size: clamp(16px, 2.2vw, 22px);
+  font-weight: 400;          /* Press Start 2P has a single weight */
+  line-height: 1.5;
+  letter-spacing: .02em;
+  text-shadow: 3px 3px 0 var(--rh-pink);
+}
+.rh h3 { font-family: var(--rh-pixel); font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: .02em; }
 .rh p { margin: 0 0 1em; }
 
 .rh-container { width: 100%; max-width: var(--rh-max); margin: 0 auto; padding: 0 20px; }
