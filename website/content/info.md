@@ -7,7 +7,7 @@ description = "Everything about the Azure Heroes community: speaking at our meet
 <p class="ah-info-intro">Everything you need to take part in the Azure Heroes community, in one place.</p>
 
 <div class="ah-info-grid">
-  <a class="ah-info-card" href="/CFP/">
+  <a class="ah-info-card" href="/cfp/">
     <span class="ah-info-card__icon"><i class="fas fa-microphone" aria-hidden="true"></i></span>
     <h2>Call for Papers</h2>
     <p>Want to share your story? We're always looking for speakers for our in-person and online meetups. First-time speakers are very welcome.</p>
