@@ -480,6 +480,30 @@ body.rh {
 .rh-speaker__bio { font-size: 14px; }
 .rh-speaker__links { display: flex; gap: 12px; font-size: 20px; margin: 0; }
 
+.rh-team { align-items: stretch; }
+.rh-team__card { display: flex; flex-direction: column; }
+.rh-team__photo {
+  aspect-ratio: 1;
+  background: var(--rh-panel-2);
+  border: 2px solid var(--rh-cyan);
+  box-shadow: 4px 4px 0 var(--rh-pink);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.rh-team__photo img { width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; }
+.rh-team__card h2 {
+  font-family: var(--rh-pixel);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--rh-cyan);
+  margin-bottom: 6px;
+}
+.rh-team__role { color: var(--rh-gold); font-size: 14px; font-weight: 600; }
+.rh-team__bio { color: var(--rh-muted); font-size: 14px; }
+.rh-team__links { display: flex; gap: 14px; margin-top: auto; padding-top: 12px; font-size: 20px; }
+.rh-team__links a { color: var(--rh-text); }
+.rh-team__links a:hover { color: var(--rh-cyan); }
+
 .rh-empty {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);

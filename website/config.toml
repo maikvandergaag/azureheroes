@@ -68,13 +68,17 @@ buildFuture = true
     url = "/retro/sponsors/"
     weight = 4
 [[menu.retro]]
+    name = "Team"
+    url = "/retro/team/"
+    weight = 5
+[[menu.retro]]
     name = "Info"
     url = "/retro/info/"
-    weight = 5
+    weight = 6
 [[menu.retro]]
     name = "Contact"
     url = "/retro/contact/"
-    weight = 6
+    weight = 7
 
 # Footer "Get involved" links (layouts/partials/footer.html)
 [[menu.footer]]

@@ -9,7 +9,7 @@ description = "Sponsors and community sponsors of Azure Heroes: Retro 2027 on 15
 
 <p class="rh-kicker">Hall of fame</p>
 
-## Our sponsors
+<h3 class="rh-pixel-heading">Our sponsors</h3>
 
 {{< retro-sponsor-wall >}}
 
@@ -19,7 +19,7 @@ description = "Sponsors and community sponsors of Azure Heroes: Retro 2027 on 15
 
 <p class="rh-kicker">Fellow heroes</p>
 
-## Community sponsors
+<h3 class="rh-pixel-heading">Community sponsors</h3>
 
 The user groups and communities that help make Azure Heroes: Retro happen. Running a community and want to join them? [Get in touch](/retro/contact/).
 
