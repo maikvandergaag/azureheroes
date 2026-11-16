@@ -7,7 +7,7 @@ description = "Venue, travel, tickets and practical information for Azure Heroes
 
 <section class="rh-section">
 
-## Venue and travel
+<h3 class="rh-pixel-heading">Venue and travel</h3>
 
 {{< retro-venue >}}
 
@@ -15,19 +15,21 @@ description = "Venue, travel, tickets and practical information for Azure Heroes
 
 <section class="rh-section rh-prose">
 
-## Tickets
+<h3 class="rh-pixel-heading">Tickets</h3>
 
 Ticket registration opens soon. Follow Azure Heroes on [LinkedIn](https://www.linkedin.com/company/azure-heroes) or join our [Meetup group](https://www.meetup.com/azure-heroes-netherlands/) to hear first when it does.
 
-## The Hero Quest
+<h3 class="rh-pixel-heading">The Hero Quest</h3>
+
 
 Collect stamps at the Hero Quest stops around the expo hall and the coffee bar. Completed quests enter the raffle, and prizes are handed out during the closing session.
 
-## Code of Conduct
+<h3 class="rh-pixel-heading">Code of Conduct</h3>
+
 
 Azure Heroes is a welcoming community. All attendees, speakers, sponsors and volunteers follow our [Code of Conduct](/retro/code-of-conduct/).
 
-## Questions?
+<h3 class="rh-pixel-heading">Questions?</h3>
 
 Something you can't find here? [Contact the organisers](/retro/contact/).
 

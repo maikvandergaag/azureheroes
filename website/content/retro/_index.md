@@ -14,7 +14,7 @@ description = "Azure Heroes: Retro — The Big One. A full day of Microsoft Clou
 
 <p class="rh-kicker">Press start</p>
 
-## A bigger stage
+<h3 class="rh-pixel-heading">A bigger stage</h3>
 
 A full day of Microsoft Cloud knowledge, practical ideas and community connections, bringing cloud enthusiasts, speakers and partners together in a retro-superhero setting.
 
@@ -30,7 +30,7 @@ Azure Heroes: Retro is the biggest event Azure Heroes Netherlands has organised 
 
 <p class="rh-kicker">Player select</p>
 
-## Who you'll meet
+<h3 class="rh-pixel-heading">Who you'll meet</h3>
 
 A hands-on Microsoft Cloud crowd on a working Thursday: people who build, run and buy cloud platforms.
 
@@ -42,7 +42,7 @@ A hands-on Microsoft Cloud crowd on a working Thursday: people who build, run an
 
 <p class="rh-kicker">The line-up</p>
 
-## Speakers
+<h3 class="rh-pixel-heading">Speakers</h3>
 
 {{< retro-speakers limit="6" >}}
 
@@ -54,7 +54,7 @@ A hands-on Microsoft Cloud crowd on a working Thursday: people who build, run an
 
 <p class="rh-kicker">Getting there</p>
 
-## When and where
+<h3 class="rh-pixel-heading">When and where</h3>
 
 {{< retro-venue >}}
 

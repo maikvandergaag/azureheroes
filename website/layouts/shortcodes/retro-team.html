@@ -1,0 +1,20 @@
+{{/* Retro team cards, using the shared team profiles and Retro-specific avatars. */}}
+<div class="rh-grid rh-grid--4 rh-team">
+  {{ range sort site.Data.team "name" }}
+  {{ $member := . }}
+  <article class="rh-card rh-team__card">
+    <div class="rh-team__photo">
+      <img src="{{ .retro_avatar | relURL }}" alt="Pixel-art portrait of {{ .name }}" width="600" height="600" loading="lazy">
+    </div>
+    <h2>{{ .name }}</h2>
+    {{ with .position }}<p class="rh-team__role">{{ . }}</p>{{ end }}
+    {{ with .text }}<div class="rh-team__bio">{{ . | markdownify }}</div>{{ end }}
+    <ul class="rh-team__links" aria-label="{{ .name }} online">
+      {{ with .linkedin }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $member.name }} on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>{{ end }}
+      {{ with .github }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $member.name }} on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>{{ end }}
+      {{ with .blog }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $member.name }} website or blog"><i class="fas fa-globe" aria-hidden="true"></i></a></li>{{ end }}
+      {{ with .mvp }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $member.name }} Microsoft MVP profile"><i class="fab fa-microsoft" aria-hidden="true"></i></a></li>{{ end }}
+    </ul>
+  </article>
+  {{ end }}
+</div>

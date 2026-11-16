@@ -13,7 +13,7 @@ The organising team reads every message and usually replies within a few working
 
 <p class="rh-kicker">Choose your quest</p>
 
-## What can we help with?
+<h3 class="rh-pixel-heading">What can we help with?</h3>
 
 <div class="rh-grid rh-grid--3">
   <article class="rh-card">
