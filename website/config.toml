@@ -83,7 +83,7 @@ buildFuture = true
 # Footer "Get involved" links (layouts/partials/footer.html)
 [[menu.footer]]
     name = "Submit a talk"
-    url = "/CFP/"
+    url = "/cfp/"
     weight = 1
 [[menu.footer]]
     name = "Become a sponsor"
@@ -220,7 +220,7 @@ buildFuture = true
 # Highlighted button at the end of the main navigation (layouts/partials/nav.html)
 [params.nav_cta]
     text = "Submit a talk"
-    url = "/CFP/"
+    url = "/cfp/"
 
 # Footer contact and social links (layouts/partials/footer.html)
 [params.footer]
