@@ -13,7 +13,7 @@
       {{ with $h.lead }}<p class="ah-hero__lead">{{ . }}</p>{{ end }}
       <div class="ah-hero__actions">
         {{ with index $upcoming 0 }}
-        <a class="ah-btn ah-btn--primary" href="{{ .RelPermalink }}">Next event: {{ .Date.Format "2 January" }} <span aria-hidden="true">→</span></a>
+        <a class="ah-btn ah-btn--primary" href="{{ .Params.details_url | default .RelPermalink | relURL }}">Next event: {{ .Date.Format "2 January" }} <span aria-hidden="true">→</span></a>
         {{ else }}
         <a class="ah-btn ah-btn--primary" href="{{ "events/" | relURL }}">See our events <span aria-hidden="true">→</span></a>
         {{ end }}

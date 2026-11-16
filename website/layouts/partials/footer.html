@@ -1,9 +1,8 @@
 {{/* Main site footer (overrides the hugo-universal-theme footer). Same layout as
      the Retro subsite footer: about + socials, upcoming, explore, get involved.
-     Links come from config.toml ([params.footer], menu.main), upcoming events
-     from content/events and the Retro facts from data/retro/event.yaml. */}}
+     Links come from config.toml ([params.footer], menu.main) and upcoming
+     events from content/events (Retro is listed there as a normal event). */}}
 {{ $f := site.Params.footer }}
-{{ $retro := site.Data.retro.event }}
 <footer id="footer" class="ah-footer">
   <div class="container">
     <div class="ah-footer__grid">
@@ -30,20 +29,13 @@
           {{ range $upcoming }}
           <li data-date="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" data-meetup>
             <span class="ah-footer__label"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Monday 2 January 2006" }}</time></span>
-            <a class="ah-footer__event" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a class="ah-footer__event" href="{{ .Params.details_url | default .RelPermalink | relURL }}">{{ .Title }}</a>
             {{ with .Params.location }}<span>{{ . }}</span>{{ end }}
           </li>
           {{ end }}
           <li class="ah-footer__empty" data-upcoming-empty{{ if $upcoming }} hidden{{ end }}>
             No new meetups scheduled yet. Follow us on {{ with $f.meetup }}<a href="{{ . }}" target="_blank" rel="noopener">Meetup</a>{{ else }}Meetup{{ end }} to hear first.
           </li>
-          {{ with $retro }}{{ if and (not .hidden) (ge (time.AsTime .date_iso).Unix (now.AddDate 0 0 -1).Unix) }}
-          <li data-date="{{ .date_iso }}T17:00:00+02:00">
-            <span class="ah-footer__label"><i class="fas fa-gamepad" aria-hidden="true"></i> <time datetime="{{ .date_iso }}">{{ .date_display }}</time></span>
-            <a class="ah-footer__event" href="{{ "retro/" | relURL }}">{{ .name }}</a>
-            <span>{{ .venue.name }}, {{ .venue.city }}</span>
-          </li>
-          {{ end }}{{ end }}
         </ul>
         <a class="ah-footer__more" href="{{ "events/" | relURL }}">All events <span aria-hidden="true">→</span></a>
         <script>
