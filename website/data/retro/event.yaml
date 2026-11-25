@@ -25,9 +25,9 @@ venue:
 
 # Leave a link empty to hide its button on the site.
 links:
-  tickets: ""            # TODO: ticket / registration URL (opens later)
+  tickets: "https://speakerdesk.eu/events/azure-heroes-2027-1al8/tickets"
   sponsor_deck: ""       # Optional: public link to the sponsorship deck PDF
-  sponsor_contact: "/retro/contact/"
+  sponsor_contact: "https://speakerdesk.eu/sponsor/azure-heroes-2027-1al8"
   email: "retro@azureheroes.online"
   code_of_conduct: "/retro/code-of-conduct/"
   main_site: "/"

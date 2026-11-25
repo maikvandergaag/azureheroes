@@ -1,0 +1,261 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Azure Heroes logo" [ref=e8]
+          - generic: 
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Home" [ref=e12] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e13]:
+            - link "Events" [ref=e14] [cursor=pointer]:
+              - /url: /events/
+          - listitem [ref=e15]:
+            - link "Sponsors" [ref=e16] [cursor=pointer]:
+              - /url: /sponsors/
+          - listitem [ref=e17]:
+            - link "Info" [ref=e18] [cursor=pointer]:
+              - /url: /info/
+          - listitem [ref=e19]:
+            - link "Team" [ref=e20] [cursor=pointer]:
+              - /url: /team/
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: /contact/
+          - listitem [ref=e23]:
+            - link "Submit a talk" [ref=e24] [cursor=pointer]:
+              - /url: /CFP/
+        - text: 
+  - generic [ref=e26]:
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: Microsoft Azure community · Netherlands
+      - heading "Azure Heroes User Group" [level=1] [ref=e29]
+      - paragraph [ref=e30]: "Free meetups for everyone building on Microsoft Azure: practical sessions from community speakers, and plenty of time to learn from each other."
+      - generic [ref=e31]:
+        - 'link "Next event: 3 December" [ref=e32] [cursor=pointer]':
+          - /url: /events/2026/12/03/
+          - text: "Next event: 3 December"
+          - generic [aria-hidden] [ref=e33]: →
+        - link "Join on Meetup" [ref=e34] [cursor=pointer]:
+          - /url: https://www.meetup.com/azure-heroes-netherlands/
+          - generic [aria-hidden] [ref=e35]: 
+          - text: Join on Meetup
+      - list [ref=e36]:
+        - listitem [ref=e37]:
+          - strong [ref=e38]: "9"
+          - generic [ref=e39]: meetups & community days
+        - listitem [ref=e40]:
+          - strong [ref=e41]: "3"
+          - generic [ref=e42]: sponsors
+        - listitem [ref=e43]:
+          - strong [ref=e44]: Free
+          - generic [ref=e45]: for everyone
+    - img "Azure Heroes superhero mascot" [ref=e47]
+  - generic [ref=e49]:
+    - article [ref=e51]:
+      - link [aria-hidden] [ref=e52] [cursor=pointer]:
+        - /url: /events/2026/12/03/
+      - generic [ref=e53]:
+        - paragraph [ref=e54]: Next event
+        - paragraph [ref=e56]:
+          - time [ref=e57]: Thursday 3 December 2026
+        - heading [level=3] [ref=e58]:
+          - 'link "Team Up: Azure Heroes x Azure Thursday Year-End Event @ Sopra Steria" [ref=e59] [cursor=pointer]':
+            - /url: /events/2026/12/03/
+        - list [ref=e60]:
+          - listitem [ref=e61]:
+            - generic [aria-hidden] [ref=e62]: 
+            - text: 17:30
+          - listitem [ref=e63]:
+            - generic [aria-hidden] [ref=e64]: 
+            - text: Sopra Steria, Nieuwegein
+        - paragraph [ref=e65]: "Azure Heroes is teaming up with Azure Thursday for their year-end event at Sopra Steria: a hands-on Azure AI Search workshop followed by a festive pubquiz."
+        - generic [ref=e66]:
+          - link "Register" [ref=e67] [cursor=pointer]:
+            - /url: https://www.meetup.com/azure-thursdays/events/317302688
+            - text: Register
+            - generic [aria-hidden] [ref=e68]: →
+          - link "Event details" [ref=e69] [cursor=pointer]:
+            - /url: /events/2026/12/03/
+    - text: 
+    - paragraph [ref=e70]:
+      - link "All events" [ref=e71] [cursor=pointer]:
+        - /url: /events/
+        - text: All events →
+  - region "Team" [ref=e72]:
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - heading "Team" [level=2] [ref=e75]
+        - link "Meet the team" [ref=e76] [cursor=pointer]:
+          - /url: /team/
+          - text: Meet the team →
+      - list [ref=e77]:
+        - listitem [ref=e78]:
+          - heading "Danny Kruge" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Founder Azure Heroes, Microsoft MVP
+          - list "Danny Kruge online" [ref=e81]:
+            - listitem [ref=e82]:
+              - link "LinkedIn" [ref=e83] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/danny-kruge/
+                - generic [aria-hidden] [ref=e84]: 
+            - listitem [ref=e85]:
+              - link "GitHub" [ref=e86] [cursor=pointer]:
+                - /url: https://github.com/mrkruge
+                - generic [aria-hidden] [ref=e87]: 
+            - listitem [ref=e88]:
+              - link "Microsoft MVP profile" [ref=e89] [cursor=pointer]:
+                - /url: https://mvp.microsoft.com/en-US/MVP/profile/88da4f3a-e010-4979-8eb3-335c75968ac4
+                - generic [aria-hidden] [ref=e90]: 
+        - listitem [ref=e91]:
+          - heading "Gillian Stravers" [level=3] [ref=e92]
+          - paragraph [ref=e93]: Cloud Architect
+          - list "Gillian Stravers online" [ref=e94]:
+            - listitem [ref=e95]:
+              - link "LinkedIn" [ref=e96] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/gillianstravers/
+                - generic [aria-hidden] [ref=e97]: 
+        - listitem [ref=e98]:
+          - heading "Maik van der Gaag" [level=3] [ref=e99]
+          - paragraph [ref=e100]: Technology leader and Microsoft MVP
+          - list "Maik van der Gaag online" [ref=e101]:
+            - listitem [ref=e102]:
+              - link "LinkedIn" [ref=e103] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/maikvandergaag/
+                - generic [aria-hidden] [ref=e104]: 
+            - listitem [ref=e105]:
+              - link "GitHub" [ref=e106] [cursor=pointer]:
+                - /url: https://github.com/maikvandergaag/
+                - generic [aria-hidden] [ref=e107]: 
+            - listitem [ref=e108]:
+              - link "Website or blog" [ref=e109] [cursor=pointer]:
+                - /url: https://msftplayground.com
+                - generic [aria-hidden] [ref=e110]: 
+            - listitem [ref=e111]:
+              - link "Microsoft MVP profile" [ref=e112] [cursor=pointer]:
+                - /url: https://mvp.microsoft.com/en-US/MVP/profile/26ed9f48-f4bd-eb11-bacc-0022481f2c24
+                - generic [aria-hidden] [ref=e113]: 
+        - listitem [ref=e114]:
+          - heading "Rogier Dijkman" [level=3] [ref=e115]
+          - paragraph [ref=e116]: Cyber Security Architect, Microsoft MVP
+          - list "Rogier Dijkman online" [ref=e117]:
+            - listitem [ref=e118]:
+              - link "LinkedIn" [ref=e119] [cursor=pointer]:
+                - /url: https://linkedin.com/in/rogierdijkman
+                - generic [aria-hidden] [ref=e120]: 
+            - listitem [ref=e121]:
+              - link "GitHub" [ref=e122] [cursor=pointer]:
+                - /url: https://github.com/azurekid
+                - generic [aria-hidden] [ref=e123]: 
+            - listitem [ref=e124]:
+              - link "Website or blog" [ref=e125] [cursor=pointer]:
+                - /url: https://azurehacking.com
+                - generic [aria-hidden] [ref=e126]: 
+            - listitem [ref=e127]:
+              - link "Microsoft MVP profile" [ref=e128] [cursor=pointer]:
+                - /url: https://mvp.microsoft.com/en-US/MVP/profile/76fdda5f-1cb4-ed11-b596-000d3a1ad36b
+                - generic [aria-hidden] [ref=e129]: 
+  - generic [ref=e131]:
+    - generic [ref=e132]:
+      - heading "Sponsors" [level=2] [ref=e133]
+      - link "Meet our sponsors" [ref=e134] [cursor=pointer]:
+        - /url: /sponsors/
+        - text: Meet our sponsors →
+    - list [ref=e135]:
+      - listitem [ref=e136]:
+        - link [ref=e137] [cursor=pointer]:
+          - /url: https://databalance.eu
+          - img "Databalance" [ref=e138]
+      - listitem [ref=e139]:
+        - link [ref=e140] [cursor=pointer]:
+          - /url: https://www.rubicon.nl/
+          - img "Rubicon" [ref=e141]
+      - listitem [ref=e142]:
+        - link [ref=e143] [cursor=pointer]:
+          - /url: https://schubergphilis.com/
+          - img "Schuberg Philis" [ref=e144]
+  - contentinfo [ref=e145]:
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - paragraph [ref=e149]: Azure Heroes
+        - paragraph [ref=e151]: Azure Heroes is a user group that focuses on anything Microsoft Azure.
+        - list "Azure Heroes on social media" [ref=e152]:
+          - listitem [ref=e153]:
+            - link "LinkedIn" [ref=e154] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/azure-heroes
+              - generic [aria-hidden] [ref=e155]: 
+          - listitem [ref=e156]:
+            - link "Meetup" [ref=e157] [cursor=pointer]:
+              - /url: https://www.meetup.com/azure-heroes-netherlands/
+              - generic [aria-hidden] [ref=e158]: 
+          - listitem [ref=e159]:
+            - link "WhatsApp community" [ref=e160] [cursor=pointer]:
+              - /url: /whatsapp-community/
+              - generic [aria-hidden] [ref=e161]: 
+          - listitem [ref=e162]:
+            - link "Email support@azureheroes.online" [ref=e163] [cursor=pointer]:
+              - /url: mailto:support@azureheroes.online
+              - generic [aria-hidden] [ref=e164]: 
+      - generic [ref=e165]:
+        - heading "Upcoming" [level=4] [ref=e166]
+        - list [ref=e167]:
+          - listitem [ref=e168]:
+            - generic [ref=e169]:
+              - generic [aria-hidden] [ref=e170]: 
+              - time [ref=e171]: Thursday 3 December 2026
+            - 'link "Team Up: Azure Heroes x Azure Thursday Year-End Event @ Sopra Steria" [ref=e172] [cursor=pointer]':
+              - /url: /events/2026/12/03/
+            - generic [ref=e173]: Sopra Steria, Nieuwegein
+        - link "All events" [ref=e174] [cursor=pointer]:
+          - /url: /events/
+          - text: All events →
+      - generic [ref=e175]:
+        - heading "Explore" [level=4] [ref=e176]
+        - list [ref=e177]:
+          - listitem [ref=e178]:
+            - link "Home" [ref=e179] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e180]:
+            - link "Events" [ref=e181] [cursor=pointer]:
+              - /url: /events/
+          - listitem [ref=e182]:
+            - link "Sponsors" [ref=e183] [cursor=pointer]:
+              - /url: /sponsors/
+          - listitem [ref=e184]:
+            - link "Info" [ref=e185] [cursor=pointer]:
+              - /url: /info/
+          - listitem [ref=e186]:
+            - link "Team" [ref=e187] [cursor=pointer]:
+              - /url: /team/
+          - listitem [ref=e188]:
+            - link "Contact" [ref=e189] [cursor=pointer]:
+              - /url: /contact/
+      - generic [ref=e190]:
+        - heading "Get involved" [level=4] [ref=e191]
+        - list [ref=e192]:
+          - listitem [ref=e193]:
+            - link "Submit a talk" [ref=e194] [cursor=pointer]:
+              - /url: /cfp/
+          - listitem [ref=e195]:
+            - link "Become a sponsor" [ref=e196] [cursor=pointer]:
+              - /url: /sponsors/
+          - listitem [ref=e197]:
+            - link "Join the WhatsApp community" [ref=e198] [cursor=pointer]:
+              - /url: /whatsapp-community/
+          - listitem [ref=e199]:
+            - link "Contact us" [ref=e200] [cursor=pointer]:
+              - /url: /contact/
+          - listitem [ref=e201]:
+            - link "support@azureheroes.online" [ref=e202] [cursor=pointer]:
+              - /url: mailto:support@azureheroes.online
+  - generic [ref=e204]:
+    - paragraph [ref=e205]: Copyright (c) 2026, Azure Heroes; all rights reserved.
+    - paragraph [ref=e206]:
+      - link "Code of Conduct" [ref=e207] [cursor=pointer]:
+        - /url: /codeofconduct/
+      - text: ·
+      - link "Contact" [ref=e208] [cursor=pointer]:
+        - /url: /contact/

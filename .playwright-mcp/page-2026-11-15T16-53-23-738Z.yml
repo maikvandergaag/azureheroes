@@ -1,0 +1,209 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - navigation [ref=f1e4]:
+      - generic [ref=f1e5]:
+        - generic [ref=f1e6]:
+          - link [ref=f1e7] [cursor=pointer]:
+            - /url: /
+            - img "Azure Heroes NL x GitHub Dev Days - Copilot & AI logo" [ref=f1e8]
+          - generic: 
+        - list [ref=f1e10]:
+          - listitem [ref=f1e11]:
+            - link "Home" [ref=f1e12] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f1e13]:
+            - link "Events" [ref=f1e14] [cursor=pointer]:
+              - /url: /events/
+          - listitem [ref=f1e15]:
+            - link "Sponsors" [ref=f1e16] [cursor=pointer]:
+              - /url: /sponsors/
+          - listitem [ref=f1e17]:
+            - link "Info" [ref=f1e18] [cursor=pointer]:
+              - /url: /info/
+          - listitem [ref=f1e19]:
+            - link "Team" [ref=f1e20] [cursor=pointer]:
+              - /url: /team/
+          - listitem [ref=f1e21]:
+            - link "Contact" [ref=f1e22] [cursor=pointer]:
+              - /url: /contact/
+          - listitem [ref=f1e23]:
+            - link "Submit a talk" [ref=f1e24] [cursor=pointer]:
+              - /url: /CFP/
+        - text: 
+  - heading "Azure Heroes NL x GitHub Dev Days - Copilot & AI" [level=1] [ref=f1e29]
+  - generic [ref=f1e33]:
+    - paragraph [ref=f1e34]:
+      - text: By
+      - link "Rogier Dijkman" [ref=f1e35] [cursor=pointer]:
+        - /url: "%20/authors/rogier-dijkman"
+      - text: October 6, 2026
+    - generic [ref=f1e36]:
+      - img "Azure Heroes NL x GitHub Dev Days - Copilot & AI" [ref=f1e38]
+      - paragraph [ref=f1e39]:
+        - text: Azure Heroes is teaming up with
+        - link "GitHub Dev Days" [ref=f1e40] [cursor=pointer]:
+          - /url: https://github.com/scubaninja
+        - text: for an evening of hands-on learning, community, AI, and plenty of Copilot.
+      - heading "Featured speakers" [level=2] [ref=f1e41]
+      - heading "Speaker April Yoho (Senior Developer Advocate @ GitHub)" [level=3] [ref=f1e42]
+      - paragraph [ref=f1e43]:
+        - strong [ref=f1e44]: "Ctrl+Alt+Delegate: Development in the Age of AI Agents"
+      - paragraph [ref=f1e45]: April is a Senior Developer Advocate at GitHub, where she helps organizations modernize how they build, deploy, and operate software at scale. She specializes in application transformation and DevOps ways of working, with a strong focus on enabling enterprises to adopt modern, code-first practices using GitHub. April is actively involved in technical content creation and education, producing enterprise-focused blogs, videos, workshops, and presentations. Through speaking engagements, executive briefings, and community events, she shares practical, real-world insights to help teams successfully adopt modern DevOps practices.
+      - paragraph [ref=f1e46]:
+        - link " LinkedIn" [ref=f1e47] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/aprilyoho/
+        - link " GitHub" [ref=f1e48] [cursor=pointer]:
+          - /url: https://github.com/scubaninja
+      - heading "Speaker Rob Bos" [level=3] [ref=f1e49]
+      - paragraph [ref=f1e50]:
+        - strong [ref=f1e51]: "GitHub Copilot Surfaces: My Leveling Up with AI"
+      - paragraph [ref=f1e52]: "GitHub Copilot is everywhere now: inline, in chat, in agent mode, in the CLI, the app, and the cloud. Rob will walk us through his journey of leveling up with Copilot and explain which surfaces matter most at each stage of your workflow."
+      - paragraph [ref=f1e53]:
+        - link " LinkedIn" [ref=f1e54] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/bosrob/
+        - link " GitHub" [ref=f1e55] [cursor=pointer]:
+          - /url: https://github.com/rajbos/
+        - link " Link to slides" [ref=f1e56] [cursor=pointer]:
+          - /url: https://github.com/rajbos/ai-engineering-fluency/#slides
+      - heading "Speaker Paul Stolk" [level=3] [ref=f1e57]
+      - paragraph [ref=f1e58]:
+        - strong [ref=f1e59]: Stop Prompting and Praying, Start Specifying
+      - paragraph [ref=f1e60]: In this hands-on session, Paul will show how Spec-Driven Development can turn Copilot from a hopeful prompt box into a reliable engineering partner, building a full app in just 60 minutes.
+      - paragraph [ref=f1e61]:
+        - link " LinkedIn" [ref=f1e62] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/paul-stolk-62ab442b/
+        - link " Link to slides" [ref=f1e63] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/paul-stolk-62ab442b/#slides
+      - heading "Agenda" [level=2] [ref=f1e64]
+      - list [ref=f1e65]:
+        - listitem [ref=f1e66]: 17:30 — Walk-in, food, drinks and networking
+        - listitem [ref=f1e67]:
+          - text: 18:30 - 18:55
+          - strong [ref=f1e68]: Keynote
+          - text: "by April Yoho, Ctrl+Alt+Delegate: Development in the Age of AI Agents"
+        - listitem [ref=f1e69]: "19:00 - 19:55 Rob Bos, GitHub Copilot Surfaces: My Leveling Up with AI"
+        - listitem [ref=f1e70]: 20:00 - 20:55 Paul Stolk, Stop Prompting and Praying, Start Specifying
+        - listitem [ref=f1e71]: 21:00 — Drinks, snacks, networking
+      - heading "Event details" [level=2] [ref=f1e72]
+      - list [ref=f1e73]:
+        - listitem [ref=f1e74]:
+          - strong [ref=f1e75]: "Date:"
+          - text: October 6, 2026
+        - listitem [ref=f1e76]:
+          - strong [ref=f1e77]: "Time:"
+          - text: 17:00–21:00 CEST
+        - listitem [ref=f1e78]:
+          - strong [ref=f1e79]: "Location:"
+          - link "BBTG, Leusderend 34, Leusden" [ref=f1e80] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/u36ucMNmpbBJrHQV6
+        - listitem [ref=f1e81]:
+          - strong [ref=f1e82]: "Topics:"
+          - code [ref=f1e83]: AI
+          - code [ref=f1e84]: Copilot
+          - code [ref=f1e85]: GitHub
+          - code [ref=f1e86]: Azure
+          - code [ref=f1e87]: Community
+      - paragraph [ref=f1e88]:
+        - link "Register now" [ref=f1e89] [cursor=pointer]:
+          - /url: https://luma.com/k0zfdmr8
+        - text: or
+        - link "join us on Meetup" [ref=f1e90] [cursor=pointer]:
+          - /url: https://www.meetup.com/azure-heroes-netherlands/
+        - text: .
+      - heading "Join us" [level=2] [ref=f1e91]
+      - paragraph [ref=f1e92]: Join us for an evening of practical learning, community, and AI-driven development with GitHub Copilot at the center of the conversation.
+      - paragraph [ref=f1e93]:
+        - link "#GitHub" [ref=f1e94] [cursor=pointer]:
+          - /url: https://www.linkedin.com/search/results/all/?keywords=%23github&origin=HASH_TAG_FROM_FEED
+        - link "#GitHubCopilot" [ref=f1e95] [cursor=pointer]:
+          - /url: https://www.linkedin.com/search/results/all/?keywords=%23githubcopilot&origin=HASH_TAG_FROM_FEED
+        - link "#DevDays" [ref=f1e96] [cursor=pointer]:
+          - /url: https://www.linkedin.com/search/results/all/?keywords=%23devdays&origin=HASH_TAG_FROM_FEED
+        - link "#AzureHeroes" [ref=f1e97] [cursor=pointer]:
+          - /url: https://www.linkedin.com/search/results/all/?keywords=%23azureheroes&origin=HASH_TAG_FROM_FEED
+        - link "#MicrosoftAzure" [ref=f1e98] [cursor=pointer]:
+          - /url: https://www.linkedin.com/search/results/all/?keywords=%23microsoftazure&origin=HASH_TAG_FROM_FEED
+        - link "#Developers" [ref=f1e99] [cursor=pointer]:
+          - /url: https://www.linkedin.com/search/results/all/?keywords=%23developers&origin=HASH_TAG_FROM_FEED
+  - contentinfo [ref=f1e100]:
+    - generic [ref=f1e102]:
+      - generic [ref=f1e103]:
+        - paragraph [ref=f1e104]: Azure Heroes
+        - paragraph [ref=f1e106]: Azure Heroes is a user group that focuses on anything Microsoft Azure.
+        - list "Azure Heroes on social media" [ref=f1e107]:
+          - listitem [ref=f1e108]:
+            - link "LinkedIn" [ref=f1e109] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/azure-heroes
+              - generic [aria-hidden] [ref=f1e110]: 
+          - listitem [ref=f1e111]:
+            - link "Meetup" [ref=f1e112] [cursor=pointer]:
+              - /url: https://www.meetup.com/azure-heroes-netherlands/
+              - generic [aria-hidden] [ref=f1e113]: 
+          - listitem [ref=f1e114]:
+            - link "WhatsApp community" [ref=f1e115] [cursor=pointer]:
+              - /url: /whatsapp-community/
+              - generic [aria-hidden] [ref=f1e116]: 
+          - listitem [ref=f1e117]:
+            - link "Email support@azureheroes.online" [ref=f1e118] [cursor=pointer]:
+              - /url: mailto:support@azureheroes.online
+              - generic [aria-hidden] [ref=f1e119]: 
+      - generic [ref=f1e120]:
+        - heading "Upcoming" [level=4] [ref=f1e121]
+        - list [ref=f1e122]:
+          - listitem [ref=f1e123]:
+            - generic [ref=f1e124]:
+              - generic [aria-hidden] [ref=f1e125]: 
+              - time [ref=f1e126]: Thursday 3 December 2026
+            - 'link "Team Up: Azure Heroes x Azure Thursday Year-End Event @ Sopra Steria" [ref=f1e127] [cursor=pointer]':
+              - /url: /events/2026/12/03/
+            - generic [ref=f1e128]: Sopra Steria, Nieuwegein
+        - link "All events" [ref=f1e129] [cursor=pointer]:
+          - /url: /events/
+          - text: All events →
+      - generic [ref=f1e130]:
+        - heading "Explore" [level=4] [ref=f1e131]
+        - list [ref=f1e132]:
+          - listitem [ref=f1e133]:
+            - link "Home" [ref=f1e134] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f1e135]:
+            - link "Events" [ref=f1e136] [cursor=pointer]:
+              - /url: /events/
+          - listitem [ref=f1e137]:
+            - link "Sponsors" [ref=f1e138] [cursor=pointer]:
+              - /url: /sponsors/
+          - listitem [ref=f1e139]:
+            - link "Info" [ref=f1e140] [cursor=pointer]:
+              - /url: /info/
+          - listitem [ref=f1e141]:
+            - link "Team" [ref=f1e142] [cursor=pointer]:
+              - /url: /team/
+          - listitem [ref=f1e143]:
+            - link "Contact" [ref=f1e144] [cursor=pointer]:
+              - /url: /contact/
+      - generic [ref=f1e145]:
+        - heading "Get involved" [level=4] [ref=f1e146]
+        - list [ref=f1e147]:
+          - listitem [ref=f1e148]:
+            - link "Submit a talk" [ref=f1e149] [cursor=pointer]:
+              - /url: /cfp/
+          - listitem [ref=f1e150]:
+            - link "Become a sponsor" [ref=f1e151] [cursor=pointer]:
+              - /url: /sponsors/
+          - listitem [ref=f1e152]:
+            - link "Join the WhatsApp community" [ref=f1e153] [cursor=pointer]:
+              - /url: /whatsapp-community/
+          - listitem [ref=f1e154]:
+            - link "Contact us" [ref=f1e155] [cursor=pointer]:
+              - /url: /contact/
+          - listitem [ref=f1e156]:
+            - link "support@azureheroes.online" [ref=f1e157] [cursor=pointer]:
+              - /url: mailto:support@azureheroes.online
+  - generic [ref=f1e159]:
+    - paragraph [ref=f1e160]: Copyright (c) 2026, Azure Heroes; all rights reserved.
+    - paragraph [ref=f1e161]:
+      - link "Code of Conduct" [ref=f1e162] [cursor=pointer]:
+        - /url: /codeofconduct/
+      - text: ·
+      - link "Contact" [ref=f1e163] [cursor=pointer]:
+        - /url: /contact/

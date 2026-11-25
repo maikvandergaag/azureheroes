@@ -11,9 +11,9 @@
       <li><i class="fas fa-location-dot" aria-hidden="true"></i> {{ $e.venue.name }}, {{ $e.venue.city }}</li>
     </ul>
     <div class="rh-actions">
-      {{ with $e.links.tickets }}<a class="rh-btn rh-btn--primary" href="{{ . }}" target="_blank" rel="noopener">Get your ticket</a>{{ end }}
+      {{ with $e.links.tickets }}<a class="rh-btn rh-btn--primary" href="{{ . }}" target="_blank" rel="noopener">Get Tickets</a>{{ end }}
       {{ with $e.sessionize.cfp_url }}<a class="rh-btn{{ if not $e.links.tickets }} rh-btn--primary{{ end }}" href="{{ . }}" target="_blank" rel="noopener">Submit a session</a>{{ end }}
-      <a class="rh-btn" href="{{ "retro/sponsors/" | relURL }}">Become a sponsor</a>
+      <a class="rh-btn" href="{{ $e.links.sponsor_contact | relURL }}" target="_blank" rel="noopener">Become a sponsor</a>
     </div>
   </div>
 </section>

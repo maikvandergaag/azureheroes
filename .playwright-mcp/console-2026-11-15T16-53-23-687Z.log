@@ -1,0 +1,3 @@
+[  487094ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.azurethursday.com/favicon.ico:1
+[  513938ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:1313/robots.txt:1
+[  521352ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:1313/robot.txt:1
