@@ -61,6 +61,6 @@ A hands-on Microsoft Cloud crowd on a working Thursday: people who build, run an
 Got a practical, real-world story about Azure, platform engineering, DevOps, security, data or AI? Submit your session for Azure Heroes: Retro. First-time speakers are very welcome.
 {{< /retro-callout >}}
 
-{{< retro-callout title="Ready to power up?" button="Become a sponsor" href="/retro/sponsors/" >}}
+{{< retro-callout title="Ready to power up?" button="Become a sponsor" >}}
 Want your brand to be part of the day? Meet 250–300 cloud engineers, architects, data professionals and decision makers. We have sponsorship options for every budget.
 {{< /retro-callout >}}

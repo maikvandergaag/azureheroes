@@ -36,9 +36,9 @@
     <div>
       <h2>Get involved</h2>
       <ul>
-        {{ with $e.links.tickets }}<li><a href="{{ . }}" target="_blank" rel="noopener">Get your ticket</a></li>{{ end }}
+        {{ with $e.links.tickets }}<li><a href="{{ . }}" target="_blank" rel="noopener">Get Tickets</a></li>{{ end }}
         {{ with $e.sessionize.cfp_url }}<li><a href="{{ . }}" target="_blank" rel="noopener">Submit a session</a>{{ with $e.sessionize.cfp_closes }} <span class="rh-footer__note">until {{ . }}</span>{{ end }}</li>{{ end }}
-        <li><a href="{{ "retro/sponsors/" | relURL }}">Become a sponsor</a></li>
+        <li><a href="{{ $e.links.sponsor_contact | relURL }}" target="_blank" rel="noopener">Become a sponsor</a></li>
         <li><a href="{{ "retro/contact/" | relURL }}">Contact the organisers</a></li>
         {{ with $e.links.email }}<li><a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
       </ul>
