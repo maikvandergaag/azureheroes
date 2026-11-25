@@ -27,7 +27,7 @@ venue:
 links:
   tickets: "https://speakerdesk.eu/events/azure-heroes-2027-1al8/tickets"
   sponsor_deck: ""       # Optional: public link to the sponsorship deck PDF
-  sponsor_contact: "https://speakerdesk.eu/sign-in?next=/organize/new"
+  sponsor_contact: "https://speakerdesk.eu/events/azure-heroes-2027-1al8/sponsor"
   email: "retro@azureheroes.online"
   code_of_conduct: "/retro/code-of-conduct/"
   main_site: "/"
